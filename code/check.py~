@@ -1,0 +1,49 @@
+
+
+def check():
+	path = path = "/media/sf_analysis/data/"
+	fname = "Ac57 test.gml"
+ 	f_r = open(path+fname,"r")
+ 	#for line in f_r.readlines():
+		#arr = line.strip('\xe2\x80\x83')
+		#print arr
+	data = f_r.read().decode("utf-8-sig").encode("utf-8")
+	
+ 	 
+ 	f_w = open("/home/amm/Desktop/sna-git/data/temp","w")
+	f_w.write(data)
+	f_w.close()
+	f_r.close()
+	
+	f_r = open("/home/amm/Desktop/sna-git/data/temp", "r") 
+	f_w = open("/home/amm/Desktop/sna-git/data/"+fname,"w")
+	
+	id_set = set()
+	for line in f_r.readlines():
+		line = line.strip('\xe2\x80\x83')
+		if len(line.split())>1:
+			 
+			fst, snd = line.split()
+ 		  
+			if fst.strip()=="id":
+				newid = snd.strip()[5::]
+				if newid not in id_set:
+					id_set.add(newid)
+ 				f_w.writelines(fst+" "+ newid+"\n")
+ 				
+			elif fst.strip() == "source" or fst.strip() == "target":
+				newid = snd.strip()[5::]
+				if newid not in id_set:
+					print newid+" not in id_set"
+ 				f_w.writelines(fst+" "+ newid+"\n")	
+			else:
+				f_w.writelines(line)
+				
+		else:
+			f_w.writelines(line)
+	
+	f_r.close()
+	f_w.close()
+		
+	
+check()
