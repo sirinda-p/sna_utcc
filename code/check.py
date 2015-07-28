@@ -21,10 +21,11 @@ def check():
 	id_set = set()
 	for line in f_r.readlines():
 		line = line.strip('\xe2\x80\x83')
+
 		if len(line.split())>1:
 			 
 			fst, snd = line.split()
- 		 
+ 		  
 			if fst.strip()=="id":
 				newid = snd.strip()[5::]
 				if newid not in id_set:
