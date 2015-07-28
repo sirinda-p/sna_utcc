@@ -1,0 +1,497 @@
+graph [
+directed 1
+node [
+id 5704103002
+gpa 3.63
+year 57
+gender F
+]
+node [
+id 5704103003
+gpa 3.29
+year 57
+gender F
+]
+node [
+id 5704103004
+gpa 2.25
+year 57
+gender M
+]
+node [
+id 5704103005
+gpa 1.50
+year 57
+gender M
+]
+node [
+id 5704103006
+gpa 1.65
+year 57
+gender M
+]
+node [
+id 5704103008
+gpa 1.92
+year 57
+gender F
+]
+node [
+id 5704103009
+gpa 3.21
+year 57
+gender F
+]
+node [
+id 5704103010
+gpa 3.00
+year 57
+gender F
+]
+node [
+id 5704103011
+gpa 2.83
+year 57
+gender M
+]
+node [
+id 5704103012
+gpa 2.92
+year 57
+gender F
+]
+node [
+id 5704103013
+gpa 2.96
+year 57
+gender F
+]
+node [
+id 5704103014
+gpa 3.13
+year 57
+gender F
+]
+node [
+id 5704103015
+gpa 3.46
+year 57
+gender F
+]
+node [
+id 5704103016
+gpa 2.00
+year 57
+gender M
+]
+node [
+id 5704103017
+gpa 2.00
+year 57
+gender F
+]
+node [
+id 5704103019
+gpa 1.17
+year 57
+gender M
+]
+node [
+id 5704103020
+gpa 1.20
+year 57
+gender M
+]
+node [
+id 5704103021
+gpa 0.00
+year 57
+gender M
+]
+node [
+id 5704103022
+gpa 2.38
+year 57
+gender M
+]
+node [
+id 5704103023
+gpa 0.00
+year 57
+gender F
+]
+node [
+id 5704103024
+gpa 0.00
+year 57
+gender F
+]
+node [
+id 5704103025
+gpa 1.50
+year 57
+gender M
+]
+node [
+id 5704103026
+gpa 2.44
+year 57
+gender F
+]
+edge [
+source 5704103012
+target 5704103002
+]
+edge [
+source 5704103012
+target 5704103003
+]
+edge [
+source 5704103012
+target 5704103008
+]
+edge [
+source 5704103012
+target 5704103009
+]
+edge [
+source 5704103012
+target 5704103011
+]
+edge [
+source 5704103012
+target 5704103013
+]
+edge [
+source 5704103012
+target 5704103014
+]
+edge [
+source 5704103012
+target 5704103015
+]
+edge [
+source 5704103012
+target 5704103017
+]
+edge [
+source 5704103008
+target 5704103002
+]
+edge [
+source 5704103008
+target 5704103003
+]
+edge [
+source 5704103008
+target 5704103009
+]
+edge [
+source 5704103008
+target 5704103012
+]
+edge [
+source 5704103008
+target 5704103013
+]
+edge [
+source 5704103008
+target 5704103014
+]
+edge [
+source 5704103008
+target 5704103015
+]
+edge [
+source 5704103008
+target 5704103017
+]
+edge [
+source 5704103009
+target 5704103002
+]
+edge [
+source 5704103009
+target 5704103003
+]
+edge [
+source 5704103009
+target 5704103008
+]
+edge [
+source 5704103009
+target 5704103010
+]
+edge [
+source 5704103009
+target 5704103012
+]
+edge [
+source 5704103009
+target 5704103013
+]
+edge [
+source 5704103009
+target 5704103014
+]
+edge [
+source 5704103009
+target 5704103015
+]
+edge [
+source 5704103009
+target 5704103017
+]
+edge [
+source 5704103002
+target 5704103003
+]
+edge [
+source 5704103002
+target 5704103004
+]
+edge [
+source 5704103002
+target 5704103005
+]
+edge [
+source 5704103002
+target 5704103006
+]
+edge [
+source 5704103002
+target 5704103008
+]
+edge [
+source 5704103002
+target 5704103010
+]
+edge [
+source 5704103002
+target 5704103011
+]
+edge [
+source 5704103002
+target 5704103012
+]
+edge [
+source 5704103002
+target 5704103013
+]
+edge [
+source 5704103002
+target 5704103014
+]
+edge [
+source 5704103002
+target 5704103015
+]
+edge [
+source 5704103002
+target 5704103016
+]
+edge [
+source 5704103002
+target 5704103017
+]
+edge [
+source 5704103002
+target 5704103020
+]
+edge [
+source 5704103002
+target 5704103021
+]
+edge [
+source 5704103002
+target 5704103022
+]
+edge [
+source 5704103017
+target 5704103002
+]
+edge [
+source 5704103017
+target 5704103003
+]
+edge [
+source 5704103017
+target 5704103008
+]
+edge [
+source 5704103017
+target 5704103009
+]
+edge [
+source 5704103017
+target 5704103010
+]
+edge [
+source 5704103017
+target 5704103011
+]
+edge [
+source 5704103017
+target 5704103012
+]
+edge [
+source 5704103017
+target 5704103022
+]
+edge [
+source 5704103015
+target 5704103002
+]
+edge [
+source 5704103015
+target 5704103003
+]
+edge [
+source 5704103015
+target 5704103008
+]
+edge [
+source 5704103015
+target 5704103009
+]
+edge [
+source 5704103015
+target 5704103010
+]
+edge [
+source 5704103015
+target 5704103011
+]
+edge [
+source 5704103015
+target 5704103013
+]
+edge [
+source 5704103015
+target 5704103014
+]
+edge [
+source 5704103015
+target 5704103017
+]
+edge [
+source 5704103014
+target 5704103002
+]
+edge [
+source 5704103014
+target 5704103003
+]
+edge [
+source 5704103014
+target 5704103008
+]
+edge [
+source 5704103014
+target 5704103009
+]
+edge [
+source 5704103014
+target 5704103010
+]
+edge [
+source 5704103014
+target 5704103011
+]
+edge [
+source 5704103014
+target 5704103013
+]
+edge [
+source 5704103014
+target 5704103015
+]
+edge [
+source 5704103014
+target 5704103017
+]
+edge [
+source 5704103014
+target 5704103022
+]
+edge [
+source 5704103011
+target 5704103002
+]
+edge [
+source 5704103011
+target 5704103003
+]
+edge [
+source 5704103011
+target 5704103004
+]
+edge [
+source 5704103011
+target 5704103005
+]
+edge [
+source 5704103011
+target 5704103006
+]
+edge [
+source 5704103011
+target 5704103008
+]
+edge [
+source 5704103011
+target 5704103009
+]
+edge [
+source 5704103011
+target 5704103010
+]
+edge [
+source 5704103011
+target 5704103012
+]
+edge [
+source 5704103011
+target 5704103016
+]
+edge [
+source 5704103011
+target 5704103021
+]
+edge [
+source 5704103022
+target 5704103008
+]
+edge [
+source 5704103022
+target 5704103009
+]
+edge [
+source 5704103022
+target 5704103010
+]
+edge [
+source 5704103022
+target 5704103011
+]
+edge [
+source 5704103022
+target 5704103012
+]
+edge [
+source 5704103022
+target 5704103013
+]
+edge [
+source 5704103022
+target 5704103014
+]
+edge [
+source 5704103022
+target 5704103015
+]
+edge [
+source 5704103022
+target 5704103017
+]
+]
