@@ -1,6099 +1,797 @@
 graph [ 
   directed 1 
   node [ 
-   id 5702100003
-   gpa 2.95
-   year 57
-   gender F
+   id 5608100002
+   gpa 3.22
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702100004
-   gpa 2.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100014
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100017
-   gpa 3.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100019
-   gpa 3.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100020
-   gpa 2.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100021
-   gpa 3.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100022
-   gpa 3.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100023
-   gpa 1.90
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100024
-   gpa 2.40
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100026
-   gpa 2.95
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100027
-   gpa 2.58
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100028
-   gpa 2.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100030
-   gpa 2.14
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100031
-   gpa 2.05
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100032
-   gpa 2.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100034
-   gpa 2.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100035
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100036
-   gpa 2.40
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100037
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100038
-   gpa 2.42
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100039
-   gpa 2.17
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100040
-   gpa 2.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100042
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100043
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100044
-   gpa 2.86
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100047
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100050
-   gpa 2.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100053
-   gpa 2.60
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100056
-   gpa 3.13
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100057
-   gpa 2.64
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100058
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100060
-   gpa 2.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100063
-   gpa 2.68
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100064
-   gpa 2.40
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100065
-   gpa 1.94
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100067
-   gpa 3.17
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100069
-   gpa 3.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100070
-   gpa 3.04
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100071
-   gpa 3.82
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100072
-   gpa 3.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100074
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100075
-   gpa 2.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100076
-   gpa 2.88
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100080
-   gpa 2.59
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100081
-   gpa 3.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100082
-   gpa 3.21
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100085
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100086
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100087
-   gpa 2.67
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100089
-   gpa 2.67
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100091
-   gpa 3.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100092
-   gpa 2.35
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100093
-   gpa 2.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100094
-   gpa 3.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100095
-   gpa 3.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100096
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100099
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100100
-   gpa 2.20
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100102
-   gpa 3.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100103
-   gpa 3.17
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100104
-   gpa 3.92
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100112
-   gpa 2.73
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100113
-   gpa 3.67
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100114
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100115
-   gpa 3.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100116
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100117
-   gpa 2.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100120
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100121
-   gpa 3.21
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100122
-   gpa 2.41
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100123
-   gpa 2.59
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100124
-   gpa 3.33
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100125
-   gpa 2.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100128
-   gpa 2.56
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100129
-   gpa 3.09
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100134
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100136
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100137
-   gpa 2.82
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100138
-   gpa 2.68
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100140
-   gpa 2.15
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100144
-   gpa 2.11
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100147
-   gpa 2.35
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100148
-   gpa 3.09
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100150
-   gpa 2.95
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100152
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100153
-   gpa 2.70
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100154
-   gpa 2.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100158
-   gpa 2.10
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100160
-   gpa 2.30
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100161
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100162
-   gpa 2.92
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100164
-   gpa 2.80
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100166
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100167
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100168
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100169
-   gpa 4.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100170
-   gpa 4.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100173
-   gpa 1.85
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100175
-   gpa 3.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100176
-   gpa 3.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100177
-   gpa 3.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100179
-   gpa 4.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100180
-   gpa 3.92
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100182
-   gpa 3.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100184
-   gpa 4.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100185
-   gpa 2.15
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100186
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100187
-   gpa 3.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100189
-   gpa 3.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100190
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100191
-   gpa 3.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100192
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100195
-   gpa 3.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100196
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100197
-   gpa 2.36
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100199
-   gpa 3.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100200
-   gpa 2.11
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100201
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100202
-   gpa 1.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100203
-   gpa 3.10
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100205
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100206
-   gpa 2.60
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100207
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100210
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100212
+   id 5608100003
    gpa 1.95
-   year 57
-   gender F
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702100213
-   gpa 2.50
-   year 57
-   gender F
+   id 5608100005
+   gpa 3.15
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702100214
-   gpa 2.00
-   year 57
-   gender F
+   id 5608100006
+   gpa 2.51
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702100215
-   gpa 2.86
-   year 57
-   gender F
+   id 5608100009
+   gpa 2.87
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702100216
-   gpa 2.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100217
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100218
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100220
-   gpa 3.46
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100221
-   gpa 2.75
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100223
-   gpa 2.17
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100225
-   gpa 2.23
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100226
-   gpa 2.77
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100227
-   gpa 2.22
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100229
-   gpa 1.69
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100230
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100231
-   gpa 2.15
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100232
-   gpa 2.17
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100233
-   gpa 2.42
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100234
-   gpa 3.05
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100235
-   gpa 2.59
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100236
-   gpa 2.05
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100237
-   gpa 2.55
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100238
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100239
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100240
-   gpa 2.11
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100241
-   gpa 3.21
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100244
-   gpa 2.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100245
-   gpa 2.35
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100246
-   gpa 2.73
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100247
-   gpa 2.73
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100248
-   gpa 2.15
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100249
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100250
-   gpa 2.08
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100252
-   gpa 2.30
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100253
-   gpa 3.05
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100254
-   gpa 2.32
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100255
-   gpa 1.72
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100256
-   gpa 3.14
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100257
-   gpa 2.58
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100258
-   gpa 2.23
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100259
-   gpa 2.85
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100260
-   gpa 2.35
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100261
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100262
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100264
-   gpa 2.20
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100265
-   gpa 2.54
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100266
-   gpa 2.82
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100267
-   gpa 1.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100268
-   gpa 2.14
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100269
-   gpa 1.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100270
-   gpa 2.14
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100272
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100274
-   gpa 2.09
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100275
-   gpa 1.67
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100276
-   gpa 1.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100277
-   gpa 2.63
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100278
-   gpa 2.10
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100279
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100280
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100282
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100283
-   gpa 2.06
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100284
-   gpa 2.10
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100286
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100287
-   gpa 2.80
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100288
-   gpa 2.15
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100292
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100293
-   gpa 2.91
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100294
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100295
-   gpa 2.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100296
-   gpa 1.83
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100297
-   gpa 2.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100298
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100299
-   gpa 2.41
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100300
-   gpa 3.09
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100301
-   gpa 2.36
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100302
-   gpa 1.95
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100304
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100305
-   gpa 2.50
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100307
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100309
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100310
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100311
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100312
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100313
-   gpa 3.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100315
-   gpa 2.71
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100316
-   gpa 2.46
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100317
-   gpa 2.71
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100318
-   gpa 2.88
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100320
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100322
-   gpa 2.80
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100323
-   gpa 2.63
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100324
-   gpa 2.82
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100325
-   gpa 2.40
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100326
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100328
-   gpa 2.41
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100329
-   gpa 2.09
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100331
-   gpa 1.63
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100332
-   gpa 3.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100333
-   gpa 2.72
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100334
-   gpa 3.09
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100335
-   gpa 2.14
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100336
-   gpa 1.69
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100337
-   gpa 2.60
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100338
-   gpa 2.96
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100339
-   gpa 3.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100340
-   gpa 3.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100341
-   gpa 2.29
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100342
-   gpa 2.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100343
-   gpa 2.17
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100344
-   gpa 2.32
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100346
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100347
-   gpa 3.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100348
-   gpa 2.22
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100349
-   gpa 1.94
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100351
-   gpa 2.63
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100352
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100353
-   gpa 2.27
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100354
-   gpa 2.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100355
-   gpa 3.17
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100356
-   gpa 2.68
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100357
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100358
-   gpa 3.67
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100359
-   gpa 2.28
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100360
-   gpa 2.19
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100361
-   gpa 3.67
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100362
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100363
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100364
-   gpa 2.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100365
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100366
-   gpa 3.21
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100368
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100370
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100371
-   gpa 2.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100372
-   gpa 2.88
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100373
-   gpa 2.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100374
-   gpa 2.91
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100375
-   gpa 3.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100376
-   gpa 2.56
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100377
-   gpa 3.13
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100378
-   gpa 2.82
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100379
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100380
-   gpa 2.30
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100382
-   gpa 3.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100383
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100384
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100387
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100389
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100390
-   gpa 1.72
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100391
-   gpa 3.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100392
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100393
-   gpa 2.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100394
-   gpa 3.08
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100395
-   gpa 3.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100396
-   gpa 2.82
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100397
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100398
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100399
-   gpa 2.58
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100400
-   gpa 1.80
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100401
-   gpa 3.17
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100402
-   gpa 3.32
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100403
-   gpa 2.60
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100404
-   gpa 2.44
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100405
-   gpa 2.82
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100406
-   gpa 3.67
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100407
-   gpa 3.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100408
-   gpa 2.35
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100409
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100410
-   gpa 2.36
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100411
-   gpa 2.33
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100412
-   gpa 2.64
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100413
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100414
-   gpa 2.67
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100415
-   gpa 2.67
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100416
-   gpa 3.33
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100417
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100418
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100419
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100420
-   gpa 3.21
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100421
-   gpa 3.29
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100422
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100423
-   gpa 2.30
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100424
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100425
-   gpa 2.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100426
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100427
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100428
-   gpa 2.20
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100429
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100430
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100431
-   gpa 2.68
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100432
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100433
-   gpa 2.59
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100434
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100435
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100436
-   gpa 2.46
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100437
-   gpa 2.15
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100439
-   gpa 2.32
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100440
-   gpa 3.13
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100441
-   gpa 2.58
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100442
-   gpa 3.13
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100443
-   gpa 2.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100445
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100446
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100447
-   gpa 2.27
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100448
-   gpa 2.90
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100449
-   gpa 2.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100450
-   gpa 3.83
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100451
-   gpa 2.18
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100452
-   gpa 3.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100454
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100455
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100456
-   gpa 3.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100457
-   gpa 3.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100458
-   gpa 2.63
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100459
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100460
-   gpa 2.40
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100462
-   gpa 2.23
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100463
-   gpa 2.77
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100464
-   gpa 2.82
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100465
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100466
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100467
-   gpa 3.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100468
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100470
-   gpa 2.05
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100472
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100473
-   gpa 3.88
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100474
-   gpa 2.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100476
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100477
-   gpa 3.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100478
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100479
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100480
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100483
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100484
-   gpa 3.41
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100485
-   gpa 4.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100486
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100487
-   gpa 3.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100488
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100489
-   gpa 3.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100490
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100491
-   gpa 3.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100492
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100493
-   gpa 3.13
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100494
-   gpa 2.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100495
-   gpa 3.44
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100496
-   gpa 3.96
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100497
-   gpa 2.18
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100498
-   gpa 2.35
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100499
-   gpa 2.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100500
-   gpa 2.73
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100501
-   gpa 2.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100502
-   gpa 2.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100503
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100504
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100505
-   gpa 3.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100506
-   gpa 3.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100507
-   gpa 2.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100508
-   gpa 2.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100509
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100510
-   gpa 3.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100511
-   gpa 3.29
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100512
-   gpa 2.88
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100513
-   gpa 2.18
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100515
-   gpa 2.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100516
-   gpa 3.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100517
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100518
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100519
-   gpa 3.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100520
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100521
-   gpa 2.92
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100522
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100523
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100524
-   gpa 1.94
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100525
-   gpa 4.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100526
-   gpa 3.30
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100527
-   gpa 2.60
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100528
-   gpa 3.17
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100529
-   gpa 1.60
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100530
-   gpa 2.92
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100531
-   gpa 2.40
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100532
-   gpa 2.90
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100534
-   gpa 3.42
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100535
-   gpa 3.67
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100536
-   gpa 2.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100537
-   gpa 3.83
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100538
-   gpa 3.54
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100539
-   gpa 3.75
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100540
-   gpa 1.70
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100541
-   gpa 3.17
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100542
-   gpa 3.04
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100543
-   gpa 3.11
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100544
-   gpa 3.33
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100545
-   gpa 2.65
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100546
-   gpa 3.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100547
-   gpa 2.83
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100548
-   gpa 3.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100549
-   gpa 2.70
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100550
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100551
-   gpa 3.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100552
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100553
-   gpa 3.32
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100554
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100555
-   gpa 3.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100556
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100558
-   gpa 2.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100559
-   gpa 3.63
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100560
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100561
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100562
-   gpa 1.83
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100563
-   gpa 2.29
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100564
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100567
-   gpa 3.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100568
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100571
-   gpa 2.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100572
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100573
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100574
-   gpa 2.60
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100575
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100577
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100578
-   gpa 2.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100579
-   gpa 2.42
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100580
-   gpa 2.27
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100581
-   gpa 3.64
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100582
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100583
-   gpa 3.13
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100584
-   gpa 2.59
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100585
-   gpa 2.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100587
-   gpa 2.59
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100588
-   gpa 2.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100590
-   gpa 3.10
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100591
-   gpa 2.91
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100592
-   gpa 2.35
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100593
-   gpa 2.07
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100594
-   gpa 2.80
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100595
-   gpa 3.30
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100596
-   gpa 2.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100597
-   gpa 3.20
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100598
-   gpa 2.18
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100599
-   gpa 2.39
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100600
-   gpa 2.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100601
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100602
-   gpa 2.91
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100603
-   gpa 3.04
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100604
-   gpa 2.88
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100605
-   gpa 3.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100606
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100607
-   gpa 3.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100608
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100609
-   gpa 2.70
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100610
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100612
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100613
-   gpa 2.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100614
-   gpa 2.35
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100615
-   gpa 2.92
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100616
-   gpa 2.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100617
-   gpa 2.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100619
-   gpa 2.56
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100620
-   gpa 3.13
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100622
-   gpa 3.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100623
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100624
-   gpa 2.80
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100625
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100626
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100628
-   gpa 2.77
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100629
-   gpa 3.42
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100632
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100633
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100634
-   gpa 3.25
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100635
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100636
-   gpa 2.25
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100637
-   gpa 3.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100638
-   gpa 3.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100639
-   gpa 3.58
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100640
-   gpa 3.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100641
-   gpa 2.83
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100642
-   gpa 3.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100643
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100644
-   gpa 3.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100646
-   gpa 3.25
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702100647
-   gpa 2.67
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702100648
-   gpa 3.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130600
-   gpa 2.15
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130601
-   gpa 2.93
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130602
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130603
-   gpa 2.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130605
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130606
-   gpa 2.41
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130607
-   gpa 2.85
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130608
-   gpa 2.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130609
-   gpa 2.85
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130610
-   gpa 2.29
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130611
-   gpa 2.63
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130612
-   gpa 2.38
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130613
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130614
-   gpa 1.96
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130615
-   gpa 3.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130616
-   gpa 2.62
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130617
-   gpa 2.64
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130618
-   gpa 3.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130619
-   gpa 3.39
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130620
-   gpa 2.61
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130621
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130622
-   gpa 2.19
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130624
-   gpa 3.11
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130625
-   gpa 2.33
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130626
-   gpa 3.14
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130627
-   gpa 3.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130628
-   gpa 2.27
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130629
-   gpa 2.71
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130630
-   gpa 2.36
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130631
-   gpa 2.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130632
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130633
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130634
-   gpa 2.88
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130635
-   gpa 3.27
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130636
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130637
-   gpa 2.69
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130638
-   gpa 3.39
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130640
-   gpa 2.14
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130641
-   gpa 3.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130642
-   gpa 3.14
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130643
-   gpa 3.36
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130644
-   gpa 2.88
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130646
-   gpa 2.75
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130647
-   gpa 2.89
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130649
-   gpa 2.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130650
-   gpa 1.95
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130651
-   gpa 2.58
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130652
-   gpa 2.55
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130653
-   gpa 2.62
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130654
-   gpa 1.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130655
-   gpa 3.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130656
-   gpa 2.25
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130657
-   gpa 2.38
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130659
-   gpa 2.77
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130660
-   gpa 2.61
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130661
-   gpa 2.50
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130662
-   gpa 3.36
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130663
-   gpa 2.05
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130664
-   gpa 3.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130665
-   gpa 2.27
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130667
-   gpa 2.50
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130668
-   gpa 2.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130669
-   gpa 2.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130670
-   gpa 3.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130671
-   gpa 2.79
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130672
-   gpa 2.86
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130673
-   gpa 3.04
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130674
-   gpa 2.39
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130675
-   gpa 3.36
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130676
-   gpa 2.27
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130677
-   gpa 2.70
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130678
-   gpa 3.21
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130679
-   gpa 2.89
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130680
-   gpa 2.38
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130681
-   gpa 2.88
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130682
-   gpa 2.54
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130683
-   gpa 3.18
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130684
-   gpa 2.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130685
-   gpa 2.43
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130686
-   gpa 2.89
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130687
-   gpa 2.85
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130688
-   gpa 2.69
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130689
-   gpa 2.64
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130690
-   gpa 3.12
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130691
-   gpa 2.67
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130692
-   gpa 2.86
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130693
-   gpa 3.39
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130694
-   gpa 3.14
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130695
-   gpa 2.50
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5702130697
+   id 5608100010
    gpa 2.57
-   year 57
-   gender F
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130698
-   gpa 3.32
-   year 57
-   gender M
+   id 5608100011
+   gpa 3.42
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130699
-   gpa 3.61
-   year 57
-   gender F
+   id 5608100012
+   gpa 2.81
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130700
-   gpa 3.46
-   year 57
-   gender F
+   id 5608100014
+   gpa 2.58
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130701
-   gpa 3.07
-   year 57
-   gender F
+   id 5608100015
+   gpa 3.47
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130703
-   gpa 3.71
-   year 57
-   gender F
+   id 5608100018
+   gpa 3.63
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130704
-   gpa 3.32
-   year 57
-   gender F
+   id 5608100021
+   gpa 2.57
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130705
-   gpa 3.36
-   year 57
-   gender F
+   id 5608100022
+   gpa 2.26
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130706
-   gpa 2.46
-   year 57
-   gender F
+   id 5608100023
+   gpa 3.44
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130707
-   gpa 2.93
-   year 57
-   gender F
+   id 5608100024
+   gpa 3.58
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130708
-   gpa 2.93
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130709
-   gpa 0.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130710
-   gpa 2.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130711
+   id 5608100025
    gpa 4.00
-   year 57
-   gender F
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130712
-   gpa 3.12
-   year 57
-   gender F
+   id 5608100026
+   gpa 2.28
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130713
-   gpa 2.59
-   year 57
-   gender F
+   id 5608100027
+   gpa 2.34
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130714
-   gpa 2.89
-   year 57
-   gender F
+   id 5608100028
+   gpa 4.00
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130715
-   gpa 2.79
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130716
-   gpa 2.86
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130717
+   id 5608100030
    gpa 3.04
-   year 57
-   gender F
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130718
-   gpa 2.96
-   year 57
-   gender F
+   id 5608100031
+   gpa 3.96
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130719
-   gpa 2.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130720
-   gpa 2.13
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5702130721
+   id 5608100032
    gpa 4.00
-   year 57
-   gender F
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130722
-   gpa 2.54
-   year 57
-   gender M
+   id 5608100033
+   gpa 3.52
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130723
-   gpa 0.00
-   year 57
-   gender F
+   id 5608100035
+   gpa 2.60
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130724
-   gpa 2.64
-   year 57
-   gender F
+   id 5608100036
+   gpa 2.94
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130725
-   gpa 1.92
-   year 57
-   gender F
+   id 5608100037
+   gpa 3.05
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130726
-   gpa 2.45
-   year 57
-   gender F
+   id 5608100038
+   gpa 3.32
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130727
-   gpa 2.61
-   year 57
-   gender M
+   id 5608100039
+   gpa 2.97
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130728
-   gpa 3.00
-   year 57
-   gender M
+   id 5608100040
+   gpa 3.98
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130729
-   gpa 2.96
-   year 57
-   gender M
+   id 5608100041
+   gpa 3.65
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130730
-   gpa 2.50
-   year 57
-   gender F
+   id 5608100042
+   gpa 3.05
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130731
-   gpa 2.67
-   year 57
-   gender F
+   id 5608100045
+   gpa 3.69
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130732
-   gpa 2.61
-   year 57
-   gender F
+   id 5608100048
+   gpa 2.59
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130733
-   gpa 3.79
-   year 57
-   gender F
+   id 5608100049
+   gpa 3.19
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130734
-   gpa 2.82
-   year 57
-   gender F
+   id 5608100051
+   gpa 2.59
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130735
-   gpa 2.50
-   year 57
-   gender F
+   id 5608100053
+   gpa 3.53
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130736
-   gpa 3.21
-   year 57
-   gender F
+   id 5608100055
+   gpa 2.56
+   year 56
+   gender "M"
    ] 
   node [ 
-   id 5702130738
-   gpa 2.73
-   year 57
-   gender F
+   id 5608100056
+   gpa 2.51
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130739
-   gpa 2.36
-   year 57
-   gender F
+   id 5608100058
+   gpa 3.13
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130740
-   gpa 1.79
-   year 57
-   gender F
+   id 5608100059
+   gpa 3.31
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130741
-   gpa 2.21
-   year 57
-   gender F
+   id 5608100061
+   gpa 3.41
+   year 56
+   gender "F"
    ] 
   node [ 
-   id 5702130742
-   gpa 3.25
-   year 57
-   gender F
+   id 5608100062
+   gpa 2.97
+   year 56
+   gender "F"
+   ] 
+  node [ 
+   id 5608100065
+   gpa 3.71
+   year 56
+   gender "M"
+   ] 
+  node [ 
+   id 5608100066
+   gpa 2.68
+   year 56
+   gender "F"
+   ] 
+  node [ 
+   id 5608100067
+   gpa 2.02
+   year 56
+   gender "M"
+   ] 
+  node [ 
+   id 5608100069
+   gpa 2.13
+   year 56
+   gender "M"
+   ] 
+  node [ 
+   id 5608100072
+   gpa 2.35
+   year 56
+   gender "F"
+   ] 
+  node [ 
+   id 5608100075
+   gpa 2.97
+   year 56
+   gender "M"
+   ] 
+  node [ 
+   id 5608100076
+   gpa 2.65
+   year 56
+   gender "M"
+   ] 
+  node [ 
+   id 5608100079
+   gpa 3.37
+   year 56
+   gender "F"
+   ] 
+  node [ 
+   id 5608100080
+   gpa 2.27
+   year 56
+   gender "M"
+   ] 
+  node [ 
+   id 5608100081
+   gpa 2.42
+   year 56
+   gender "F"
+   ] 
+  node [ 
+   id 5608100082
+   gpa 2.15
+   year 56
+   gender "M"
+   ] 
+  node [ 
+   id 5608100084
+   gpa 3.06
+   year 56
+   gender "F"
+   ] 
+  node [ 
+   id 5608100085
+   gpa 2.93
+   year 56
+   gender "M"
    ] 
   edge [ 
-   source 5702100234
-   target 5702100236
+   source 5608100028
+   target 5608100041
   ]
   edge [ 
-   source 5702100234
-   target 5702100299
+   source 5608100028
+   target 5608100042
   ]
   edge [ 
-   source 5702100234
-   target 5702100231
+   source 5608100028
+   target 5608100053
   ]
   edge [ 
-   source 5702100234
-   target 5702100239
+   source 5608100028
+   target 5608100055
   ]
   edge [ 
-   source 5702100234
-   target 5702100294
+   source 5608100028
+   target 5608100065
   ]
   edge [ 
-   source 5702100234
-   target 5702100238
+   source 5608100041
+   target 5608100042
   ]
   edge [ 
-   source 5702100234
-   target 5702100244
+   source 5608100041
+   target 5608100053
   ]
   edge [ 
-   source 5702100234
-   target 5702100261
+   source 5608100041
+   target 5608100055
   ]
   edge [ 
-   source 5702100234
-   target 5702100241
+   source 5608100041
+   target 5608100065
   ]
   edge [ 
-   source 5702100234
-   target 5702100266
+   source 5608100061
+   target 5608100025
   ]
   edge [ 
-   source 5702100277
-   target 5702100249
+   source 5608100009
+   target 5608100010
   ]
   edge [ 
-   source 5702100277
-   target 5702100237
+   source 5608100009
+   target 5608100031
   ]
   edge [ 
-   source 5702100277
-   target 5702100259
+   source 5608100009
+   target 5608100051
   ]
   edge [ 
-   source 5702100277
-   target 5702100302
+   source 5608100009
+   target 5608100059
   ]
   edge [ 
-   source 5702100277
-   target 5702100278
+   source 5608100009
+   target 5608100061
   ]
   edge [ 
-   source 5702100277
-   target 5702100288
+   source 5608100003
+   target 5608100066
   ]
   edge [ 
-   source 5702100277
-   target 5702100296
+   source 5608100003
+   target 5608100005
   ]
   edge [ 
-   source 5702100277
-   target 5702100300
+   source 5608100003
+   target 5608100012
   ]
   edge [ 
-   source 5702100277
-   target 5702100227
+   source 5608100003
+   target 5608100031
   ]
   edge [ 
-   source 5702100277
-   target 5702100233
+   source 5608100059
+   target 5608100023
   ]
   edge [ 
-   source 5702100277
-   target 5702100250
+   source 5608100059
+   target 5608100025
   ]
   edge [ 
-   source 5702100277
-   target 5702100257
+   source 5608100059
+   target 5608100031
   ]
   edge [ 
-   source 5702100277
-   target 5702100258
+   source 5608100059
+   target 5608100032
   ]
   edge [ 
-   source 5702100282
-   target 5702100227
+   source 5608100059
+   target 5608100040
   ]
   edge [ 
-   source 5702100282
-   target 5702100311
+   source 5608100059
+   target 5608100061
   ]
   edge [ 
-   source 5702100282
-   target 5702100267
+   source 5608100025
+   target 5608100040
   ]
   edge [ 
-   source 5702100282
-   target 5702100300
+   source 5608100025
+   target 5608100045
   ]
   edge [ 
-   source 5702100282
-   target 5702100302
+   source 5608100025
+   target 5608100018
   ]
   edge [ 
-   source 5702100282
-   target 5702100249
+   source 5608100025
+   target 5608100031
   ]
   edge [ 
-   source 5702100282
-   target 5702100258
+   source 5608100025
+   target 5608100032
   ]
   edge [ 
-   source 5702100282
-   target 5702100297
+   source 5608100084
+   target 5608100038
   ]
   edge [ 
-   source 5702100297
-   target 5702100227
+   source 5608100084
+   target 5608100045
   ]
   edge [ 
-   source 5702100297
-   target 5702100311
+   source 5608100084
+   target 5608100053
   ]
   edge [ 
-   source 5702100297
-   target 5702100286
+   source 5608100084
+   target 5608100011
   ]
   edge [ 
-   source 5702100297
-   target 5702100267
+   source 5608100084
+   target 5608100015
   ]
   edge [ 
-   source 5702100297
-   target 5702100268
+   source 5608100084
+   target 5608100018
   ]
   edge [ 
-   source 5702100297
-   target 5702100295
+   source 5608100084
+   target 5608100024
   ]
   edge [ 
-   source 5702100297
-   target 5702100282
+   source 5608100084
+   target 5608100025
   ]
   edge [ 
-   source 5702100297
-   target 5702100298
+   source 5608100084
+   target 5608100033
   ]
   edge [ 
-   source 5702100297
-   target 5702100302
+   source 5608100042
+   target 5608100028
   ]
   edge [ 
-   source 5702100297
-   target 5702100234
+   source 5608100042
+   target 5608100041
   ]
   edge [ 
-   source 5702100297
-   target 5702100304
+   source 5608100042
+   target 5608100053
   ]
   edge [ 
-   source 5702100297
-   target 5702100250
+   source 5608100042
+   target 5608100055
   ]
   edge [ 
-   source 5702100297
-   target 5702100309
+   source 5608100042
+   target 5608100065
   ]
   edge [ 
-   source 5702100297
-   target 5702100249
+   source 5608100065
+   target 5608100055
   ]
   edge [ 
-   source 5702100297
-   target 5702100279
+   source 5608100065
+   target 5608100053
   ]
   edge [ 
-   source 5702100297
-   target 5702100269
+   source 5608100065
+   target 5608100042
   ]
   edge [ 
-   source 5702100297
-   target 5702100288
+   source 5608100065
+   target 5608100041
   ]
   edge [ 
-   source 5702100297
-   target 5702100247
+   source 5608100065
+   target 5608100028
   ]
   edge [ 
-   source 5702100259
-   target 5702100274
+   source 5608100039
+   target 5608100066
   ]
   edge [ 
-   source 5702100259
-   target 5702100277
+   source 5608100039
+   target 5608100053
   ]
   edge [ 
-   source 5702100259
-   target 5702100278
+   source 5608100039
+   target 5608100040
   ]
   edge [ 
-   source 5702100259
-   target 5702100288
+   source 5608100039
+   target 5608100038
   ]
   edge [ 
-   source 5702100259
-   target 5702100229
+   source 5608100039
+   target 5608100005
   ]
   edge [ 
-   source 5702100259
-   target 5702100232
+   source 5608100039
+   target 5608100012
   ]
   edge [ 
-   source 5702100259
-   target 5702100233
+   source 5608100039
+   target 5608100025
   ]
   edge [ 
-   source 5702100259
-   target 5702100237
+   source 5608100039
+   target 5608100028
   ]
   edge [ 
-   source 5702100259
-   target 5702100241
+   source 5608100039
+   target 5608100031
   ]
   edge [ 
-   source 5702100259
-   target 5702100247
+   source 5608100039
+   target 5608100032
   ]
   edge [ 
-   source 5702100259
-   target 5702100248
+   source 5608100066
+   target 5608100005
   ]
   edge [ 
-   source 5702100259
-   target 5702100249
+   source 5608100066
+   target 5608100012
   ]
   edge [ 
-   source 5702100259
-   target 5702100250
+   source 5608100005
+   target 5608100012
   ]
   edge [ 
-   source 5702100259
-   target 5702100256
+   source 5608100005
+   target 5608100023
   ]
   edge [ 
-   source 5702100259
-   target 5702100257
+   source 5608100005
+   target 5608100031
   ]
   edge [ 
-   source 5702100259
-   target 5702100258
+   source 5608100005
+   target 5608100039
   ]
   edge [ 
-   source 5702100259
-   target 5702100262
+   source 5608100005
+   target 5608100066
   ]
   edge [ 
-   source 5702100259
-   target 5702100265
+   source 5608100031
+   target 5608100005
   ]
   edge [ 
-   source 5702100259
-   target 5702100309
+   source 5608100031
+   target 5608100025
   ]
   edge [ 
-   source 5702100259
-   target 5702100292
+   source 5608100031
+   target 5608100028
   ]
   edge [ 
-   source 5702100265
-   target 5702100295
+   source 5608100031
+   target 5608100032
   ]
   edge [ 
-   source 5702100265
-   target 5702100293
+   source 5608100031
+   target 5608100040
   ]
   edge [ 
-   source 5702100265
-   target 5702100247
+   source 5608100032
+   target 5608100040
   ]
   edge [ 
-   source 5702100265
-   target 5702100274
+   source 5608100032
+   target 5608100025
   ]
   edge [ 
-   source 5702100265
-   target 5702100277
+   source 5608100032
+   target 5608100028
   ]
   edge [ 
-   source 5702100265
-   target 5702100278
+   source 5608100032
+   target 5608100031
   ]
   edge [ 
-   source 5702100265
-   target 5702100288
+   source 5608100048
+   target 5608100040
   ]
   edge [ 
-   source 5702100265
-   target 5702100229
+   source 5608100023
+   target 5608100039
   ]
   edge [ 
-   source 5702100265
-   target 5702100232
+   source 5608100023
+   target 5608100040
   ]
   edge [ 
-   source 5702100265
-   target 5702100233
+   source 5608100010
+   target 5608100039
   ]
   edge [ 
-   source 5702100265
-   target 5702100237
+   source 5608100010
+   target 5608100040
   ]
   edge [ 
-   source 5702100265
-   target 5702100241
+   source 5608100010
+   target 5608100051
   ]
   edge [ 
-   source 5702100265
-   target 5702100247
+   source 5608100010
+   target 5608100059
   ]
   edge [ 
-   source 5702100265
-   target 5702100248
+   source 5608100010
+   target 5608100061
   ]
   edge [ 
-   source 5702100265
-   target 5702100249
+   source 5608100010
+   target 5608100009
   ]
   edge [ 
-   source 5702100265
-   target 5702100250
+   source 5608100010
+   target 5608100023
   ]
   edge [ 
-   source 5702100265
-   target 5702100256
+   source 5608100058
+   target 5608100028
   ]
   edge [ 
-   source 5702100265
-   target 5702100309
+   source 5608100058
+   target 5608100031
   ]
   edge [ 
-   source 5702100265
-   target 5702100292
+   source 5608100058
+   target 5608100038
   ]
   edge [ 
-   source 5702100286
-   target 5702100304
+   source 5608100058
+   target 5608100040
   ]
   edge [ 
-   source 5702100286
-   target 5702100292
+   source 5608100058
+   target 5608100053
   ]
   edge [ 
-   source 5702100286
-   target 5702100297
+   source 5608100058
+   target 5608100065
   ]
   edge [ 
-   source 5702100286
-   target 5702100267
+   source 5608100056
+   target 5608100028
   ]
   edge [ 
-   source 5702100286
-   target 5702100311
+   source 5608100056
+   target 5608100031
   ]
   edge [ 
-   source 5702100286
-   target 5702100248
+   source 5608100056
+   target 5608100053
   ]
   edge [ 
-   source 5702100286
-   target 5702100227
+   source 5608100056
+   target 5608100065
   ]
   edge [ 
-   source 5702100293
-   target 5702100278
+   source 5608100024
+   target 5608100038
   ]
   edge [ 
-   source 5702100293
-   target 5702100248
+   source 5608100024
+   target 5608100045
   ]
   edge [ 
-   source 5702100293
-   target 5702100309
+   source 5608100024
+   target 5608100011
   ]
   edge [ 
-   source 5702100293
-   target 5702100265
+   source 5608100024
+   target 5608100015
   ]
   edge [ 
-   source 5702100293
-   target 5702100298
+   source 5608100024
+   target 5608100018
   ]
   edge [ 
-   source 5702100292
-   target 5702100286
+   source 5608100024
+   target 5608100033
   ]
   edge [ 
-   source 5702100292
-   target 5702100304
+   source 5608100011
+   target 5608100015
   ]
   edge [ 
-   source 5702100292
-   target 5702100297
+   source 5608100011
+   target 5608100018
   ]
   edge [ 
-   source 5702100292
-   target 5702100267
+   source 5608100011
+   target 5608100024
   ]
   edge [ 
-   source 5702100292
-   target 5702100311
+   source 5608100011
+   target 5608100033
   ]
   edge [ 
-   source 5702100292
-   target 5702100227
+   source 5608100011
+   target 5608100038
   ]
   edge [ 
-   source 5702100292
-   target 5702100293
+   source 5608100040
+   target 5608100032
   ]
   edge [ 
-   source 5702100244
-   target 5702100236
+   source 5608100045
+   target 5608100025
   ]
   edge [ 
-   source 5702100244
-   target 5702100234
+   source 5608100018
+   target x
   ]
   edge [ 
-   source 5702100244
-   target 5702100299
+   source 5608100033
+   target x
   ]
   edge [ 
-   source 5702100244
-   target 5702100231
+   source 5608100051
+   target x
   ]
   edge [ 
-   source 5702100299
-   target 5702100236
+   source 5608100085
+   target 5608100059
   ]
   edge [ 
-   source 5702100299
-   target 5702100234
+   source 5608100038
+   target 5608100018
   ]
   edge [ 
-   source 5702100299
-   target 5702100231
+   source 5608100038
+   target 5608100025
   ]
   edge [ 
-   source 5702100299
-   target 5702100294
+   source 5608100038
+   target 5608100033
   ]
   edge [ 
-   source 5702100299
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100299
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100299
-   target 5702100244
-  ]
-  edge [ 
-   source 5702100299
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100299
-   target 5702100270
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100299
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100231
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100244
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100261
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100236
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100240
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100295
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100255
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100260
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100275
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100229
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100258
-  ]
-  edge [ 
-   source 5702100248
-   target 5702100247
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100240
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100248
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100295
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100255
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100260
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100275
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100229
-  ]
-  edge [ 
-   source 5702100247
-   target 5702100258
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100298
-   target 5606103139
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100295
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100255
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100260
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100275
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100248
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100229
-  ]
-  edge [ 
-   source 5702100298
-   target 5702100258
-  ]
-  edge [ 
-   source 5702100295
-   target 5702100248
-  ]
-  edge [ 
-   source 5702100295
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100295
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100295
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100295
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100295
-   target 5702100293
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100257
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100259
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100277
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100249
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100247
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100267
-  ]
-  edge [ 
-   source 5702100237
-   target 5702100232
-  ]
-  edge [ 
-   source 5702100231
-   target 5702100236
-  ]
-  edge [ 
-   source 5702100231
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100231
-   target 5702100299
-  ]
-  edge [ 
-   source 5702100231
-   target 5702100244
-  ]
-  edge [ 
-   source 5702100231
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100231
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100231
-   target 5702100270
-  ]
-  edge [ 
-   source 5702100311
-   target 5702100286
-  ]
-  edge [ 
-   source 5702100311
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100311
-   target 5702100282
-  ]
-  edge [ 
-   source 5702100311
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100311
-   target 5702100227
-  ]
-  edge [ 
-   source 5702100311
-   target 5702100267
-  ]
-  edge [ 
-   source 5702100311
-   target 5702100304
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100305
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100496
-  ]
-  edge [ 
-   source 5702100307
-   target 5702100304
-  ]
-  edge [ 
-   source 5702100250
-   target 5702100249
-  ]
-  edge [ 
-   source 5702100250
-   target 5702100232
-  ]
-  edge [ 
-   source 5702100250
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100250
-   target 5702100269
-  ]
-  edge [ 
-   source 5702100250
-   target 5702100268
-  ]
-  edge [ 
-   source 5702100250
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100250
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100232
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100232
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100232
-   target 5702100268
-  ]
-  edge [ 
-   source 5702100232
-   target 5702100269
-  ]
-  edge [ 
-   source 5702100232
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100232
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100232
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100256
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100256
-   target 5702100232
-  ]
-  edge [ 
-   source 5702100256
-   target 5702100268
-  ]
-  edge [ 
-   source 5702100256
-   target 5702100269
-  ]
-  edge [ 
-   source 5702100256
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100256
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100256
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100305
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100305
-   target 5702100307
-  ]
-  edge [ 
-   source 5702100239
-   target 5702100307
-  ]
-  edge [ 
-   source 5702100239
-   target 5702100249
-  ]
-  edge [ 
-   source 5702100239
-   target 5702100232
-  ]
-  edge [ 
-   source 5702100239
-   target 5702100268
-  ]
-  edge [ 
-   source 5702100267
-   target 5702100286
-  ]
-  edge [ 
-   source 5702100267
-   target 5702100227
-  ]
-  edge [ 
-   source 5702100267
-   target 5702100304
-  ]
-  edge [ 
-   source 5702100267
-   target 5702100311
-  ]
-  edge [ 
-   source 5702100267
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100267
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100267
-   target 5702100282
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100282
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100267
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100311
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100268
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100269
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100286
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100247
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100257
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100244
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100293
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100227
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100229
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100232
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100227
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100237
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100249
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100257
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100259
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100268
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100269
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100272
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100275
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100277
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100233
-   target 5702100293
-  ]
-  edge [ 
-   source 5702100238
-   target 5702100230
-  ]
-  edge [ 
-   source 5702100238
-   target 5702100270
-  ]
-  edge [ 
-   source 5702100238
-   target 5702100235
-  ]
-  edge [ 
-   source 5702100238
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100238
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100238
-   target 5702100264
-  ]
-  edge [ 
-   source 5702100230
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100230
-   target 5702100270
-  ]
-  edge [ 
-   source 5702100230
-   target 5702100235
-  ]
-  edge [ 
-   source 5702100230
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100230
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100230
-   target 5702100264
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100230
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100231
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100235
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100240
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100245
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100246
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100247
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100253
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100254
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100264
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100276
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100283
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100284
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100299
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100301
-  ]
-  edge [ 
-   source 5702100312
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100283
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100301
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100312
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100276
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100255
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100275
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100299
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100300
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100305
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100307
-  ]
-  edge [ 
-   source 5702100284
-   target 5702100311
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100284
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100496
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100312
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100276
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100255
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100275
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100299
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100300
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100305
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100307
-  ]
-  edge [ 
-   source 5702100283
-   target 5702100311
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100276
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100279
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100283
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100312
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100255
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100258
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100275
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100299
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100300
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100305
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100307
-  ]
-  edge [ 
-   source 5702100301
-   target 5702100311
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100295
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100311
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100257
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100244
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100247
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100236
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100227
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100293
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100268
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100268
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100269
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100232
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100227
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100236
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100244
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100310
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100299
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100295
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100286
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100231
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100279
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100227
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100236
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100244
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100247
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100257
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100311
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100295
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100293
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100269
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100262
-   target 5702100272
-  ]
-  edge [ 
-   source 5702100262
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100287
-   target 5702100272
-  ]
-  edge [ 
-   source 5702100287
-   target 5702100262
-  ]
-  edge [ 
-   source 5702100272
-   target 5702100262
-  ]
-  edge [ 
-   source 5702100272
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100302
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100302
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100302
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100302
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100302
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100302
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100286
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100258
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100259
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100304
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100257
-  ]
-  edge [ 
-   source 5702100249
-   target 5702100282
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100286
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100293
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100297
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100258
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100259
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100298
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100304
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100301
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100288
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100234
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100237
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100256
-  ]
-  edge [ 
-   source 5702100300
-   target 5702100257
-  ]
-  edge [ 
-   source 5702100270
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100270
-   target 5702100264
-  ]
-  edge [ 
-   source 5702100270
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100270
-   target 5702100235
-  ]
-  edge [ 
-   source 5702100270
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100270
-   target 5702100230
-  ]
-  edge [ 
-   source 5702100294
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100294
-   target 5702100264
-  ]
-  edge [ 
-   source 5702100294
-   target 5702100270
-  ]
-  edge [ 
-   source 5702100294
-   target 5702100235
-  ]
-  edge [ 
-   source 5702100294
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100294
-   target 5702100230
-  ]
-  edge [ 
-   source 5702100264
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100264
-   target 5702100270
-  ]
-  edge [ 
-   source 5702100264
-   target 5702100235
-  ]
-  edge [ 
-   source 5702100264
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100264
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100264
-   target 5702100230
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100310
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100254
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100253
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100261
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100272
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100262
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100259
-  ]
-  edge [ 
-   source 5702100241
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100253
-   target 5702100254
-  ]
-  edge [ 
-   source 5702100253
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100253
-   target 5702100310
-  ]
-  edge [ 
-   source 5702100253
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100253
-   target 5702100261
-  ]
-  edge [ 
-   source 5702100253
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100310
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100254
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100253
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100261
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100272
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100262
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100259
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100233
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100286
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100295
-  ]
-  edge [ 
-   source 5702100309
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100239
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100250
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100253
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100254
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100261
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100262
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100259
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100265
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100269
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100272
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100278
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100287
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100296
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100307
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100310
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100305
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100302
-  ]
-  edge [ 
-   source 5702100274
-   target 5702100292
-  ]
-  edge [ 
-   source 5702100254
-   target 5702100253
-  ]
-  edge [ 
-   source 5702100254
-   target 5702100261
-  ]
-  edge [ 
-   source 5702100254
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100254
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100254
-   target 5702100310
-  ]
-  edge [ 
-   source 5702100254
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100310
-   target 5702100309
-  ]
-  edge [ 
-   source 5702100310
-   target 5702100241
-  ]
-  edge [ 
-   source 5702100310
-   target 5702100253
-  ]
-  edge [ 
-   source 5702100310
-   target 5702100254
-  ]
-  edge [ 
-   source 5702100310
-   target 5702100261
-  ]
-  edge [ 
-   source 5702100310
-   target 5702100274
-  ]
-  edge [ 
-   source 5702100235
-   target 5702100266
-  ]
-  edge [ 
-   source 5702100235
-   target 5702100264
-  ]
-  edge [ 
-   source 5702100235
-   target 5702100294
-  ]
-  edge [ 
-   source 5702100235
-   target 5702100230
-  ]
-  edge [ 
-   source 5702100235
-   target 5702100238
-  ]
-  edge [ 
-   source 5702100235
-   target 5702100270
+   source 5608100038
+   target 5608100045
   ]
 ]

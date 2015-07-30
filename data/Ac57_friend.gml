@@ -1,5 +1,11 @@
 graph [ 
 directed 1 
+node [
+id 99999
+gpa 0.00
+year 00
+gender x
+]
 node [ 
 id 00003
 gpa 2.95
@@ -4455,10 +4461,6 @@ target 00258
 edge [ 
 source 00298
 target 00265
-]
-edge [ 
-source 00298
-target 03139
 ]
 edge [ 
 source 00298
