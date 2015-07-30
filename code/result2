@@ -1,0 +1,334 @@
+
+
+HM Act57_bf.gml
+#nodes = 29
+
+Group size = 4
+Density = 0.833333333333, Diameter = 2, Max in-degree = 3, Max out-degree = 3
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+
+HM Thai57_bf.gml
+#nodes = 24
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 3
+Density = 1.0, Diameter = 1, Max in-degree = 2, Max out-degree = 2
+
+Group size = 4
+Density = 1.0, Diameter = 1, Max in-degree = 3, Max out-degree = 3
+
+
+Biz55_bf.gml
+
+
+
+
+Nited56_bf.gml
+#nodes = 103
+
+Group size = 3
+Density = 1.0, Diameter = 1, Max in-degree = 2, Max out-degree = 2
+
+Group size = 5
+Density = 0.75, Diameter = 2, Max in-degree = 4, Max out-degree = 3
+
+Group size = 17
+Density = 0.227941176471, Diameter = 7, Max in-degree = 6, Max out-degree = 5
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 6
+Density = 0.566666666667, Diameter = 3, Max in-degree = 5, Max out-degree = 4
+
+Group size = 21
+Density = 0.264285714286, Diameter = 7, Max in-degree = 9, Max out-degree = 11
+
+
+
+
+Eng55_bf.gml
+#nodes = 21
+
+Group size = 17
+Density = 0.283088235294, Diameter = 5, Max in-degree = 10, Max out-degree = 6
+
+
+Ac57_bf.gml
+#nodes = 639
+
+Group size = 4
+Density = 0.916666666667, Diameter = 2, Max in-degree = 3, Max out-degree = 3
+
+Group size = 3
+Density = 1.0, Diameter = 1, Max in-degree = 2, Max out-degree = 2
+
+Group size = 5
+Density = 0.6, Diameter = 3, Max in-degree = 3, Max out-degree = 3
+
+Group size = 3
+Density = 1.0, Diameter = 1, Max in-degree = 2, Max out-degree = 2
+
+Group size = 4
+Density = 1.0, Diameter = 1, Max in-degree = 3, Max out-degree = 3
+
+Group size = 6
+Density = 0.5, Diameter = 3, Max in-degree = 3, Max out-degree = 3
+
+Group size = 15
+Density = 0.171428571429, Diameter = 8, Max in-degree = 6, Max out-degree = 3
+
+Group size = 10
+Density = 0.277777777778, Diameter = 6, Max in-degree = 4, Max out-degree = 3
+
+
+Niti56_bf.gml
+#nodes = 56
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 4
+Density = 1.0, Diameter = 1, Max in-degree = 3, Max out-degree = 3
+
+Group size = 7
+Density = 0.714285714286, Diameter = 3, Max in-degree = 6, Max out-degree = 6
+
+Group size = 10
+Density = 0.4, Diameter = 4, Max in-degree = 5, Max out-degree = 6
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+
+
+
+EC55_bf.gml
+
+
+
+
+Niti55_bf.gml
+#nodes = 60
+
+Group size = 12
+Density = 0.363636363636, Diameter = 6, Max in-degree = 6, Max out-degree = 7
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 12
+Density = 0.25, Diameter = 7, Max in-degree = 5, Max out-degree = 5
+
+Group size = 4
+Density = 1.0, Diameter = 1, Max in-degree = 3, Max out-degree = 3
+
+Group size = 6
+Density = 0.866666666667, Diameter = 2, Max in-degree = 5, Max out-degree = 5
+
+
+HM Korea57_bf.gml
+
+
+
+
+
+
+Ac57_friend.gml
+#nodes = 639
+
+Group size = 70
+Density = 0.186335403727, Diameter = 4, Max degree = 28
+
+
+HM Korea57_friend.gml
+
+
+
+
+Niti56_friend.gml
+#nodes = 56
+
+Group size = 56
+Density = 0.246103896104, Diameter = 3, Max degree = 54
+
+
+EC55_friend.gml
+
+
+
+
+Eng55_friend.gml
+#nodes = 21
+
+Group size = 20
+Density = 0.936842105263, Diameter = 2, Max degree = 19
+
+
+Biz55_friend.gml
+
+
+
+
+
+
+HM Act57_friend.gml
+#nodes = 29
+
+Group size = 28
+Density = 0.306878306878, Diameter = 2, Max degree = 27
+
+
+Nited56_friend.gml
+#nodes = 103
+
+Group size = 100
+Density = 0.0939393939394, Diameter = 6, Max degree = 27
+
+
+Niti55_friend.gml
+#nodes = 60
+
+Group size = 60
+Density = 0.132768361582, Diameter = 4, Max degree = 27
+
+
+HM Thai57_friend.gml
+#nodes = 24
+
+Group size = 18
+Density = 0.450980392157, Diameter = 2, Max degree = 17
+
+
+
+
+
+
+Nited56_study.gml
+#nodes = 103
+
+Group size = 5
+Density = 0.6, Diameter = 2, Max in-degree = 4, Max out-degree = 4
+
+Group size = 4
+Density = 0.416666666667, Diameter = 3, Max in-degree = 2, Max out-degree = 2
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 18
+Density = 0.235294117647, Diameter = 6, Max in-degree = 7, Max out-degree = 9
+
+
+Niti55_study.gml
+#nodes = 60
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 4
+Density = 0.75, Diameter = 2, Max in-degree = 3, Max out-degree = 3
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 4
+Density = 0.5, Diameter = 3, Max in-degree = 3, Max out-degree = 2
+
+
+Ac57_study.gml
+#nodes = 639
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 5
+Density = 0.7, Diameter = 3, Max in-degree = 4, Max out-degree = 4
+
+Group size = 20
+Density = 0.231578947368, Diameter = 6, Max in-degree = 9, Max out-degree = 9
+
+Group size = 3
+Density = 0.833333333333, Diameter = 2, Max in-degree = 2, Max out-degree = 2
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 5
+Density = 0.75, Diameter = 2, Max in-degree = 4, Max out-degree = 4
+
+Group size = 6
+Density = 0.6, Diameter = 3, Max in-degree = 4, Max out-degree = 5
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+
+EC55_study.gml
+
+
+
+
+Niti56_study.gml
+#nodes = 56
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 10
+Density = 0.322222222222, Diameter = 5, Max in-degree = 5, Max out-degree = 7
+
+Group size = 4
+Density = 0.916666666667, Diameter = 2, Max in-degree = 3, Max out-degree = 3
+
+
+
+
+HM Act57_study.gml
+#nodes = 29
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+
+Eng55_study.gml
+#nodes = 21
+
+Group size = 2
+Density = 1.0, Diameter = 1, Max in-degree = 1, Max out-degree = 1
+
+Group size = 12
+Density = 0.340909090909, Diameter = 5, Max in-degree = 9, Max out-degree = 5
+
+
+
+
+HM Thai57_study.gml
+#nodes = 24
+
+Group size = 8
+Density = 0.482142857143, Diameter = 4, Max in-degree = 7, Max out-degree = 7
+
+
+HM Korea57_study.gml
+
+
+
+
