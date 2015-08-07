@@ -3,19 +3,17 @@ from tempfile import mkstemp
 from shutil import move
 from os import remove, close
 
-def replace_value():
+def replace_value(fname):
 	path= "/home/amm/Desktop/sna-git/data/"
 	
-	
-	
-	for fname in os.listdir(path):
-		file_path = path+fname
-		pattern = "gender F" 
-		subst = "gender \"F\"" 
-		replace(file_path, pattern, subst)
-		pattern = "gender M" 
-		subst = "gender \"M\"" 
-		replace(file_path, pattern, subst)
+	#for fname in os.listdir(path):
+	file_path = path+fname
+	pattern = "gender F" 
+	subst = "gender \"F\"" 
+	replace(file_path, pattern, subst)
+	pattern = "gender M" 
+	subst = "gender \"M\"" 
+	replace(file_path, pattern, subst)
 
 def replace(file_path, pattern, subst):
     #Create temp file
@@ -33,7 +31,8 @@ def replace(file_path, pattern, subst):
     
 def check():
 	path =   "/media/sf_analysis/data/GML/"
-	for fname in os.listdir(path):
+	fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
+	for fname in fname_list:
 		print fname
 
 		f_r = open(path+fname,"r")
@@ -98,6 +97,14 @@ def check():
 		data = "".join(data)
 		f_w.write(data)
 		f_w.close()
-			
-	
-replace_value()
+		replace_value(fname)	
+
+
+check()
+ 
+
+'''
+Steps to process data
+1. check()
+2. markUnsurveyed()
+'''

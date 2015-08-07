@@ -5,11 +5,12 @@ def mark():
 	oldpath = "/home/amm/Desktop/sna-git/data/"
 	newpath = oldpath+"mark_unsurveyed/"
 	error_list = []
-	for fname in os.listdir(oldpath):
+	fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
+	for fname in fname_list:
 		## get source nodes
 		print "\n"
 		print fname
-		#if fname != "Eng55_bf.gml": continue
+		 
 		src_set = set()
 		f_r = open(oldpath+fname,"r")
 		for line in f_r.readlines():
@@ -26,16 +27,16 @@ def mark():
 			unmarked_set = all_set - src_set
 			
 			for v in g.vs:
-				print v
+				 
 				if v['id'] in unmarked_set:
 					 
 					v["survey"] = False
 				else:
 					v["survey"] = True
 				 
-			#print "Total nodes = "+str(len(all_set))
-			#print "surveyed nodes = "+str(len(src_set))
-			#print "Unsurveyed nodes = "+str(len(unmarked_set))
+			print "Total nodes = "+str(len(all_set))
+			print "surveyed nodes = "+str(len(src_set))
+			print "Unsurveyed nodes = "+str(len(unmarked_set))
 			
 			write(g, newpath+fname, format = "gml")
 				

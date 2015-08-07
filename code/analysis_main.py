@@ -1,6 +1,6 @@
 import os
 from igraph import *
-
+import numpy as np
 
 def findGroups(g, gtype):
 	
@@ -37,9 +37,7 @@ def getNodeAttribute(g,gsize):
  	return avg_gpa
 	  
 
-
-## main function to compute properties of subgraphs
-def computeProperty(group_arr, g, directed):
+def computeProperty_groups(group_arr, g, directed):
 	#make a subgraph
 	property_list = []
 	 
@@ -49,26 +47,32 @@ def computeProperty(group_arr, g, directed):
 		if gsize>1:
  			
 			subg = g.subgraph(group) 
- 			den, dia, max_deg, avg_edge_btw, edge_conn = property_network(subg,directed)
- 			
-			if directed:
-				 
- 				indegree_arr =  subg.indegree()
- 				avg_indegree = sum(indegree_arr)/len(indegree_arr) 
-   				outdegree_arr = subg.outdegree()
-   				avg_outdegree = sum(outdegree_arr)/len(outdegree_arr)
-				avg_deg = (avg_indegree,avg_outdegree )
- 			else:
-				deg_arr = subg.degree()
-				avg = sum(deg_arr)/len(deg_arr)
- 				avg_deg = (avg,avg)
-				
-  			avg_gpa = getNodeAttribute(subg,gsize)
-  			
- 			property_list.append([gsize, den, dia, max_deg[0], max_deg[1], avg_edge_btw, edge_conn,avg_deg[0],avg_deg[1], avg_gpa])
-		 
- 	 	
+  			gsize, den, dia, max_deg, avg_edge_btw, edge_conn,avg_deg, gcc, lcc, avg_gpa = computeProperty(subg,directed, gsize)
+  			property_list.append([gsize, den, dia, max_deg[0], max_deg[1], avg_edge_btw, edge_conn,avg_deg[0],avg_deg[1], gcc, lcc, avg_gpa])
+  	 	
 	return property_list
+	
+## main function to compute properties of for each connected component
+def computeProperty(subg,directed, gsize):
+ 
+	den, dia, max_deg, avg_edge_btw, edge_conn, gcc, lcc = property_network(subg,directed)
+	
+	if directed:
+		 
+		indegree_arr =  subg.indegree()
+		avg_indegree = sum(indegree_arr)/len(indegree_arr) 
+		outdegree_arr = subg.outdegree()
+		avg_outdegree = sum(outdegree_arr)/len(outdegree_arr)
+		avg_deg = (avg_indegree,avg_outdegree )
+	else:
+		deg_arr = subg.degree()
+		avg = sum(deg_arr)/len(deg_arr)
+		avg_deg = (avg,avg)
+		
+	avg_gpa = getNodeAttribute(subg,gsize)
+	
+	return gsize, den, dia, max_deg, avg_edge_btw, edge_conn,avg_deg, gcc, lcc, avg_gpa
+ 
 		
 ## calculate properties of a given network
 def property_network(g,directed):
@@ -91,20 +95,57 @@ def property_network(g,directed):
 	avg_edge_btw = sum(eb)/len(eb)
  	edge_conn = g.edge_connectivity()
 	
+	## global cc
+	gcc = g.transitivity_undirected()
+	
+	## avg local cc  
+	lcc = g.transitivity_avglocal_undirected()
 	#print (avg_edge_btw,edge_conn)
 	
-	return den, dia, max_deg, avg_edge_btw, edge_conn
+	return den, dia, max_deg, avg_edge_btw, edge_conn, gcc, lcc
 	 
+## get top-k score node ids 
+def getTopK(score_arr, v_arr, k):
+	
+	np_score_arr = np.array(score_arr)
+	np_v_arr = np.array(v_arr)
+	topk_index_arr = np_score_arr.argsort()[-k:][::-1] ## sort in descending order
+	 
+	return np_v_arr[topk_index_arr]
+	 
+	
+	
+## calculate properties of each node and return nodes with 5 highest scores
+def property_node(g, isdirected, k):
+	 
+	v_arr = g.vs["id"]
+ 	ev_arr = g.evcent(isdirected) # set directed=True/ False for directed graph
+	topK_ev = getTopK(ev_arr, v_arr, k)
+	print "Top "+str(k)+" eigenvector :"+str(topK_ev)
+	
+	if isdirected: 
+		indeg_arr = g.indegree()
+		topK_indeg = getTopK(indeg_arr, v_arr, k)
+		print "Top "+str(k)+" indegree :"+str(topK_indeg)
+		outdeg_arr = g.outdegree()
+		topK_outdeg = getTopK(outdeg_arr, v_arr, k)
+		print "Top "+str(k)+" outdegree :"+str(topK_outdeg)
+	else:
+		deg_arr = g.degree()
+		topK_deg = getTopK(deg_arr, v_arr, k)
+		print "Top "+str(k)+" degree :"+str(topK_deg)
+	 
+	hub_arr = g.hub_score()
+	topK_hub = getTopK(hub_arr, v_arr, k)
+	print "Top "+str(k)+" hub_score :"+str(topK_hub)
+	
+	closeness_arr = g.closeness()
+	topK_closeness = getTopK(closeness_arr, v_arr, k)
+	print "Top "+str(k)+" closeness :"+str(topK_closeness)
 
-	
-## calculate properties of each node
-def property_node(subg):
-	
-	eigenvector_centrality() # set directed=True/ False for directed graph
-	degree()
-	hub_score()
-	g.closeness()
-	
+	tran_arr = g.transitivity_local_undirected() 
+	topK_tran = getTopK(tran_arr, v_arr, k)
+	print "Top "+str(k)+" local cc :"+str(topK_tran)
 	
 def colorNodes(group_arr, g, fname, gtype ):
 	
@@ -127,13 +168,12 @@ def colorNodes(group_arr, g, fname, gtype ):
 	gname = "/home/amm/Desktop/sna-git/result/"+fname.replace(".gml","")+"_"+gtype+".png"
 	plot(g,gname)  
 
-	
 		
-	
-	
 def main():
 	path = "/home/amm/Desktop/sna-git/data/"
 	result_path = "/home/amm/Desktop/sna-git/result/analysis/"
+	
+	analysis = "whole" # whole graph or community
 	
 	for ftype in [ "bf.gml","friend.gml", "study.gml"]:
 		if ftype == "friend.gml":
@@ -141,13 +181,16 @@ def main():
 		else:
 			directed = True
 		
-		f_w = open(result_path+"property_alldept_"+ftype.replace(".gml",""),"w")
-		f_w.write("gsize, den, dia, max_indeg, max_outdeg, avg_edge_btw, edge_conn,avg_indeg,avg_outdeg, avg_gpa\n")
+		if analysis == "community":
+			f_w = open(result_path+"property_community_alldept_"+ftype.replace(".gml",""),"w")
+			f_w.write("gsize, den, dia, max_indeg, max_outdeg, avg_edge_btw, edge_conn,avg_indeg,avg_outdeg, gcc, lcc, avg_gpa\n")
+		else:
+			f_w = open(result_path+"property_wholegraph_alldept_"+ftype.replace(".gml",""),"w")
 		
 		
+		#fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
 		for fname in os.listdir(path):
-			#if fname != "Niti55_bf.gml": continue
- 			try:
+  			try:
 				ftype2 = fname.split("_")[1]
 				if ftype2 != ftype:
 					continue
@@ -161,15 +204,25 @@ def main():
 					
 				print "#nodes = "+str(len(g.vs()))
 				
-				## get connected subgraphs" 
-				for gtype in ["component"]:#, "edge"
-					group_arr = findGroups(g, gtype)
-					#colorNodes(group_arr, g, fname, gtype)
-					property_list = computeProperty(group_arr, g, directed)
-					for l in property_list:
-						print l
-						f_w.write(str(l).lstrip("[").rstrip("]"))
-						f_w.write("\n")
+				if analysis == "community":
+					## get connected subgraphs" 
+					for gtype in ["component"]:#, "edge"
+						group_arr = findGroups(g, gtype)
+						colorNodes(group_arr, g, fname, gtype)
+						 
+						property_list = computeProperty(group_arr, g, directed)
+						
+						for l in property_list:
+							print l
+							f_w.write(str(l).lstrip("[").rstrip("]"))
+							f_w.write("\n")
+			 
+				else:
+					k=3
+					
+ 					property_node(g,directed, k)
+				 		
+						
 			except:
 				print "\n"
 				continue
@@ -179,24 +232,30 @@ def main():
 		
 ''' 
 	TO DO
-	1. Plot subgraphs - done 
-	2. Detect overlapping community
-	3. Try other community detection algorithm
-	4. Compute graph properties - done
-		- Centrality 
-		- Density
-		- Degree distribution
-		- Diameter 
-	5. Mark unsurveyed nodes - done
-	6. Get GPA - done
-	6.1 Write the properties and GPA to a file - done
-	7. Compute correlation between graph properties and GPA
-	8. Take unsurveyed nodes into account when analyzing data
-	9. Find a way to measure interaction patterns in communities
-	
-	TO CROSS-CHECK with raw data
-	1. Edge links 
-	2. Unsurveyed students
+	x	1. Plot subgraphs  
+		2. Detect overlapping community
+		3. Try other community detection algorithm
+	x	4. Compute graph properties 
+			- Density
+			- Degree distribution
+			- Diameter 
+			- Global clustering coefficient
+	x	5. Compute node properties  
+			- Centrality: degree, hub, closeness
+			- Local clustering coefficient
+			
+	x	6. Mark unsurveyed nodes  
+	x	7. Get GPA  
+			- Write the properties and GPA to a file 
+		8. Compute correlation between graph properties and GPA
+		9. Take unsurveyed nodes into account when analyzing data
+		10. Find a way to measure interaction patterns in communities 
+			- Use motifs
+		11. Analyze motifs detected by fanmod
+		
+		TO CROSS-CHECK with raw data (paper survey)
+		1. Edge links 
+		2. Unsurveyed students (check with the unsurveyed nodes)
 	
 '''	
 
