@@ -114,18 +114,7 @@ gpa 2.45
 year 57
 gender "F"
  ] 
-node [ 
-id 104024
-gpa 2.00
-year 57
-gender "M"
- ] 
-node [ 
-id 104025
-gpa 1.75
-year 57
-gender "M"
- ] 
+ 
 node [ 
 id 104027
 gpa 3.46
@@ -162,12 +151,7 @@ gpa 1.91
 year 57
 gender "M"
  ] 
-node [ 
-id 104034
-gpa 0.00
-year 57
-gender "M"
- ] 
+  
 node [ 
 id 104035
 gpa 1.86

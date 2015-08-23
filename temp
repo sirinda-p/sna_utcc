@@ -1,4 +1,4 @@
-graph [ 
+ graph [ 
   directed 1 
   node [ 
    id 5705104001
@@ -108,18 +108,7 @@ graph [
    year 57
    gender F
    ] 
-  node [ 
-   id 5705104024
-   gpa 2.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104025
-   gpa 1.75
-   year 57
-   gender M
-   ] 
+  
   node [ 
    id 5705104027
    gpa 3.46
@@ -156,399 +145,7 @@ graph [
    year 57
    gender M
    ] 
-  node [ 
-   id 5705104034
-   gpa 0.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104035
-   gpa 1.86
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104036
-   gpa 2.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104037
-   gpa 2.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104038
-   gpa 2.50
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104039
-   gpa 1.63
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104040
-   gpa 2.08
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104041
-   gpa 3.29
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104042
-   gpa 3.19
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104043
-   gpa 3.18
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104044
-   gpa 2.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104045
-   gpa 2.67
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104046
-   gpa 2.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104050
-   gpa 1.75
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104051
-   gpa 2.00
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104052
-   gpa 2.79
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104600
-   gpa 1.75
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104603
-   gpa 2.12
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104606
-   gpa 2.88
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104607
-   gpa 3.08
-   year 57
-   gender M
-   ] 
-node [ 
-   id 5705404001
-   gpa 3.01
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404002
-   gpa 2.17
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404003
-   gpa 1.92
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404004
-   gpa 1.54
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705404005
-   gpa 2.27
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404006
-   gpa 3.15
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404007
-   gpa 1.73
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404009
-   gpa 2.06
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404010
-   gpa 2.58
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404012
-   gpa 2.62
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404013
-   gpa 2.74
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705404014
-   gpa 2.42
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705404015
-   gpa 1.56
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404016
-   gpa 2.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404017
-   gpa 2.27
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404018
-   gpa 2.42
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705404019
-   gpa 3.07
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705404020
-   gpa 2.38
-   year 57
-   gender M
-   ] 
-
-﻿graph [ 
-  directed 1 
-  node [ 
-   id 5705104001
-   gpa 3.88
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104002
-   gpa 3.25
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104003
-   gpa 3.21
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104004
-   gpa 2.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104006
-   gpa 3.50
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104008
-   gpa 2.38
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104009
-   gpa 2.96
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104010
-   gpa 1.83
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104013
-   gpa 1.95
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104014
-   gpa 2.21
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104015
-   gpa 2.21
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104016
-   gpa 3.46
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104017
-   gpa 2.08
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104018
-   gpa 2.35
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104019
-   gpa 2.22
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104020
-   gpa 3.54
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104021
-   gpa 2.31
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104022
-   gpa 2.45
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104024
-   gpa 2.00
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104025
-   gpa 1.75
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104027
-   gpa 3.46
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104028
-   gpa 2.71
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104030
-   gpa 2.08
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104031
-   gpa 2.54
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104032
-   gpa 3.83
-   year 57
-   gender F
-   ] 
-  node [ 
-   id 5705104033
-   gpa 1.91
-   year 57
-   gender M
-   ] 
-  node [ 
-   id 5705104034
-   gpa 0.00
-   year 57
-   gender M
-   ] 
+  
   node [ 
    id 5705104035
    gpa 1.86
@@ -772,6 +369,7 @@ node [
    year 57
    gender M
    ] 
+
   edge [ 
    source 5705404017
    target 5705404001
@@ -2159,11 +1757,11 @@ node [
   ]
   edge [ 
    source 5705104052
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104052
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104052
@@ -2191,7 +1789,7 @@ node [
   ]
   edge [ 
    source 5705104052
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104052
@@ -2339,11 +1937,11 @@ node [
   ]
   edge [ 
    source 5705104033
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104033
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104033
@@ -2367,7 +1965,7 @@ node [
   ]
   edge [ 
    source 5705104033
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104033
@@ -2495,11 +2093,11 @@ node [
   ]
   edge [ 
    source 5705104008
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104008
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104008
@@ -2527,7 +2125,7 @@ node [
   ]
   edge [ 
    source 5705104008
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104008
@@ -2831,11 +2429,11 @@ node [
   ]
   edge [ 
    source 5705104003
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104003
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104003
@@ -2863,7 +2461,7 @@ node [
   ]
   edge [ 
    source 5705104003
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104003
@@ -3011,11 +2609,11 @@ node [
   ]
   edge [ 
    source 5705104013
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104013
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104013
@@ -3043,7 +2641,7 @@ node [
   ]
   edge [ 
    source 5705104013
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104013
@@ -3155,11 +2753,11 @@ node [
   ]
   edge [ 
    source 5705104042
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104042
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104042
@@ -3223,11 +2821,11 @@ node [
   ]
   edge [ 
    source 5705104009
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104009
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104009
@@ -3255,7 +2853,7 @@ node [
   ]
   edge [ 
    source 5705104009
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104009
@@ -3399,7 +2997,7 @@ node [
   ]
   edge [ 
    source 5705104043
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104043
@@ -3427,7 +3025,7 @@ node [
   ]
   edge [ 
    source 5705104043
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104043
@@ -3783,7 +3381,7 @@ node [
   ]
   edge [ 
    source 5705104002
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104002
@@ -3811,11 +3409,11 @@ node [
   ]
   edge [ 
    source 5705104002
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104002
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104002
@@ -3955,11 +3553,11 @@ node [
   ]
   edge [ 
    source 5705104004
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104004
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104004
@@ -3987,7 +3585,7 @@ node [
   ]
   edge [ 
    source 5705104004
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104004
@@ -4187,11 +3785,11 @@ node [
   ]
   edge [ 
    source 5705104018
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104018
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104018
@@ -4219,7 +3817,7 @@ node [
   ]
   edge [ 
    source 5705104018
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104018
@@ -4367,11 +3965,11 @@ node [
   ]
   edge [ 
    source 5705104603
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104603
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104603
@@ -4487,7 +4085,7 @@ node [
   ]
   edge [ 
    source 5705104031
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104031
@@ -4535,11 +4133,11 @@ node [
   ]
   edge [ 
    source 5705104028
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104028
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104028
@@ -4627,7 +4225,7 @@ node [
   ]
   edge [ 
    source 5705104028
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104028
@@ -4755,7 +4353,7 @@ node [
   ]
   edge [ 
    source 5705104036
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104036
@@ -6191,11 +5789,11 @@ node [
   ]
   edge [ 
    source 5705104052
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104052
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104052
@@ -6223,7 +5821,7 @@ node [
   ]
   edge [ 
    source 5705104052
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104052
@@ -6371,11 +5969,11 @@ node [
   ]
   edge [ 
    source 5705104033
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104033
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104033
@@ -6399,7 +5997,7 @@ node [
   ]
   edge [ 
    source 5705104033
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104033
@@ -6527,11 +6125,11 @@ node [
   ]
   edge [ 
    source 5705104008
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104008
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104008
@@ -6559,7 +6157,7 @@ node [
   ]
   edge [ 
    source 5705104008
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104008
@@ -6863,11 +6461,11 @@ node [
   ]
   edge [ 
    source 5705104003
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104003
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104003
@@ -6895,7 +6493,7 @@ node [
   ]
   edge [ 
    source 5705104003
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104003
@@ -7043,11 +6641,11 @@ node [
   ]
   edge [ 
    source 5705104013
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104013
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104013
@@ -7075,7 +6673,7 @@ node [
   ]
   edge [ 
    source 5705104013
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104013
@@ -7187,11 +6785,11 @@ node [
   ]
   edge [ 
    source 5705104042
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104042
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104042
@@ -7255,11 +6853,11 @@ node [
   ]
   edge [ 
    source 5705104009
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104009
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104009
@@ -7287,7 +6885,7 @@ node [
   ]
   edge [ 
    source 5705104009
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104009
@@ -7431,7 +7029,7 @@ node [
   ]
   edge [ 
    source 5705104043
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104043
@@ -7459,7 +7057,7 @@ node [
   ]
   edge [ 
    source 5705104043
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104043
@@ -7815,7 +7413,7 @@ node [
   ]
   edge [ 
    source 5705104002
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104002
@@ -7843,11 +7441,11 @@ node [
   ]
   edge [ 
    source 5705104002
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104002
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104002
@@ -7987,11 +7585,11 @@ node [
   ]
   edge [ 
    source 5705104004
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104004
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104004
@@ -8019,7 +7617,7 @@ node [
   ]
   edge [ 
    source 5705104004
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104004
@@ -8219,11 +7817,11 @@ node [
   ]
   edge [ 
    source 5705104018
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104018
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104018
@@ -8251,7 +7849,7 @@ node [
   ]
   edge [ 
    source 5705104018
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104018
@@ -8399,11 +7997,11 @@ node [
   ]
   edge [ 
    source 5705104603
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104603
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104603
@@ -8519,7 +8117,7 @@ node [
   ]
   edge [ 
    source 5705104031
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104031
@@ -8567,11 +8165,11 @@ node [
   ]
   edge [ 
    source 5705104028
-   target 5705104025
+   target x
   ]
   edge [ 
    source 5705104028
-   target 5705104024
+   target x
   ]
   edge [ 
    source 5705104028
@@ -8659,7 +8257,7 @@ node [
   ]
   edge [ 
    source 5705104028
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104028
@@ -8787,7 +8385,7 @@ node [
   ]
   edge [ 
    source 5705104036
-   target 5705104034
+   target x
   ]
   edge [ 
    source 5705104036

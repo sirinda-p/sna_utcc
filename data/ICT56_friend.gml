@@ -6,12 +6,7 @@ gpa 0.00
 year 00
 gender "x"
 ]
-node [ 
-id 04002
-gpa 1.44
-year 56
-gender "M"
- ] 
+ 
 node [ 
 id 04003
 gpa 4.00
@@ -204,12 +199,7 @@ gpa 2.96
 year 56
 gender "M"
  ] 
-node [ 
-id 04061
-gpa 2.75
-year 56
-gender "M"
- ] 
+ 
 node [ 
 id 04064
 gpa 2.54
@@ -218,7 +208,7 @@ gender "M"
  ] 
 edge [ 
 source 04042
-target 04002
+target 99999
 ]
 edge [ 
 source 04042
@@ -310,7 +300,7 @@ target 04060
 ]
 edge [ 
 source 04042
-target 04061
+target 99999
 ]
 edge [ 
 source 04042
@@ -318,7 +308,7 @@ target 04064
 ]
 edge [ 
 source 04021
-target 04002
+target 99999
 ]
 edge [ 
 source 04021
@@ -430,7 +420,7 @@ target 04060
 ]
 edge [ 
 source 04021
-target 04061
+target 99999
 ]
 edge [ 
 source 04021
@@ -1908,4 +1898,58 @@ edge [
 source 04043
 target 04007
 ]
+
+
+  edge [
+source 04018
+target 04006
+  ]
+  edge [
+source 04018
+target 04021
+  ]
+  edge [
+source 04018
+target 04022
+  ]
+  edge [
+source 04018
+target 04033
+  ]
+  edge [
+source 04018
+target 04048
+  ]
+  edge [
+source 04018
+target 04064
+  ]
+  edge [
+source 04018
+target 04030
+  ]
+  edge [
+source 04040
+target 04042
+  ]
+  edge [
+source 04040
+target 04021
+  ]
+  edge [
+source 04040
+target 04020
+  ]
+  edge [
+source 04040
+target 04033
+  ]
+  edge [
+source 04040
+target 04041
+  ]
+  edge [
+source 04040
+target 04054
+  ]
 ]

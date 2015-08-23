@@ -37,12 +37,12 @@ def replace(file_path, pattern, subst):
 '''
 def check():
 	path =   "/media/sf_analysis/data/GML/"
-	#fname_list = ["ICT55_friend.gml","ICT55_bf.gml","ICT55_study.gml"]
-	fname_list = ["ICT57-All_friend.gml"]#"ICT57-All_friend.gml",,"ICT57-All_study.gml"
+	#fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
+	fname_list = [ "ICT57-All_friend.gml" ]
 	
 	#fname_list = os.listdir(path)
 	for fname in fname_list:
-		print fname
+		
 		if os.path.isdir(path+fname): continue
 		if fname.split(".")[1] !="gml": continue
 		if fname.startswith("ICT57"):
@@ -50,7 +50,7 @@ def check():
 		else:
 			num = 5
  		f_r = open(path+fname,"r")
-		 
+		print path+fname
 		data = f_r.read().decode("utf-8-sig").encode("utf-8")
 		 
  		f_w = open("/home/amm/Desktop/sna-git/temp","w")

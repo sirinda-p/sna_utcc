@@ -45,11 +45,11 @@ def dupID():
 	oldpath = "/home/amm/Desktop/sna-git/data/"
 	 
 	error_list = []
-	fname_list = ["Biz55_study.gml"]
+	fname_list = ["ICT57-All_friend.gml"]
 	for fname in fname_list:
 	#for fname in os.listdir(oldpath):
 		## get source nodes
-		print fname 
+		print oldpath+fname 
  		f_r = open(oldpath+fname,"r")
  		
 		lines = f_r.readlines()
@@ -74,4 +74,4 @@ def dupID():
 		
 	 
 	
-mark()
+dupID()

@@ -5,19 +5,20 @@ def mark():
 	oldpath = "/home/amm/Desktop/sna-git/data/"
 	newpath = oldpath+"mark_unsurveyed/"
 	error_list = []
-	fname_list =["ICT57-All_friend.gml" ]
-	
+	#fname_list =["ICT57-All_friend.gml" ]
+	fname_list = sorted(os.listdir(oldpath))
+	ttsv = 0
 	for fname in fname_list:
 	#for fname in os.listdir(oldpath):
 		## get source nodes
  		if os.path.isdir(oldpath+fname): continue
  		if fname.split(".")[1] !="gml": continue
- 		#if fname.startswith("ICT57"): continue
+ 		#if not fname.startswith("ICT57-All"): continue
 		src_set = set()
 		f_r = open(oldpath+fname,"r")
 		hash_reverse_pair = {}
-		print  "im  here"
-		for line in f_r.readlines():
+ 		for line in f_r.readlines():
+			 
 			if len(line.split())>1:
 				try:
 					fst, snd = line.split()
@@ -26,12 +27,10 @@ def mark():
  				if fst.strip() == "source":
 					sid = snd.strip() 
 					src_set.add(float(sid))
-					
+		print "\n"			
  		print  oldpath+fname			
  		
-		#try:
-		#print "\n"
-		#print  oldpath+fname
+		 
 		g = read(oldpath+fname, format="gml")
 		print "Successful reading gml" 
 		all_set = set(g.vs['id'])
@@ -64,10 +63,15 @@ def mark():
 				
 				#print str(node)+":"+str(flist)
 			
-		  
-		#print "Total nodes = "+str(len(all_set))
-		#print "surveyed nodes = "+str(len(src_set))
-		#print "Unsurveyed nodes = "+str(len( unmarked_set))
+		tt = len(all_set)-1.
+		sv = len(src_set)
+		ttsv += sv
+		print "Total nodes = "+str(tt)
+		sv_p = int(sv/tt*100)
+		print "surveyed nodes = "+str(sv)+"("+str(sv_p)+")"
+		usv = len( unmarked_set)-1
+		
+		print "Unsurveyed nodes = "+str(usv)
 		#print "Unsurveyed nodes = "+str(unmarked_set)
 		
 		#write(g, newpath+fname, format = "gml")
@@ -79,5 +83,6 @@ def mark():
 		#print error_list
 		#print len(error_list)
  
+	print ttsv/3
 	
 mark()

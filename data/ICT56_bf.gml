@@ -6,12 +6,7 @@ gpa 0.00
 year 00
 gender "x"
 ]
-node [ 
-id 04002
-gpa 1.44
-year 56
-gender "M"
- ] 
+ 
 node [ 
 id 04003
 gpa 4.00
@@ -204,12 +199,7 @@ gpa 2.96
 year 56
 gender "M"
  ] 
-node [ 
-id 04061
-gpa 2.75
-year 56
-gender "M"
- ] 
+ 
 node [ 
 id 04064
 gpa 2.54
@@ -808,4 +798,18 @@ edge [
 source 04043
 target 04060
 ]
+
+  edge [
+source 04018
+target 04048
+  ]
+  edge [
+source 04018
+target 04006
+  ]
+ edge [
+source 04040
+target 04033
+  ]
+
 ]
