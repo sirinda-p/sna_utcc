@@ -4,7 +4,7 @@ node [
 id 99999
 gpa 0.00
 year 00
-gender x
+gender "x"
 ]
 node [ 
 id 00004
@@ -669,23 +669,23 @@ source 00087
 target 00098
 ]
 edge [ 
-source 
+source 00127
 target 00056
 ]
 edge [ 
-source 
+source 00127
 target 00125
 ]
 edge [ 
-source 
+source 00127
 target 00158
 ]
 edge [ 
-source 
+source 00127
 target 00221
 ]
 edge [ 
-source 
+source 00127
 target 00244
 ]
 edge [ 

@@ -5,50 +5,79 @@ def mark():
 	oldpath = "/home/amm/Desktop/sna-git/data/"
 	newpath = oldpath+"mark_unsurveyed/"
 	error_list = []
-	fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
+	fname_list =["ICT57-All_friend.gml" ]
+	
 	for fname in fname_list:
+	#for fname in os.listdir(oldpath):
 		## get source nodes
-		print "\n"
-		print fname
-		 
+ 		if os.path.isdir(oldpath+fname): continue
+ 		if fname.split(".")[1] !="gml": continue
+ 		#if fname.startswith("ICT57"): continue
 		src_set = set()
 		f_r = open(oldpath+fname,"r")
+		hash_reverse_pair = {}
+		print  "im  here"
 		for line in f_r.readlines():
 			if len(line.split())>1:
-				fst, snd = line.split()
-				if fst.strip() == "source":
-					nid = snd.strip()
-					src_set.add(float(nid))
-		 
-		try:
-			g = read(oldpath+fname, format="gml")
-			all_set = set(g.vs['id'])
-		
-			unmarked_set = all_set - src_set
-			
-			for v in g.vs:
-				 
-				if v['id'] in unmarked_set:
-					 
-					v["survey"] = False
-				else:
-					v["survey"] = True
-				 
-			print "Total nodes = "+str(len(all_set))
-			print "surveyed nodes = "+str(len(src_set))
-			print "Unsurveyed nodes = "+str(len(unmarked_set))
-			
-			write(g, newpath+fname, format = "gml")
-				
- 		except:
-			error_list.append(fname)
-			print error_list
-			
-	 
-		
+				try:
+					fst, snd = line.split()
+				except:
+					print fname
+ 				if fst.strip() == "source":
+					sid = snd.strip() 
+					src_set.add(float(sid))
+					
+ 		print  oldpath+fname			
  		
+		#try:
+		#print "\n"
+		#print  oldpath+fname
+		g = read(oldpath+fname, format="gml")
+		print "Successful reading gml" 
+		all_set = set(g.vs['id'])
 		
+		unmarked_set = all_set - src_set
 		
-	 
+		for v in g.vs:
+		 
+			if v['id'] in unmarked_set:
+				 
+				v["survey"] = False
+				
+			else:
+				v["survey"] = True
+		
+		hash_reverse_pair = dict()
+		for e in g.es():
+			sid = g.vs[e.source]['id']
+			tid = g.vs[e.target]['id']
+			if tid not in hash_reverse_pair:
+				hash_reverse_pair[tid] = [sid]
+			else:
+				hash_reverse_pair[tid].append(sid)
+		
+			
+		### get nodes referring to the unsurveyed nodes
+		for node in unmarked_set:
+			if node in hash_reverse_pair:
+				flist = hash_reverse_pair[node]
+				
+				#print str(node)+":"+str(flist)
+			
+		  
+		#print "Total nodes = "+str(len(all_set))
+		#print "surveyed nodes = "+str(len(src_set))
+		#print "Unsurveyed nodes = "+str(len( unmarked_set))
+		#print "Unsurveyed nodes = "+str(unmarked_set)
+		
+		#write(g, newpath+fname, format = "gml")
+					
+ 		#except  :
+			#print "error"
+			#error_list.append(fname)
+		
+		#print error_list
+		#print len(error_list)
+ 
 	
 mark()

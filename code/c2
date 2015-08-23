@@ -1,0 +1,2670 @@
+Eng55_friend.gml
+﻿graph [ 
+
+  directed 1 
+
+  node [ 
+
+   id 5507101002
+
+   gpa 2.40
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101003
+
+   gpa 2.30
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101004
+
+   gpa 2.75
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101005
+
+   gpa 3.16
+
+   year 55
+
+   gender F
+
+   ] 
+
+  node [ 
+
+   id 5507101006
+
+   gpa 2.21
+
+   year 55
+
+   gender F
+
+   ] 
+
+  node [ 
+
+   id 5507101009
+
+   gpa 2.96
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101011
+
+   gpa 2.17
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101012
+
+   gpa 3.51
+
+   year 55
+
+   gender F
+
+   ] 
+
+  node [ 
+
+   id 5507101015
+
+   gpa 2.76
+
+   year 55
+
+   gender F
+
+   ] 
+
+  node [ 
+
+   id 5507101016
+
+   gpa 2.53
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101017
+
+   gpa 2.56
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101018
+
+   gpa 3.27
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101019
+
+   gpa 2.85
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101020
+
+   gpa 2.80
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101021
+
+   gpa 2.50
+
+   year 55
+
+   gender F
+
+   ] 
+
+  node [ 
+
+   id 5507101022
+
+   gpa 3.30
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101023
+
+   gpa 2.68
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101024
+
+   gpa 3.40
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101025
+
+   gpa 2.33
+
+   year 55
+
+   gender M
+
+   ] 
+
+  node [ 
+
+   id 5507101026
+
+   gpa 2.20
+
+   year 55
+
+   gender F
+
+   ] 
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101009
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101002
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101019
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101003
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101020
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101021
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101016
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101006
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101005
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101015
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101004
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101024
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101022
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101012
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101025
+
+  ]
+
+  edge [ 
+
+   source 5507101018
+
+   target 5507101026
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101023
+
+  ]
+
+  edge [ 
+
+   source 5507101017
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101002
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101003
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101004
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101005
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101006
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101009
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101011
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101012
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101015
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101016
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101017
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101018
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101019
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101020
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101021
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101022
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101024
+
+  ]
+
+  edge [ 
+
+   source 5507101023
+
+   target 5507101025
+
+  ]
+
+]

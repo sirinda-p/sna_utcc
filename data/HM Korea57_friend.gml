@@ -4,7 +4,7 @@ node [
 id 99999
 gpa 0.00
 year 00
-gender x
+gender "x"
 ]
 node [ 
 id 08001
@@ -1397,50 +1397,6 @@ target 08066
 edge [ 
 source 08080
 target 08072
-]
-edge [ 
-source 
-target 08004
-]
-edge [ 
-source 
-target 08012
-]
-edge [ 
-source 
-target 08019
-]
-edge [ 
-source 
-target 08030
-]
-edge [ 
-source 
-target 08031
-]
-edge [ 
-source 
-target 08042
-]
-edge [ 
-source 
-target 08050
-]
-edge [ 
-source 
-target 08051
-]
-edge [ 
-source 
-target 08054
-]
-edge [ 
-source 
-target 08056
-]
-edge [ 
-source 
-target 08076
 ]
 edge [ 
 source 08054

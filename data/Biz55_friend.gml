@@ -4,7 +4,7 @@ node [
 id 99999
 gpa 0.00
 year 00
-gender x
+gender "x"
 ]
 node [ 
 id 08002
@@ -1716,6 +1716,10 @@ target 08189
 ]
 edge [ 
 source 08134
+target 08002
+]
+edge [ 
+source 08134
 target 08032
 ]
 edge [ 
@@ -1893,6 +1897,10 @@ target 99999
 edge [ 
 source 08032
 target 99999
+]
+edge [ 
+source 08093
+target 08002
 ]
 edge [ 
 source 08093
@@ -2096,34 +2104,38 @@ target 08032
 ]
 edge [ 
 source 08061
+target 08002
+]
+edge [ 
+source 08061
 target 08003
 ]
 edge [ 
-source 
-target 5608100049
+source 08002
+target 99999
 ]
 edge [ 
-source 
+source 08002
 target 08015
 ]
 edge [ 
-source 
+source 08002
 target 08017
 ]
 edge [ 
-source 
+source 08002
 target 08022
 ]
 edge [ 
-source 
+source 08002
 target 08028
 ]
 edge [ 
-source 
+source 08002
 target 08032
 ]
 edge [ 
-source 
+source 08002
 target 08040
 ]
 edge [ 
