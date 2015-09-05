@@ -188,7 +188,7 @@ def main():
 			f_w = open(result_path+"property_wholegraph_alldept_"+ftype.replace(".gml",""),"w")
 		
 		
-		#fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
+		fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
 		for fname in os.listdir(path):
   			try:
 				ftype2 = fname.split("_")[1]
