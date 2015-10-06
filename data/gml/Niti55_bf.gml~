@@ -1142,31 +1142,4 @@ source 00020
 target 00074
 ]
 
-edge [ 
-source 00054
-target 00013
-]
-edge [ 
-source 00020
-target 00029
-]
-
-edge [ 
-source 00068
-target 00078
-]
-
-edge [ 
-source 00070
-target 00030
-]
-edge [ 
-source 00070
-target 00015
-]
-edge [ 
-source 00070
-target 00079
-]
-
 ]
