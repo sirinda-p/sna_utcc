@@ -1,16 +1,17 @@
 import os
 from igraph import *
 
-def mark():
-	oldpath = "/home/amm/Desktop/sna-git/data/"
-	newpath = oldpath+"mark_unsurveyed/"
+def check():
+	path = "/home/ubuntu/sna-utcc-research/data/gml/"
+ 
 	error_list = []
-	fname_list = ["ICT55_study.gml"]
-	for fname in fname_list:
+ 
+	for fname in os.listdir(path):
 	#for fname in os.listdir(oldpath):
 		## get source nodes
-		print fname 
- 		f_r = open(oldpath+fname,"r")
+		if not fname.startswith("Niti55"): continue
+		print fname
+ 		f_r = open(path+fname,"r")
  		id_set = set()
 		lines = f_r.readlines()
 		f_r.close()
@@ -74,4 +75,4 @@ def dupID():
 		
 	 
 	
-dupID()
+check()

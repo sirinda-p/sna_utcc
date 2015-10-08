@@ -2,7 +2,7 @@ import os
 from igraph import *
 
 def mark():
-	oldpath = "/home/amm/Desktop/sna-git/data/"
+	oldpath = "/home/ubuntu/sna-utcc-research/data/gml/"
 	newpath = oldpath+"mark_unsurveyed/"
 	error_list = []
 	#fname_list =["ICT57-All_friend.gml" ]
@@ -11,7 +11,8 @@ def mark():
 	for fname in fname_list:
 	#for fname in os.listdir(oldpath):
 		## get source nodes
- 		if os.path.isdir(oldpath+fname): continue
+ 		#if os.path.isdir(oldpath+fname): continue
+ 		if not fname.startswith("Niti55_"): continue
  		if fname.split(".")[1] !="gml": continue
  		#if not fname.startswith("ICT57-All"): continue
 		src_set = set()
@@ -32,7 +33,7 @@ def mark():
  		
 		 
 		g = read(oldpath+fname, format="gml")
-		print "Successful reading gml" 
+		#print "Successful reading gml" 
 		all_set = set(g.vs['id'])
 		
 		unmarked_set = all_set - src_set

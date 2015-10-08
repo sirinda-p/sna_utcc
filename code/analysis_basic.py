@@ -43,8 +43,8 @@ def measureProperty(g, directed, k):
 	
 	# Assortativity is a preference for a network's nodes to attach to others that are similar in some way	
 	# When r = 1, the network is said to have perfect assortative mixing patterns
-r	# when r = 0 the network is non-assortative
-	# while at r = −1 the network is completely disassortative.	
+ 	# when r = 0 the network is non-assortative
+	# while at r = −1 the network is completely disassortative
 	
 	assort_gpa = g.assortativity(types1="gpa", directed=False)
 	for v in g.vs():
@@ -135,8 +135,8 @@ def main_basic():
 		
 		#fname_list = ["ICT56_friend.gml","ICT56_bf.gml","ICT56_study.gml"]
 		err_list = []
-		#for fname in os.listdir(path):
-		for fname in fname_list:
+		for fname in os.listdir(path):
+		#for fname in fname_list:
   			try:
 				ftype2 = fname.split("_")[1]
 				if ftype2 != ftype:
@@ -164,8 +164,8 @@ def main_basic():
 
 		
 def main_structure():
-	path = "/home/amm/Desktop/sna-git/data/"
-	result_path = "/home/amm/Desktop/sna-git/result/analysis/"
+	path = "/home/ubuntu/sna-utcc-research/data/gml/"
+	result_path = "/home/ubuntu/sna-utcc-research/result/analysis/"
 		
 	for ftype in [ "study.gml", "bf.gml","friend.gml"]:
 		
@@ -206,13 +206,13 @@ def main_structure():
 			measureProperty(g, directed, k)
 			
 			
-			'''
+			 
  			if directed:
 				tow = "%10s, %3d, %5.2f, %5.2f, %3d,%d, %5.2f, %5.2f, %5.2f, %5.2f, %5.2f\n " %(fshort, gsize, den, dia, max_deg[0], max_deg[1], avg_deg[0], avg_deg[1], edge_conn, gcc, lcc )
 			else:
 				tow = "%10s, %3d, %5.2f, %5.2f, %3d, %5.2f, %5.2f, %5.2f, %5.2f\n " %(fshort, gsize, den, dia, max_deg[0], avg_deg[0], edge_conn, gcc, lcc )
 			f_w.write(tow) 								
-			'''
+			 
 			
 		#f_w.close
 		print "Error list"
@@ -240,4 +240,4 @@ Structure properties:
 Useful code examples - awesome visualization! http://cneurocvs.rmki.kfki.hu/igraph/screenshots2.html
 '''
 
-main_structure()  
+main()  
