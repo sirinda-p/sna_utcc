@@ -1,0 +1,15 @@
+
+Indeg
+GPA of top10: maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)
+
+Outdeg
+GPA of top10: maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)
+
+Hub
+GPA of top10: maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)
+
+Authority
+GPA of top10: maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)
+
+Betweenness
+GPA of top10: maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)

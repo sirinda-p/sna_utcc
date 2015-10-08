@@ -3,6 +3,7 @@ from igraph import *
 import numpy  as np
 import myutil as myutil
 
+''' old code ''' 
 ## Measure structure properties of a network 
 def measureProperty(g, directed, k):
 	

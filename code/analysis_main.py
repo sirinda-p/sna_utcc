@@ -2,6 +2,7 @@ import os
 from igraph import *
 import numpy as np
 
+''' old code '''
 def findGroups(g, gtype):
 	
 	if gtype == "component":
@@ -105,14 +106,7 @@ def property_network(g,directed):
  
 	return den, dia, max_deg, avg_edge_btw, edge_conn, gcc, lcc
 	 
-## get top-k score node ids 
-def getTopK(score_arr, v_arr, k):
-	
-	np_score_arr = np.array(score_arr)
-	np_v_arr = np.array(v_arr)
-	topk_index_arr = np_score_arr.argsort()[-k:][::-1] ## sort in descending order
-	 
-	return np_v_arr[topk_index_arr]
+
 	 
 	
 	
@@ -271,8 +265,8 @@ def main():
 	x	6. Mark unsurveyed nodes  
 	x	7. Get GPA  
 			- Write the properties and GPA to a file 
-		8. Compute correlation between graph properties and GPA
-		9. Take unsurveyed nodes into account when analyzing data
+	x	8. Compute correlation between graph properties and GPA
+	 	9. Take unsurveyed nodes into account when analyzing data
 		10. Find a way to measure interaction patterns in communities 
 			- Use motifs
 		11. Analyze motifs detected by fanmod
