@@ -8,319 +8,319 @@ gender "x"
 ]
 node [
 id 04001
-gpa 0.00
+gpa 3.54
 year 55
 gender "F"
  ]
 node [
 id 04003
-gpa 0.00
+gpa 2.33
 year 55
 gender "M"
  ]
 node [
 id 04004
-gpa 0.00
+gpa 3.77
 year 55
 gender "M"
  ]
 node [
 id 04005
-gpa 0.00
+gpa 3.03
 year 55
 gender "F"
  ]
 node [
 id 04007
-gpa 0.00
+gpa 2.27
 year 55
 gender "F"
  ]
 node [
 id 04009
-gpa 0.00
+gpa 2.27
 year 55
 gender "M"
  ]
 node [
 id 04011
-gpa 0.00
+gpa 2.26
 year 55
 gender "M"
  ]
 node [
 id 04012
-gpa 0.00
+gpa 2.83
 year 55
 gender "M"
  ]
 node [
 id 04015
-gpa 0.00
+gpa 2.26
 year 55
 gender "F"
  ]
 node [
 id 04016
-gpa 0.00
+gpa 2.63
 year 55
 gender "M"
  ]
 node [
 id 04017
-gpa 0.00
+gpa 2.25
 year 55
 gender "F"
  ]
 node [
 id 04018
-gpa 0.00
+gpa 2.97
 year 55
 gender "F"
  ]
 node [
 id 04020
-gpa 0.00
+gpa 2.52
 year 55
 gender "M"
  ]
 node [
 id 04022
-gpa 0.00
+gpa 2.35
 year 55
 gender "M"
  ]
 node [
 id 04023
-gpa 0.00
+gpa 2.10
 year 55
 gender "M"
  ]
 node [
 id 04024
-gpa 0.00
+gpa 2.52
 year 55
 gender "M"
  ]
 node [
 id 04026
-gpa 0.00
+gpa 3.20
 year 55
 gender "M"
  ]
 node [
 id 04027
-gpa 0.00
+gpa 2.61
 year 55
 gender "F"
  ]
 node [
 id 04028
-gpa 0.00
+gpa 2.97
 year 55
 gender "M"
  ]
 node [
 id 04029
-gpa 0.00
+gpa 2.45
 year 55
 gender "F"
  ]
 node [
 id 04030
-gpa 0.00
+gpa 2.88
 year 55
 gender "M"
  ]
 node [
 id 04031
-gpa 0.00
+gpa 3.70
 year 55
 gender "M"
  ]
 node [
 id 04033
-gpa 0.00
+gpa 2.72
 year 55
 gender "M"
  ]
 node [
 id 04034
-gpa 0.00
+gpa 2.02
 year 55
 gender "M"
  ]
 node [
 id 04035
-gpa 0.00
+gpa 1.89
 year 55
 gender "F"
  ]
 node [
 id 04039
-gpa 0.00
+gpa 2.25
 year 55
 gender "F"
  ]
 node [
 id 04041
-gpa 0.00
+gpa 2.50
 year 55
 gender "M"
  ]
 node [
 id 04042
-gpa 0.00
+gpa 2.94
 year 55
 gender "F"
  ]
 node [
 id 04043
-gpa 0.00
+gpa 2.36
 year 55
 gender "M"
  ]
 node [
 id 04044
-gpa 0.00
+gpa 2.42
 year 55
 gender "F"
  ]
 node [
 id 04045
-gpa 0.00
+gpa 2.07
 year 55
 gender "M"
  ]
 node [
 id 04047
-gpa 0.00
+gpa 2.74
 year 55
 gender "M"
  ]
 node [
 id 04048
-gpa 0.00
+gpa 2.36
 year 55
 gender "F"
  ]
 node [
 id 04052
-gpa 0.00
+gpa 2.90
 year 55
 gender "M"
  ]
 node [
 id 04054
-gpa 0.00
+gpa 2.55
 year 55
 gender "M"
  ]
 node [
 id 04056
-gpa 0.00
+gpa 2.50
 year 55
 gender "F"
  ]
 node [
 id 04057
-gpa 0.00
+gpa 2.70
 year 55
 gender "M"
  ]
 node [
 id 04059
-gpa 0.00
+gpa 2.56
 year 55
 gender "M"
  ]
 node [
 id 04060
-gpa 0.00
+gpa 2.55
 year 55
 gender "M"
  ]
 node [
 id 04061
-gpa 0.00
+gpa 2.73
 year 55
 gender "F"
  ]
 node [
 id 04064
-gpa 0.00
+gpa 2.01
 year 55
 gender "F"
  ]
 node [
 id 04066
-gpa 0.00
+gpa 2.02
 year 55
 gender "M"
  ]
 node [
 id 04067
-gpa 0.00
+gpa 3.09
 year 55
 gender "M"
  ]
 node [
 id 04069
-gpa 0.00
+gpa 2.41
 year 55
 gender "M"
  ]
 node [
 id 04070
-gpa 0.00
+gpa 3.03
 year 55
 gender "F"
  ]
 node [
 id 04071
-gpa 0.00
+gpa 3.29
 year 55
 gender "M"
  ]
 node [
 id 04073
-gpa 0.00
+gpa 1.99
 year 55
 gender "M"
  ]
 node [
 id 04074
-gpa 0.00
+gpa 3.37
 year 55
 gender "M"
  ]
 node [
 id 04075
-gpa 0.00
+gpa 3.49
 year 55
 gender "F"
  ]
 node [
 id 04079
-gpa 0.00
+gpa 2.87
 year 55
 gender "M"
  ]
 node [
 id 04080
-gpa 0.00
+gpa 3.27
 year 55
 gender "M"
  ]
 node [
 id 04081
-gpa 0.00
+gpa 3.04
 year 55
 gender "M"
  ]
 node [
 id 04086
-gpa 0.00
+gpa 2.47
 year 55
 gender "M"
  ]

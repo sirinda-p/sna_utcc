@@ -1,17 +1,15 @@
 Name, P-value
-ICT55_study.gml, 1.0000
- Nited56_study.gml, 0.9999
- Niti55_study.gml, 0.9775
- ICT57-V_study.gml, 1.0000
- ICT56_study.gml, 0.9655
- Ac57_study.gml, 1.0000
- ICT57_study.gml, 1.0000
- EC55_study.gml, 0.9715
- Niti56_study.gml, 0.9995
- ICT57-All_study.gml, 0.9635
- HM Act57_study.gml, 0.2494
- Biz55_study.gml, 0.9998
- Eng55_study.gml, 1.0000
- HM Thai57_study.gml, 0.9997
- HM Korea57_study.gml, 0.9989
+ICT55_study.gml, 1.0000 1.0000
+ Nited56_study.gml, 0.9997 0.9267
+ Niti55_study.gml, 0.9820 0.9992
+ ICT56_study.gml, 0.9655 0.9383
+ Ac57_study.gml, 1.0000 0.9603
+ EC55_study.gml, 0.9715 0.4941
+ Niti56_study.gml, 0.9924 1.0000
+ ICT57-All_study.gml, 0.9725 1.0000
+ HM Act57_study.gml, 1.0000 1.0000
+ Biz55_study.gml, 0.9991 1.0000
+ Eng55_study.gml, 1.0000 1.0000
+ HM Thai57_study.gml, 0.9997 0.8438
+ HM Korea57_study.gml, 0.9989 0.3783
  

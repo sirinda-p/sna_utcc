@@ -76,10 +76,10 @@ def Centrality_grade_correlation_main(g, directed, cen_arr, cen_score_arr_all):
 		btw_corr, btw_pval = scipy.stats.pearsonr(att_arr, betweenness_arr)
 		'''
 	return cen_arr,corr_val_arr, pval_arr
- 
 	
+ 
 def main_powerlaw():
-	path = "/home/amm/Desktop/sna-git/data/gml/"
+	path = "/home/amm/Desktop/sna-git/data/gml/notempnode/"
 	result_path = "/home/amm/Desktop/sna-git/result/analysis/"
 	
 	k = 10 # top k students with the highest centrality scores
@@ -108,36 +108,47 @@ def main_powerlaw():
 				print "Error importing a graph"
 				continue
 			
-			pathfname = "/home/amm/Desktop/sna-git/result/freqDistPlot/"+fname.replace(".gml",".png")
+			
 			
 			if directed:
 				indeg_arr = [d for d in g.indegree() if d>0]
-				pvalue = power_law_fit(indeg_arr,return_alpha_only=False).p
-				plotFreqDist(indeg_arr , pathfname, directed)	
+				pvalue_in = power_law_fit(indeg_arr,return_alpha_only=False).p
+				pathfname = "/home/amm/Desktop/sna-git/result/freqDistPlot/"+fname.replace(".gml","_indegree.png")
+				plotFreqDist(indeg_arr , pathfname, directed, 'Indegree')	
+				
+				outdeg_arr = [d for d in g.outdegree() if d>0]
+				pvalue_out = power_law_fit(outdeg_arr,return_alpha_only=False).p
+				pathfname = "/home/amm/Desktop/sna-git/result/freqDistPlot/"+fname.replace(".gml","_outdegree.png")
+				plotFreqDist(outdeg_arr , pathfname, directed, 'Outdegree')	
+				
+				tow = "%10s, %5.4f %5.4f\n " %(fname, pvalue_in, pvalue_out)
+				f_w.write(tow)
 			else:
 				deg_arr = [d for d in g.degree() if d>0]
 				pvalue = power_law_fit(deg_arr,return_alpha_only=False).p
+				pathfname = "/home/amm/Desktop/sna-git/result/freqDistPlot/"+fname.replace(".gml","_degree.png")
 				plotFreqDist(deg_arr, pathfname, directed)
 					
-			tow = "%10s, %5.4f\n " %(fname, pvalue)
-			f_w.write(tow)
+				tow = "%10s, %5.4f\n " %(fname, pvalue)
+				f_w.write(tow)
+				
 		f_w.close()
 		
 		
-def plotFreqDist(arr, pathfname, directed):
+def plotFreqDist(arr, pathfname, directed, degree='Degree'):
 	
 	plt.hist(arr)
 	if directed:
 		plt.xlabel('Indegree')
 	else:
-		plt.xlabel('Degree')
+		plt.xlabel(degree)
 	plt.ylabel('Frequency')
 	#plt.show()
 	plt.savefig(pathfname)
 	plt.clf()
 	
 def main_structure():
-	path = "/home/amm/Desktop/sna-git/data/gml/"
+	path = "/home/amm/Desktop/sna-git/data/gml/notempnode/"
 	result_path = "/home/amm/Desktop/sna-git/result/analysis/"
 	
 	k = 10 # top k students with the highest centrality scores
@@ -146,6 +157,7 @@ def main_structure():
 		f_w = open(result_path+"CorrelationBtwCentrality-GPA_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
 		f_gpa = open(result_path+"GPA_of_topK_Centrality_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
 		f_gen = open(result_path+"Gender_of_topK_Centrality_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
+		f_stat=  open(result_path+"CentralityStatistic_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
 		
 		if ftype == "friend.gml":
 			directed = False
@@ -164,14 +176,17 @@ def main_structure():
  		gender_topK_hash = dict()
  		gpa_all_hash = dict()
  		gender_all_hash = dict()
- 		 
+ 		cen_all_hash = dict()
+ 		size_hash = dict()
  		
  		for cen in cen_arr:
 			corr_hash[cen] = dict()
 			pval_hash[cen] = dict()
 			cen_topK_hash[cen] = dict()
+			cen_all_hash[cen] = dict()
 			gpa_topK_hash[cen] = dict() 		
 			gender_topK_hash[cen] = dict()
+			
 					
 		for fname in os.listdir(path):
    			try:
@@ -180,16 +195,15 @@ def main_structure():
 					continue
  				
 				if ftype2 == "friend.gml":
-					g = read(path+fname, format="gml").as_undirected()
+					g = read(path+fname, format="gml").as_undirected().simplify()
 				else:
-					g = read(path+fname, format="gml") 
+					g = read(path+fname, format="gml").simplify()
 			except:
 				err_list.append(fname)
-				print "Error importing a graph"
+ 				print fname+"Error importing a graph"
 				continue
 			
-			print fname
-			##Calculate correlation between centrality scores and gpa
+ 			##Calculate correlation between centrality scores and gpa
 			cen_score_arr_all = calCentrality(g, directed)
 			cen_arr,corr_val_arr, pval_arr = Centrality_grade_correlation_main(g, directed, cen_arr,cen_score_arr_all)
 			
@@ -202,6 +216,7 @@ def main_structure():
 			
 			id_arr = g.vs["id"]
 			gsize = len(id_arr)
+			size_hash[fname] = gsize
 			node_arr = g.vs()
 			temp = [n['gpa'] for n in node_arr]
 			gpa_all_hash[fname] = (max(temp),min(temp), sum(temp)/len(temp))
@@ -215,11 +230,14 @@ def main_structure():
 			for cen, cen_score_arr in zip(cen_arr,cen_score_arr_all):
 				## Get topK students 
 				topK_nodeid_arr, topK_score_arr = myutil.getTopK(cen_score_arr, id_arr, k+1)
-				
+				if cen == "Degree":
+					print fname
+					print (topK_nodeid_arr[0], topK_score_arr[0])
 				topK_gpa, topK_gender_arr  = myutil.getTopKAtt(topK_nodeid_arr,node_arr,k )
 				 
 				cen_topK_hash[cen][fname] = topK_score_arr
 				gpa_topK_hash[cen][fname] = topK_gpa
+				cen_all_hash[cen][fname] = cen_score_arr
 				
 				temp3 = Counter(topK_gender_arr)
 				topK_gender_freq = dict()
@@ -245,9 +263,8 @@ def main_structure():
 		for cen in cen_arr:
 			f_gpa.write("\n"+cen+"\n")
 			f_gen.write("\n"+cen+"\n")
-			
-			print cen
-			f_gpa.write("GPA of top"+str(k)+": maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)\n")
+			f_stat.write("\n"+cen+"\n")
+ 			f_gpa.write("GPA of top"+str(k)+": maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)\n")
 			f_gen.write("Gender of top"+str(k)+": MaleTopK(MaleAll), FemaleTopK(FemaleAll)\n")
 			for fname in corr_hash[cen].keys():
 			 
@@ -260,14 +277,16 @@ def main_structure():
 				
 				topK_gender_arr,topK_gender_freq  = gender_topK_hash[cen][fname] 
 				all_gender_freq = gender_all_hash[fname] 
-				 
+				cen_arr = cen_all_hash[cen][fname] 
 				 
 				tow2 = "%10s, %5.2f( %5.2f), %5.2f( %5.2f) \n " %(fname, topK_gender_freq['M'], all_gender_freq['M'] , topK_gender_freq['F'], all_gender_freq['F'] )
 				f_gen.write(tow2)
 				
+				tow3 = "%10s, %5.4f, %5.4f , %5.4f , %5.4f  \n " %(fname, size_hash[fname], max(cen_arr), min(cen_arr), sum(cen_arr)/len(cen_arr))
+				f_stat.write(tow3)
 		f_gpa.close()
 		f_gen.close()
-			
+		f_stat.close() 
 			
 			
 #main_structure()
