@@ -9,7 +9,7 @@ def main():
 	for fname in os.listdir(path):
 		if fname.endswith ("gml"): continue
 		print fname
-		g = read(path+fname, format="gml")
+		g = read(path+fname, format="gml").simplify()
 		 
 		for v in g.vs():
 			if v['id'] in [99999.0, 9999.0]:

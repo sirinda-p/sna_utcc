@@ -8,7 +8,7 @@ def main():
 	for gname in os.listdir(gml_path):
 		if not gname.startswith("Ac"): continue
 		print gname
-		g = ig.read(gml_path+gname,  format="gml")
+		g = ig.read(gml_path+gname,  format="gml").simplify()
 		min_id = 227
 		max_id = 312
 		notinlist = [228+1, 242+1, 243, 308, 306, 303, 280, 252]
@@ -27,7 +27,7 @@ def main():
 		newname = gname.replace("raw","")
 		ig.write(g, gml_path+newname, format="gml")
 	 
-	 	newg = ig.read(gml_path+newname, format="gml")
+	 	newg = ig.read(gml_path+newname, format="gml").simplify()
 	 	print len(newg.vs())
 		print len(newg.es())
 		

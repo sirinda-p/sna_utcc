@@ -198,9 +198,9 @@ def main():
 				print fname
 				
 				if ftype2 == "friend.gml":
-					g = read(path+fname, format="gml").as_undirected()
+					g = read(path+fname, format="gml").as_undirected().simplify()
 				else:
-					g = read(path+fname, format="gml") 
+					g = read(path+fname, format="gml").simplify() 
 				
 				gsize = len(g.vs())
 				 

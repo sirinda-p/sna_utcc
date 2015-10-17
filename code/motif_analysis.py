@@ -64,7 +64,7 @@ def main():
 		if fname.endswith(".csv.dump"):
 			print fname
 			gname = fname.strip(".csv.dump")+".gml"
-  			g = ig.read(gml_path+gname,  format="gml")
+  			g = ig.read(gml_path+gname,  format="gml").simplify()
 			myplot(result_path, fname, g, size)
 			 
 			

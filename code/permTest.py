@@ -49,7 +49,7 @@ def main():
 	path = "/home/ubuntu/sna-utcc-research/data/gml/"
 	for fname in os.listdir(path):
 		print fname
-		g = read(path+fname, format="gml")
+		g = read(path+fname, format="gml").simplify()
 		ftype  = fname.split("_")[1]
 		
 		if ftype== "friend.gml":

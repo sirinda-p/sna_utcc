@@ -27,7 +27,7 @@ def count():
 					
  		#try:
  		
-		g = read(oldpath+fname, format="gml")
+		g = read(oldpath+fname, format="gml").simplify()
 		 
 		all_set = set(g.vs['id'])
 		

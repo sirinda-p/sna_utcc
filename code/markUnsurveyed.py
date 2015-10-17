@@ -32,7 +32,7 @@ def mark():
  		print  oldpath+fname			
  		
 		 
-		g = read(oldpath+fname, format="gml")
+		g = read(oldpath+fname, format="gml").simplify()
 		#print "Successful reading gml" 
 		all_set = set(g.vs['id'])
 		
