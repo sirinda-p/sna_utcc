@@ -20,7 +20,7 @@ def convert():#F6F67B#F6F67B
 			for e in g.es():
 				src = int(g.vs[e.source]["id"])
 				dest = int(g.vs[e.target]["id"])
-				//if src in (9999, 99999) or dest in (9999, 99999): continue
+				#if src in (9999, 99999) or dest in (9999, 99999): continue
 				line = str(src)+" "+str(dest)+"\n"
 				f_w.write(line)
 			f_w.close()

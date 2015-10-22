@@ -1,0 +1,75 @@
+FANMOD 1.1 subgraph enumeration
+-------------------------------
+
+Network name: C:\Users\Amm\Desktop\fanmod_results\motif_edgelist\Niti56_bf.txt
+Network type: Directed
+Number of nodes: 86
+Number of edges: 89
+Number of single edges: 53
+Number of mutual edges: 36
+
+Algorithm: enumeration
+Subgraph size: 3
+
+Generated 1000 random networks
+   with locally constant number of bidirectional edges,
+   3 exchanges per edge and 3 tries per edge.
+
+189 subgraphs were enumerated in the original network.
+336858 subgraphs were enumerated in the random networks.
+337047 subgraphs were enumerated in all networks.
+
+For the random networks: 398638 tries were made, 249075 were successful.
+Randomization took 0.368 seconds.
+Enumeration took 0.37 seconds.
+
+
+Result overview:
+
+  ID Adj   Frequency     Mean-Freq  Standard-Dev    Z-Score  p-Value
+          [Original]      [Random]      [Random]
+
+   6 000     20.106%       15.013%     0.0034108     14.931        0
+     000
+     110
+
+  46 000     18.519%       1.0148%      0.005136     34.081        0
+     101
+     110
+
+  14 000     15.344%       30.197%     0.0076481    -19.421        1
+     001
+     110
+
+ 238 011     11.111%       0.2332%     0.0023622      46.05        0
+     101
+     110
+
+  78 001     7.9365%       25.355%     0.0069903    -24.919        1
+     001
+     110
+
+ 174 010     6.8783%       0.9663%     0.0055205     10.709        0
+     101
+     110
+
+ 164 010      5.291%       10.288%     0.0054838    -9.1117        1
+     100
+     100
+
+ 166 010     4.2328%      0.13115%     0.0019185     21.379        0
+     100
+     110
+
+  36 000     4.2328%       13.239%     0.0046318    -19.444        1
+     100
+     100
+
+  12 000     3.1746%       3.2016%     0.0030093  -0.089771    0.662
+     001
+     100
+
+  38 000     3.1746%      0.29642%     0.0029009     9.9216        0
+     100
+     110
+

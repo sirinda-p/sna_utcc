@@ -15,7 +15,7 @@ def convert():#F6F67B#F6F67B
 		try: 
 			print "\n"
 			print fname
-			f_w = open(newpath+fname.strip(".gml"), "w")
+			f_w = open(newpath+fname.replace(".gml",".txt"), "w")
 			g = read(oldpath+fname, format="gml").simplify()
 			for e in g.es():
 				src = int(g.vs[e.source]["id"])
