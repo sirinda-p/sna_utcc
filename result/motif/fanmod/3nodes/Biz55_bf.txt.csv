@@ -1,0 +1,83 @@
+FANMOD 1.1 subgraph enumeration
+-------------------------------
+
+Network name: C:\Users\Amm\Desktop\motif_edgelist\motif_edgelist\Biz55_bf.txt
+Network type: Directed
+Number of nodes: 8187
+Number of edges: 114
+Number of single edges: 78
+Number of mutual edges: 36
+
+Algorithm: enumeration
+Subgraph size: 3
+
+Generated 1000 random networks
+   with locally constant number of bidirectional edges,
+   3 exchanges per edge and 3 tries per edge.
+
+322 subgraphs were enumerated in the original network.
+419872 subgraphs were enumerated in the random networks.
+420194 subgraphs were enumerated in all networks.
+
+For the random networks: 432340 tries were made, 336592 were successful.
+Randomization took 0.276 seconds.
+Enumeration took 0.592 seconds.
+
+
+Result overview:
+
+ID,Adj-Matrix,Frequency,Mean-Freq,Standard-Dev,Z-Score,p-Value
+,,[Original],[Random],[Random]
+
+6,000,35.404%,31.12%,0.0031075,13.784,0
+,000
+,110
+
+14,000,23.292%,27.186%,0.0047235,-8.2447,1
+,001
+,110
+
+78,001,7.4534%,12.788%,0.0035535,-15.013,1
+,001
+,110
+
+164,010,6.8323%,10.646%,0.0040109,-9.509,1
+,100
+,100
+
+12,000,5.9006%,7.7883%,0.0031054,-6.0786,1
+,001
+,100
+
+46,000,5.2795%,0.3111%,0.0027337,18.175,0
+,101
+,110
+
+36,000,4.0373%,9.0201%,0.0033911,-14.694,1
+,100
+,100
+
+38,000,3.4161%,0.43485%,0.0031282,9.5305,0
+,100
+,110
+
+238,011,2.4845%,0.03631%,0.0008914,27.464,0
+,101
+,110
+
+166,010,2.4845%,0.1251%,0.0016191,14.572,0
+,100
+,110
+
+174,010,2.4845%,0.44191%,0.0031888,6.4053,0
+,101
+,110
+
+102,001,0.62112%,0.095057%,0.0014342,3.6679,0.005
+,100
+,110
+
+140,010,0.31056%,0.0062413%,0.00041123,7.4001,0.002
+,001
+,100
+

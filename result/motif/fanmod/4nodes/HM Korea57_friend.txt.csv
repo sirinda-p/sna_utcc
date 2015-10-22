@@ -1,0 +1,61 @@
+FANMOD 1.1 subgraph enumeration
+-------------------------------
+
+Network name: C:\Users\Amm\Desktop\motif_edgelist\motif_edgelist_4nodes\HM Korea57_friend.txt
+Network type: Undirected
+Number of nodes: 8086
+Number of edges: 202
+Number of single edges: 0
+Number of mutual edges: 202
+
+Algorithm: enumeration
+Subgraph size: 4
+
+Generated 1000 random networks
+   with locally constant number of bidirectional edges,
+   3 exchanges per edge and 3 tries per edge.
+
+7554 subgraphs were enumerated in the original network.
+16250622 subgraphs were enumerated in the random networks.
+16258176 subgraphs were enumerated in all networks.
+
+For the random networks: 1309324 tries were made, 395122 were successful.
+Randomization took 0.457 seconds.
+Enumeration took 18.1 seconds.
+
+
+Result overview:
+
+ID,Adj-Matrix,Frequency,Mean-Freq,Standard-Dev,Z-Score,p-Value
+,,[Original],[Random],[Random]
+
+8598,0010,41.819%,55.322%,0.0047893,-28.194,1
+,0001
+,1001
+,0110
+
+4958,0001,26.251%,1.9647%,0.006202,39.159,0
+,0011
+,0101
+,1110
+
+4382,0001,19.579%,34.039%,0.0049795,-29.039,1
+,0001
+,0001
+,1110
+
+13278,0011,6.6455%,0.23312%,0.001196,53.614,0
+,0011
+,1101
+,1110
+
+31710,0111,4.8319%,0.00023677%,3.7759e-005,1279.6,0
+,1011
+,1101
+,1110
+
+27030,0110,0.87371%,8.4413%,0.0042942,-17.623,1
+,1001
+,1001
+,0110
+

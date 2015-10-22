@@ -1,0 +1,63 @@
+FANMOD 1.1 subgraph enumeration
+-------------------------------
+
+Network name: C:\Users\Amm\Desktop\motif_edgelist\motif_edgelist\HM Thai57_bf.txt
+Network type: Directed
+Number of nodes: 3023
+Number of edges: 31
+Number of single edges: 21
+Number of mutual edges: 10
+
+Algorithm: enumeration
+Subgraph size: 3
+
+Generated 1000 random networks
+   with locally constant number of bidirectional edges,
+   3 exchanges per edge and 3 tries per edge.
+
+73 subgraphs were enumerated in the original network.
+106544 subgraphs were enumerated in the random networks.
+106617 subgraphs were enumerated in all networks.
+
+For the random networks: 241136 tries were made, 32459 were successful.
+Randomization took 0.084 seconds.
+Enumeration took 0.199 seconds.
+
+
+Result overview:
+
+ID,Adj-Matrix,Frequency,Mean-Freq,Standard-Dev,Z-Score,p-Value
+,,[Original],[Random],[Random]
+
+6,000,38.356%,31.577%,0.011837,5.7272,0
+,000
+,110
+
+46,000,17.808%,3.5989%,0.014665,9.6895,0
+,101
+,110
+
+166,010,12.329%,3.4671%,0.012243,7.2382,0
+,100
+,110
+
+14,000,8.2192%,19.991%,0.021733,-5.4168,1
+,001
+,110
+
+38,000,8.2192%,5.3555%,0.0098273,2.914,0
+,100
+,110
+
+238,011,6.8493%,0%,0,undefined,0
+,101
+,110
+
+164,010,4.1096%,9.9203%,0.019306,-3.0097,1
+,100
+,100
+
+12,000,4.1096%,2.8292%,0.0091572,1.3982,0.058
+,001
+,100
+

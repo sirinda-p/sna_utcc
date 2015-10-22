@@ -2,7 +2,7 @@ import os
 import igraph as ig
 import numpy
 
-def getSigSubgNumber(outfile, fanmod_path):
+def getSigSubgNumber(outfile, fanmod_path, size):
 	f = open(fanmod_path+outfile, "r")
 	lines = f.readlines()
 	lenlines = len(lines)
@@ -14,20 +14,24 @@ def getSigSubgNumber(outfile, fanmod_path):
 		if line.startswith("Result"):
 			i+=5
 			line = lines[i]
-			no, x1,x2, x3,x4, x5, pvalue = line.split()
+			#no, x1,x2, x3,x4, x5, pvalue = line.split()
+ 			no, x1, x2, x3, x4, x5, pvalue = line.split(",")
 			if float(pvalue) <0.05:
 				#bin_no = '{0:09b}'.format(int(no))
 				sigNo_arr.append((int(no)))
-			i+=4
+			i+=size+1
 			while 1:
+				if i>=lenlines: break
 				line = lines[i]
-				no, x1, x2, x3, x4, x5, pvalue = line.split()
+  				 
+				no, x1, x2, x3, x4, x5, pvalue = line.split(",")
+				
 				if float(pvalue) <0.05:
 					#bin_no = '{0:09b}'.format(int(no))
 					
 					sigNo_arr.append(int(no))
-				i+=4
-				if i>=lenlines: break
+				i+=size+1
+				
 			break
 		else:
 			i+=1
@@ -37,7 +41,8 @@ def getSigSubgNumber(outfile, fanmod_path):
 
 def getGPAhash(dumpfile,gml_path):
 	
-	gname = dumpfile.replace(".txt.OUT.dump",".gml")
+	#gname = dumpfile.replace(".txt.OUT.dump",".gml")
+	gname = dumpfile.replace(".txt.csv.dump",".gml")
 	g = ig.read(gml_path+gname, format="gml").simplify()
 	id_gpa_hash = dict()
 	for v in g.vs():
@@ -121,34 +126,42 @@ def getAvgGPAall(gml_path, fanmod_path, dumpfile, sigNo_arr, f_sig, f_nonsig):
 		
 	
 def main(): 
+	'''
 	fanmod_path = "/home/ubuntu/Desktop/sna_utcc/result/motif/fanmod/"
 	result_path = "/home/ubuntu/Desktop/sna_utcc/result/motif/analysis/"
 	gml_path = "/home/ubuntu/Desktop/sna_utcc/data/gml/notempnode/"
+	'''
+	fanmod_basepath = "/home/amm/Desktop/sna-project/sna-git/result/motif/fanmod/"
+	result_path = "/home/amm/Desktop/sna-project/sna-git/result/motif/analysis/"
+	gml_path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
 	
 	
-	size = 2 
- 	flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","ICT57-All","Nited56","Niti55"]
- 	type_arr = ["bf", "friend", "study"]
- 	for t in type_arr:
- 		f_sig = open(result_path+t+"_sigMotif_gpa.txt", "w")
- 		f_nonsig = open(result_path+t+"_nonsigMotif_gpa.txt", "w")
-		for fname in flist:
-			f_sig.write(fname+"\n")
-			f_nonsig.write(fname+"\n")
-			
-			outfile = fname + "_"+t+".txt.OUT"
-			dumpfile= fname + "_"+t+ ".txt.OUT.dump"
-			
-			## Get significant subgraphs numbers in outfile
-			print outfile
-			sigNo_arr = getSigSubgNumber(outfile, fanmod_path)
-			 
-			getAvgGPAall(gml_path, fanmod_path, dumpfile, sigNo_arr, f_sig, f_nonsig)
+	for size in (3,4): ## need to find motifs in ICT57 -->change node id to  digits
+		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","Nited56","Niti55"]
+		type_arr = ["bf", "friend", "study"]
+		fanmod_path = fanmod_basepath+str(size)+"nodes/"
+		for t in type_arr:
+			f_sig = open(result_path+t+"_sigMotif_"+str(size)+"nodes_gpa.txt", "w")
+			f_nonsig = open(result_path+t+"_nonsigMotif_"+str(size)+"nodes_gpa.txt", "w")
+			for fname in flist:
+				f_sig.write(fname+"\n")
+				f_nonsig.write(fname+"\n")
 				
-			
-		f_sig.close()
-		f_nonsig.close()
-	
+				#outfile = fname + "_"+t+".txt.OUT"
+				outfile = fname + "_"+t+".txt.csv"
+				#dumpfile= fname + "_"+t+ ".txt.OUT.dump"
+				dumpfile= fname + "_"+t+ ".txt.csv.dump"
+				
+				## Get significant subgraphs numbers in outfile
+				print outfile
+				sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)
+				 
+				getAvgGPAall(gml_path, fanmod_path, dumpfile, sigNo_arr, f_sig, f_nonsig)
+					
+				
+			f_sig.close()
+			f_nonsig.close()
+		
 			 
 			 
 			 

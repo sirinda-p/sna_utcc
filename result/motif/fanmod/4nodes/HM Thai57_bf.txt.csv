@@ -1,0 +1,131 @@
+FANMOD 1.1 subgraph enumeration
+-------------------------------
+
+Network name: C:\Users\Amm\Desktop\motif_edgelist\motif_edgelist_4nodes\HM Thai57_bf.txt
+Network type: Directed
+Number of nodes: 3023
+Number of edges: 31
+Number of single edges: 21
+Number of mutual edges: 10
+
+Algorithm: enumeration
+Subgraph size: 4
+
+Generated 1000 random networks
+   with locally constant number of bidirectional edges,
+   3 exchanges per edge and 3 tries per edge.
+
+172 subgraphs were enumerated in the original network.
+311480 subgraphs were enumerated in the random networks.
+311652 subgraphs were enumerated in all networks.
+
+For the random networks: 240719 tries were made, 32576 were successful.
+Randomization took 0.06 seconds.
+Enumeration took 0.417 seconds.
+
+
+Result overview:
+
+ID,Adj-Matrix,Frequency,Mean-Freq,Standard-Dev,Z-Score,p-Value
+,,[Original],[Random],[Random]
+
+590,0000,19.186%,3.0495%,0.01078,14.968,0
+,0010
+,0100
+,1110
+
+158,0000,13.953%,2.8191%,0.018331,6.0741,0
+,0000
+,1001
+,1110
+
+142,0000,10.465%,6.5302%,0.013716,2.8688,0
+,0000
+,1000
+,1110
+
+14,0000,9.3023%,11.829%,0.016275,-1.5522,0.946
+,0000
+,0000
+,1110
+
+74,0000,8.7209%,2.3733%,0.016076,3.9485,0
+,0000
+,0100
+,1010
+
+588,0000,8.7209%,8.1913%,0.019665,0.26932,0.377
+,0010
+,0100
+,1100
+
+150,0000,4.6512%,2.6574%,0.013014,1.5319,0.095
+,0000
+,1001
+,0110
+
+2766,0000,3.4884%,0.21211%,0.0024856,13.181,0
+,1010
+,1100
+,1110
+
+3038,0000,2.907%,0%,0,undefined,0
+,1011
+,1101
+,1110
+
+30,0000,2.3256%,4.4638%,0.015254,-1.4017,0.856
+,0000
+,0001
+,1110
+
+4686,0001,1.7442%,0.57704%,0.0039905,2.9248,0.001
+,0010
+,0100
+,1110
+
+2270,0000,1.7442%,0.081703%,0.0019573,8.4938,0
+,1000
+,1101
+,1110
+
+8588,0010,1.7442%,1.491%,0.0054961,0.46072,0.309
+,0001
+,1000
+,1100
+
+666,0000,1.7442%,0.30617%,0.0033181,4.3338,0.001
+,0010
+,1001
+,1010
+
+18654,0100,1.7442%,0%,0,undefined,0
+,1000
+,1101
+,1110
+
+390,0000,1.7442%,0.58518%,0.0036805,3.149,0.002
+,0001
+,1000
+,0110
+
+27342,0110,1.7442%,0%,0,undefined,0
+,1010
+,1100
+,1110
+
+2758,0000,1.7442%,0.050637%,0.0015753,10.751,0
+,1010
+,1100
+,0110
+
+27340,0110,1.7442%,0%,0,undefined,0
+,1010
+,1100
+,1100
+
+31710,0111,0.5814%,0%,0,undefined,0
+,1011
+,1101
+,1110
+

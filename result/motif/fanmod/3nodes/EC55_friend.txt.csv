@@ -1,0 +1,39 @@
+FANMOD 1.1 subgraph enumeration
+-------------------------------
+
+Network name: C:\Users\Amm\Desktop\motif_edgelist\motif_edgelist\EC55_friend.txt
+Network type: Undirected
+Number of nodes: 248
+Number of edges: 320
+Number of single edges: 0
+Number of mutual edges: 320
+
+Algorithm: enumeration
+Subgraph size: 3
+
+Generated 1000 random networks
+   with locally constant number of bidirectional edges,
+   3 exchanges per edge and 3 tries per edge.
+
+2512 subgraphs were enumerated in the original network.
+3728044 subgraphs were enumerated in the random networks.
+3730556 subgraphs were enumerated in all networks.
+
+For the random networks: 2171819 tries were made, 558715 were successful.
+Randomization took 0.772 seconds.
+Enumeration took 2.956 seconds.
+
+
+Result overview:
+
+ID,Adj-Matrix,Frequency,Mean-Freq,Standard-Dev,Z-Score,p-Value
+,,[Original],[Random],[Random]
+
+78,001,74.562%,99.166%,0.0039494,-62.298,1
+,001
+,110
+
+238,011,25.438%,0.83382%,0.0039494,62.298,0
+,101
+,110
+
