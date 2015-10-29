@@ -155,33 +155,35 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr):
 		motif_id = 	int(motif_id,2) 
  	
 		if motif_id in sig_motifID_arr:
-			node_arr = [number_hash[key] for key in temp]
+			node_arr = set(number_hash[key] for key in temp)
+			
 			subg = g.subgraph(node_arr)
 			if len(subg.es()) == nedge:
-				print set(node_arr)
-				
-				selected_node.union(set(node_arr))
-				print selected_node 
+
+				selected_node = selected_node.union(node_arr)
+
 			elif len(subg.es()) > nedge:
 				print "Something is wrong. Number of edges in the graph exceeds the maximum number of edges" 
 	
-	print len(selected_node)
-	print len(vall)
+	print (len(selected_node), len(vall))
+ 
 	return selected_node
 		
 def main_correlation(): 
-	'''
-	fanmod_path = "/home/ubuntu/Desktop/sna_utcc/result/motif/fanmod/"
-	result_path = "/home/ubuntu/Desktop/sna_utcc/result/motif/analysis/"
-	gml_path = "/home/ubuntu/Desktop/sna_utcc/data/gml/notempnode/"
-	'''
-	fanmod_basepath = "/home/amm/Desktop/sna-project/sna-git/result/motif/fanmod/"
-	result_path = "/home/amm/Desktop/sna-project/sna-git/result/motif/analysis/"
-	gml_path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
+	machine = "ubuntu"
+	if machine == "ubuntu":
+		prefix = "/home/ubuntu/Desktop/sna_utcc/"
+	else:
+		prefix = "/home/amm/Desktop/sna-project/sna-git/"
+		
+ 
+	fanmod_basepath = prefix+"/result/motif/fanmod/"
+	result_path = prefix+"result/motif/analysis/"
+	gml_path = prefix+"data/gml/notempnode/"
 	
 	
 	for size in (3,4): ## need to change node ids in motifs of ICT57  
-		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","Nited56","Niti55"]
+		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","ICT57-All","Nited56","Niti55"]
 		type_arr = ["bf", "friend", "study"]
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
 		for t in type_arr:
@@ -204,7 +206,7 @@ def main_correlation():
 							 
 				selected_node = getNodesInMotif(size, g, dfile, directed, sigNo_arr)
 					
-				break
+				 
 			break
 		break
 		
@@ -223,7 +225,7 @@ def main():
 	
 	
 	for size in (3,4): ## need to find motifs in ICT57 -->change node id to  digits
-		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","Nited56","Niti55"]
+		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","ICT57-All","Nited56","Niti55"]
 		type_arr = ["bf", "friend", "study"]
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
 		for t in type_arr:
