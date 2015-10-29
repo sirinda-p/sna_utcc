@@ -48,7 +48,17 @@ def plotMotif(result_path, fname, g, size):
 		gidset[gid]	= i
 		
 		gname =   fname.strip(".csv.dump")+"-id"+str(gid)+"MotifNo"+str(i)+".png"
-		print gname
+		 
 		ig.plot(subg, plotpath+gname )  #
-		
+
+## construct a hash of :key = node id, value = gpa		
+def getGPAHash(g):
+	gpa_hash = dict()
+	for v in g.vs():
+		gpa_hash[v['id']] = v['gpa']
+	return gpa_hash
+	
+	
+	
+
  

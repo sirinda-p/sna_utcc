@@ -1,6 +1,7 @@
 import os
 import igraph as ig
 import numpy
+import stat_myutil as mystat 
 
 def getSigSubgNumber(outfile, fanmod_path, size):
 	f = open(fanmod_path+outfile, "r")
@@ -124,8 +125,9 @@ def getAvgGPAall(gml_path, fanmod_path, dumpfile, sigNo_arr, f_sig, f_nonsig):
 	f_sig.write("\n")
 	f_nonsig.write("\n")
 		
-		
-def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr):
+
+			
+def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 	## Analyze only a complete motif (complete graph) 
 	if directed: 
 		nedge = size*(size-1)
@@ -135,9 +137,9 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr):
 	
 	## get node number for each node id 
 	number_hash = dict()
-	vall = g.vs() 
+	
 	for v, i in zip(vall, range(0,len(vall))):
-		number_hash[v['id']] = i
+		number_hash[v] = i
 	
 	selected_node = set()	
 	## extract subgraphs and get nodes in those significant subgraphs
@@ -160,7 +162,7 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr):
 			subg = g.subgraph(node_arr)
 			if len(subg.es()) == nedge:
 
-				selected_node = selected_node.union(node_arr)
+				selected_node = selected_node.union(set(temp))
 
 			elif len(subg.es()) > nedge:
 				print "Something is wrong. Number of edges in the graph exceeds the maximum number of edges" 
@@ -183,11 +185,13 @@ def main_correlation():
 	
 	
 	for size in (3,4): ## need to change node ids in motifs of ICT57  
-		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","ICT57-All","Nited56","Niti55"]
+		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","Nited56","Niti55"]
 		type_arr = ["bf", "friend", "study"]
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
+		f_w = open(result_path+"one-tailed_2sampleTest_gpa_motifSize"+str(size)+"VSall.txt", "w")
 		for t in type_arr:
-			 
+			print t
+			f_w.write(t+" (Name, t-stat, one-tailed pvalue\n")
 			for fname in flist:
 				
 				if t == "friend":
@@ -196,22 +200,24 @@ def main_correlation():
 				else:
 					directed = True
 					g = ig.read(gml_path+fname+"_"+t+".gml", format="gml").simplify()
-				
+				 
+				node_all = [n['id'] for n in g.vs() ]
 				outfile = fname + "_"+t+".txt.csv" 
 				dumpfilename= fname + "_"+t+ ".txt.csv.dump"
 				dfile = open(fanmod_path+dumpfilename, "r")
 				## Get significant subgraphs numbers in outfile
-				print fname
+ 
 				sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)	
 							 
-				selected_node = getNodesInMotif(size, g, dfile, directed, sigNo_arr)
-					
-				 
-			break
-		break
+				motif_nodes = getNodesInMotif(size, g, dfile, directed, sigNo_arr,node_all)
+				tval, pval = mystat.test2Means(node_all, motif_nodes, g)
+
+				tow = "%15s, %5.4f, %5.4f\n" %(fname, tval.item(), pval)
+				f_w.write(tow)
+			f_w.write("\n") 
+	 	f_w.close()
 		
-			 
-			 		
+			
 			
 def main(): 
 	'''
