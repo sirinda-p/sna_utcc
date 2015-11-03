@@ -1,9 +1,9 @@
 from scipy import stats 
 import myutil 
 ## Perform statistical testing on 2 sample means
-def test2Means(nodeid_all, motif_nodeid, g):
+def test2Means(motif_nodeid,nonmotif_nodeid,  g):
 	gpa_hash = myutil.getGPAHash(g) ## key = my id, value = gpa
-	score_all = getGPA(nodeid_all, gpa_hash)
+	score_all = getGPA(nonmotif_nodeid, gpa_hash)
 	score_motif = getGPA(motif_nodeid, gpa_hash)
 
 	tval, pval = stats.ttest_ind(score_motif,score_all, equal_var=False)

@@ -1,7 +1,7 @@
 import os
 from igraph import *
 import random 
-import edgeswap as swapper   
+import edgeswap   
 
 
 ## permute edges while fixing node degree and direction
@@ -56,7 +56,7 @@ def main():
 			isDirected = True
 		
 		
-		permuter = swapper.EdgeSwapGraph(g)
+		permuter = EdgeSwapGraph(g)
 		newg = permuter.randomize_by_edge_swaps(5)
 		
 		print (len(g.vs()), len(newg.vs()))

@@ -58,7 +58,14 @@ def getGPAHash(g):
 		gpa_hash[v['id']] = v['gpa']
 	return gpa_hash
 	
-	
-	
+## assume that node sequence stay the same
+def getGPAHash_intID(g):
+	gpa_hash = dict()
+	  
+	for v in g.vs():
+		gpa_hash[v.index] = v['gpa']
+		 
+		
+	return gpa_hash	
 
  

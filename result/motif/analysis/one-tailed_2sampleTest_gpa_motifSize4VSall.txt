@@ -1,42 +1,42 @@
-bf (Name, t-stat, one-tailed pvalue
-         Niti56, 4.6576, 0.0001
-           Ac57, -0.5193, 0.3179
+bf (Name, t-stat, one-tailed pvalue (nan = no motif found)
+         Niti56, 5.4313, 0.0000
+           Ac57, -0.5502, 0.3082
           Biz55,   nan,   nan
-           EC55, 1.6712, 0.0928
-          Eng55, 2.2678, 0.0176
+           EC55, 1.7776, 0.0829
+          Eng55, 4.4988, 0.0002
        HM Act57,   nan,   nan
      HM Korea57,   nan,   nan
-      HM Thai57, 1.8912, 0.0548
-          ICT55, 0.8979, 0.1913
-          ICT56, 0.4545, 0.3260
-        Nited56, 3.8951, 0.0003
-         Niti55, 0.8445, 0.2022
+      HM Thai57, 2.2224, 0.0327
+          ICT55, 1.1855, 0.1265
+          ICT56, 0.6107, 0.2732
+        Nited56, 4.9898, 0.0000
+         Niti55, 1.2546, 0.1087
 
-friend (Name, t-stat, one-tailed pvalue
-         Niti56, -0.0636, 0.4747
-           Ac57, 0.0355, 0.4859
-          Biz55, 1.8911, 0.0312
-           EC55, 0.9675, 0.1677
+friend (Name, t-stat, one-tailed pvalue (nan = no motif found)
+         Niti56,   nan,   nan
+           Ac57, 0.2849, 0.3952
+          Biz55, 2.7241, 0.0039
+           EC55, 2.7437, 0.0059
           Eng55,   nan,   nan
        HM Act57,   nan,   nan
-     HM Korea57, 1.3183, 0.0951
+     HM Korea57, 2.0528, 0.0244
       HM Thai57,   nan,   nan
-          ICT55, 0.0000, 0.5000
-          ICT56, 0.0000, 0.5000
-        Nited56, 1.2058, 0.1150
-         Niti55, 1.1551, 0.1254
+          ICT55,   nan,   nan
+          ICT56,   nan,   nan
+        Nited56, 3.4708, 0.0004
+         Niti55, 3.5510, 0.0008
 
-study (Name, t-stat, one-tailed pvalue
+study (Name, t-stat, one-tailed pvalue (nan = no motif found)
          Niti56,   nan,   nan
-           Ac57, -3.1445, 0.0087
+           Ac57, -3.3565, 0.0062
           Biz55,   nan,   nan
            EC55,   nan,   nan
           Eng55,   nan,   nan
        HM Act57,   nan,   nan
-     HM Korea57, 0.9715, 0.1881
+     HM Korea57, 1.0452, 0.1716
       HM Thai57,   nan,   nan
           ICT55,   nan,   nan
           ICT56,   nan,   nan
-        Nited56, 2.7074, 0.0348
+        Nited56, 2.8213, 0.0317
          Niti55,   nan,   nan
 

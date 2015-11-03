@@ -191,7 +191,7 @@ def main_correlation():
 		f_w = open(result_path+"one-tailed_2sampleTest_gpa_motifSize"+str(size)+"VSall.txt", "w")
 		for t in type_arr:
 			print t
-			f_w.write(t+" (Name, t-stat, one-tailed pvalue\n")
+			f_w.write(t+" (Name, t-stat, one-tailed pvalue (nan = no motif found\n")
 			for fname in flist:
 				
 				if t == "friend":
@@ -210,9 +210,10 @@ def main_correlation():
 				sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)	
 							 
 				motif_nodes = getNodesInMotif(size, g, dfile, directed, sigNo_arr,node_all)
-				tval, pval = mystat.test2Means(node_all, motif_nodes, g)
+				nonmotif_nodes = set(node_all).difference(set(motif_nodes))
+				tval, pval = mystat.test2Means(motif_nodes, nonmotif_nodes, g)
 
-				tow = "%15s, %5.4f, %5.4f\n",%(fname, tval.item(), pval)
+				tow = "%15s, %5.4f, %5.4f\n" %(fname, tval.item(), pval)
 				f_w.write(tow)
 			f_w.write("\n") 
 	 	f_w.close()
