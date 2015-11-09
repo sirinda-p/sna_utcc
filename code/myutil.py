@@ -1,4 +1,5 @@
 import numpy as np
+import collections, itertools
 
 def getTopK(score_arr, v_arr, k):
 	
@@ -67,5 +68,25 @@ def getGPAHash_intID(g):
 		 
 		
 	return gpa_hash	
+
+ 
+def countGender(comm_arr, g):
+	
+	
+	gender_freq_list = []
+	for comm in comm_arr:
+		gender_arr = [] 
+		if len(comm)<2: continue
+		for n in comm:
+			gender_arr.append(g.vs[n]['gender'])
+	
+		letter_freqs = collections.Counter(gender_arr)
+		gender_freq_list.append(letter_freqs)
+	
+	return gender_freq_list
+			
+
+
+
 
  
