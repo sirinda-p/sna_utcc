@@ -1,0 +1,78 @@
+Niti56 (role, absolute difference, p-value)
+isolator, 0.5, 1.0000
+  norole, 0.4, 0.0080
+  broker, 0.2, 0.0120
+  clique, 0.1, 0.2000
+
+Ac57 (role, absolute difference, p-value)
+isolator, 0.6, 1.0000
+  norole, 0.5, 1.0000
+  broker, 1.0, 0.0010
+  clique, 1.0, 0.0450
+
+Biz55 (role, absolute difference, p-value)
+isolator, 0.2, 1.0000
+  norole, 0.2, 0.0080
+  broker, 0.0, 1.0000
+  clique, 1.0, 0.1050
+
+EC55 (role, absolute difference, p-value)
+isolator, 0.7, 1.0000
+  norole, 0.2, 0.9980
+  broker, 1.0, 0.0010
+  clique, 0.3, 0.0840
+
+Eng55 (role, absolute difference, p-value)
+isolator, 1.0, 1.0000
+  norole, 0.0, 1.0000
+  broker, 0.3, 0.8360
+  clique, 0.8, 0.2880
+
+HM Act57 (role, absolute difference, p-value)
+isolator, 0.2, 1.0000
+  norole, 0.3, 0.6890
+  broker, 0.0, 1.0000
+  clique, 1.0, 0.5310
+
+HM Korea57 (role, absolute difference, p-value)
+isolator, 0.8, 1.0000
+  norole, 0.8, 0.9830
+  broker, 0.0, 1.0000
+  clique, 1.0, 0.2290
+
+HM Thai57 (role, absolute difference, p-value)
+isolator, 0.3, 1.0000
+  norole, 1.0, 0.4240
+  broker, 1.0, 0.0670
+  clique, 0.7, 0.4190
+
+ICT55 (role, absolute difference, p-value)
+isolator, 1.0, 1.0000
+  norole, 0.1, 0.9910
+  broker, 0.8, 0.0010
+  clique, 0.4, 0.2020
+
+ICT56 (role, absolute difference, p-value)
+isolator, 1.0, 1.0000
+  norole, 0.4, 0.7250
+  broker, 0.6, 0.4820
+  clique, 1.0, 0.7340
+
+ICT57-All (role, absolute difference, p-value)
+isolator, 0.6, 1.0000
+  norole, 0.4, 0.9960
+  broker, 1.0, 0.0000
+  clique, 1.0, 0.1980
+
+Nited56 (role, absolute difference, p-value)
+isolator, 0.1, 1.0000
+  norole, 0.2, 1.0000
+  broker, 0.4, 0.0010
+  clique, 0.3, 0.0670
+
+Niti55 (role, absolute difference, p-value)
+isolator, 1.0, 1.0000
+  norole, 0.2, 0.0090
+  broker, 1.0, 0.0010
+  clique, 0.2, 0.1920
+

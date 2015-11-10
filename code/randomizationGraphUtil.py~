@@ -2,7 +2,7 @@ import os
 import igraph as ig 
 
 def swapedges(ftype, g):
-	if ftype== "friend.gml":
+	if ftype== "friend":
  
 		out_seq = [v.degree() for v in g.vs()]
 		newg = ig.Graph.Degree_Sequence(out_seq, method="no_multiple")
@@ -16,4 +16,29 @@ def swapedges(ftype, g):
 		
 	return newg
 
+def swapedges_withAttributes(ftype, g, gpa_intID_hash, gender_intID_hash ):
+ 	
+	if ftype== "friend":
  
+		out_seq = [v.degree() for v in g.vs()]
+		newg = ig.Graph.Degree_Sequence(out_seq, method="no_multiple")
+			
+	else:
+		isDirected = True
+		out_seq = [v.outdegree() for v in g.vs()]
+		in_seq = [v.indegree() for v in g.vs()]
+		## nodes in newg have the same internal ids as nodes in g
+		print out_seq
+		print in_seq
+		try:
+			newg = ig.Graph.Degree_Sequence(out_seq, in_seq, method="no_multiple")
+		except Exception as e :
+			print e
+			
+			raise e
+			 
+	for v in newg.vs():
+		v['gpa'] = gpa_intID_hash[v.index]
+		v['gender'] = gender_intID_hash[v.index]
+
+	return newg

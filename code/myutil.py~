@@ -76,6 +76,7 @@ def countGender(comm_arr, g):
 	gender_freq_list = []
 	for comm in comm_arr:
 		gender_arr = [] 
+		if len(comm)<2: continue
 		for n in comm:
 			gender_arr.append(g.vs[n]['gender'])
 	

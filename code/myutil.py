@@ -69,7 +69,16 @@ def getGPAHash_intID(g):
 		
 	return gpa_hash	
 
- 
+## assume that node sequence stay the same
+def getGenderHash_intID(g):
+	gender_hash = dict()
+	  
+	for v in g.vs():
+		gender_hash[v.index] = v['gender']
+		 
+		
+	return gender_hash	
+	 
 def countGender(comm_arr, g):
 	
 	

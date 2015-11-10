@@ -5,16 +5,8 @@ import scipy.stats
 import stat_myutil as mystat 
 import randomizationGraphUtil as randomutil
 import myutil as myutil
+import communityUtil as commutil
 
-
-def findCommunity(g, technique):
-	 
-	if technique == "fastgreedy":
-		group_arr = g.community_fastgreedy().as_clustering()
-	else:
-		group_arr = g.community_edge_betweenness().as_clustering()
-		
-	return  group_arr ## each group contains internal node ids (not my id)
 
 def getNodeInCommunity(g, group_arr):
 	node_set = set()
@@ -116,7 +108,7 @@ def calPvalue4Std(g, ftype, stdgpa_comm_arr, comm_technique,  nrandom):
 			rndg = randomutil.swapedges(ftype, g)
 			
 		#Get random communities
-		comm_arr = findCommunity(rndg, comm_technique)
+		comm_arr = commutil.findCommunity(rndg, comm_technique)
 		
 		#Get random ratio
 	 
@@ -169,7 +161,7 @@ def main_std_test():
 				else:
 					g = read(gml_path+fullname, format="gml").simplify() 	
 			
-			comm_arr = findCommunity(g, comm_technique)
+			comm_arr = commutil.findCommunity(g, comm_technique)
 			avggpa_comm_arr, stdgpa_comm_arr  = calAvgStdGPAwithinCommunity(g, comm_arr)
  			calPvalue4Std(g, t, stdgpa_comm_arr, comm_technique,  nrandom=10)
  			 
@@ -194,7 +186,7 @@ def main_diversity():
 	male_arr = []
 	female_arr = []
 	for t in type_arr:
-		print t
+		print 
  		## get percentage of male and female in each community and perform 2-mean test 
 		for fname in flist:
 			
@@ -209,7 +201,7 @@ def main_diversity():
 				else:
 					g = read(gml_path+fullname, format="gml").simplify() 	
 			
-			comm_arr = findCommunity(g, comm_technique)
+			comm_arr = commutil.findCommunity(g, comm_technique)
 			gender_freq_list = myutil.countGender(comm_arr, g)
 			
 			for gender_freq in gender_freq_list:

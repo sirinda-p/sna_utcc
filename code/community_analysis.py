@@ -209,9 +209,7 @@ def main_diversity():
 				f = gender_freq['F']
 				male_arr.append(m/(f+m))
 				female_arr.append(f/(f+m))
-			 
-			
-		
+
 		 
 		print len(female_arr)
 		## Perform paired t test 
