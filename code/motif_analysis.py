@@ -129,6 +129,7 @@ def getAvgGPAall(gml_path, fanmod_path, dumpfile, sigNo_arr, f_sig, f_nonsig):
 			
 def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 	## Analyze only a complete motif (complete graph) 
+	cmotif = 0
 	if directed: 
 		nedge = size*(size-1)
 	else:
@@ -161,18 +162,18 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 			
 			subg = g.subgraph(node_arr)
 			if len(subg.es()) == nedge:
-
+				cmotif += 1
 				selected_node = selected_node.union(set(temp))
 
 			elif len(subg.es()) > nedge:
 				print "Something is wrong. Number of edges in the graph exceeds the maximum number of edges" 
 	
-	print (len(selected_node), len(vall))
+	#print (len(selected_node), len(vall))
  
-	return selected_node
+	return selected_node, cmotif
 		
 def main_correlation(): 
-	machine = "ubuntu"
+	machine = "home"
 	if machine == "ubuntu":
 		prefix = "/home/ubuntu/Desktop/sna_utcc/"
 	else:
@@ -185,9 +186,11 @@ def main_correlation():
 	
 	
 	for size in (3,4): ## need to change node ids in motifs of ICT57  
-		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","Nited56","Niti55"]
-		type_arr = ["bf", "friend", "study"]
+ 		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
+
+ 		type_arr = ["bf", "friend", "study"]
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
+		print "size "+str(size)
 		f_w = open(result_path+"one-tailed_2sampleTest_gpa_motifSize"+str(size)+"VSall.txt", "w")
 		for t in type_arr:
 			print t
@@ -204,15 +207,16 @@ def main_correlation():
 				node_all = [n['id'] for n in g.vs() ]
 				outfile = fname + "_"+t+".txt.csv" 
 				dumpfilename= fname + "_"+t+ ".txt.csv.dump"
-				dfile = open(fanmod_path+dumpfilename, "r")
+ 				dfile = open(fanmod_path+dumpfilename, "r")
 				## Get significant subgraphs numbers in outfile
  
 				sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)	
 							 
-				motif_nodes = getNodesInMotif(size, g, dfile, directed, sigNo_arr,node_all)
+				motif_nodes, cmotif = getNodesInMotif(size, g, dfile, directed, sigNo_arr,node_all)
 				nonmotif_nodes = set(node_all).difference(set(motif_nodes))
 				tval, pval = mystat.test2Means(motif_nodes, nonmotif_nodes, g)
 
+				print (fname, cmotif)
 				tow = "%15s, %5.4f, %5.4f\n" %(fname, tval.item(), pval)
 				f_w.write(tow)
 			f_w.write("\n") 
@@ -231,11 +235,13 @@ def main():
 	gml_path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
 	
 	
-	for size in (3,4): ## need to find motifs in ICT57 -->change node id to  digits
-		flist = ["Niti56","Ac57", "Biz55", "EC55","Eng55","HM Act57","HM Korea57","HM Thai57","ICT55","ICT56","ICT57-All","Nited56","Niti55"]
-		type_arr = ["bf", "friend", "study"]
+	for size in range(3,5): ## need to find motifs in ICT57 -->change node id to  digits
+		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
+		type_arr = [ "friend", "study"]
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
+		print size
 		for t in type_arr:
+			print t
 			f_sig = open(result_path+t+"_sigMotif_"+str(size)+"nodes_gpa.txt", "w")
 			f_nonsig = open(result_path+t+"_nonsigMotif_"+str(size)+"nodes_gpa.txt", "w")
 			for fname in flist:
@@ -248,7 +254,7 @@ def main():
 				dumpfile= fname + "_"+t+ ".txt.csv.dump"
 				
 				## Get significant subgraphs numbers in outfile
-				print outfile
+				#print outfile
 				sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)
 				 
 				getAvgGPAall(gml_path, fanmod_path, dumpfile, sigNo_arr, f_sig, f_nonsig)
@@ -258,11 +264,4 @@ def main():
 			f_nonsig.close()
 		
 			 
-			 
-			 
-			 
-			 
-			 
-			 
-			
 main_correlation()

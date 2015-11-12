@@ -54,12 +54,12 @@ def computeProperty(g,directed ):
 	return gsize, den, dia, max_deg, edge_conn,avg_deg, gcc, lcc 
  	
 def main_basic():
-	path = "/home/amm/Desktop/sna-git/data/"
-	result_path = "/home/amm/Desktop/sna-git/result/analysis/"
+	path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
+	result_path = "/home/amm/Desktop/sna-project/sna-git/result/analysis/"
 		
-	for ftype in [ "bf.gml","friend.gml", "study.gml"]:
+	for ftype in [ "bf.gml",  "friend.gml", "study.gml"]:
 		
-		f_w = open(result_path+"BasicProperty_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
+		f_w = open(result_path+"BasicProperty_wholegraph_allDept_notempnode_"+ftype.replace(".gml",".csv"),"w")
 		if ftype == "friend.gml":
 			directed = False
 			f_w.write("DeptName, gsize, den, dia, max_deg, avg_deg, edge_conn, gcc, lcc\n")
@@ -102,4 +102,4 @@ Basic properties:
 - Clustering coefficient (local and global)
 - Connectivity
 ''' 
-	
+main_basic()	

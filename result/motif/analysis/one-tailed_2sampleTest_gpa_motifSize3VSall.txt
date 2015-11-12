@@ -1,42 +1,45 @@
 bf (Name, t-stat, one-tailed pvalue (nan = no motif found)
-         Niti56, 2.9689, 0.0024
            Ac57, 0.9415, 0.1757
-          Biz55, 2.7693, 0.0060
-           EC55, 2.4262, 0.0091
           Eng55, 3.1269, 0.0068
+          ICT55, -0.9189, 0.1813
+          ICT56, 0.4460, 0.3318
+      ICT57-All, 0.3857, 0.3506
+         Niti55, 1.9103, 0.0306
+         Niti56, 2.9689, 0.0024
        HM Act57, 3.0167, 0.0208
      HM Korea57, 3.7829, 0.0021
       HM Thai57, 3.0374, 0.0035
-          ICT55, -0.9189, 0.1813
-          ICT56, 0.4460, 0.3318
         Nited56, 3.2098, 0.0011
-         Niti55, 1.9103, 0.0306
+          Biz55, 2.7693, 0.0060
+           EC55, 2.4262, 0.0091
 
 friend (Name, t-stat, one-tailed pvalue (nan = no motif found)
-         Niti56,   nan,   nan
            Ac57, -0.5879, 0.3006
-          Biz55, 2.4763, 0.0073
-           EC55, 0.1693, 0.4390
           Eng55,   nan,   nan
+          ICT55,   nan,   nan
+          ICT56,   nan,   nan
+      ICT57-All,   nan,   nan
+         Niti55, 1.7384, 0.0576
+         Niti56,   nan,   nan
        HM Act57,   nan,   nan
      HM Korea57, 2.3198, 0.0160
       HM Thai57, 3.2309, 0.0054
-          ICT55,   nan,   nan
-          ICT56,   nan,   nan
         Nited56, 2.4779, 0.0088
-         Niti55, 1.7384, 0.0576
+          Biz55, 2.4763, 0.0073
+           EC55, 0.1693, 0.4390
 
 study (Name, t-stat, one-tailed pvalue (nan = no motif found)
-         Niti56, 5.8607, 0.0001
            Ac57, -0.0282, 0.4889
-          Biz55,   nan,   nan
-           EC55, 2.2005, 0.0203
           Eng55, 2.9908, 0.0055
+          ICT55, -0.0698, 0.4733
+          ICT56, 2.0498, 0.0323
+      ICT57-All, -1.8750, 0.0673
+         Niti55, -0.5739, 0.3097
+         Niti56, 5.8607, 0.0001
        HM Act57,   nan,   nan
      HM Korea57, 2.6712, 0.0059
       HM Thai57,   nan,   nan
-          ICT55, -0.0698, 0.4733
-          ICT56, 2.0498, 0.0323
         Nited56, 6.6005, 0.0000
-         Niti55, -0.5739, 0.3097
+          Biz55,   nan,   nan
+           EC55, 2.2005, 0.0203
 
