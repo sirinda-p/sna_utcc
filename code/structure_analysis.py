@@ -146,13 +146,14 @@ def plotFreqDist(arr, pathfname, directed, degree='Degree'):
 	#plt.show()
 	plt.savefig(pathfname)
 	plt.clf()
-	
+
 def main_structure():
-	path = "/home/amm/Desktop/sna-git/data/gml/notempnode/"
-	result_path = "/home/amm/Desktop/sna-git/result/analysis/"
+	path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
+	result_path = "/home/amm/Desktop/sna-project/sna-git/result/analysis/"
 	
 	k = 10 # top k students with the highest centrality scores
-	
+	flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
+
 	for ftype in [ "bf.gml","friend.gml", "study.gml"]: #[ "bf.gml","friend.gml", "study.gml"]:
 		f_w = open(result_path+"CorrelationBtwCentrality-GPA_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
 		f_gpa = open(result_path+"GPA_of_topK_Centrality_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
@@ -188,21 +189,13 @@ def main_structure():
 			gender_topK_hash[cen] = dict()
 			
 					
-		for fname in os.listdir(path):
-   			try:
-				ftype2 = fname.split("_")[1]
-				if ftype2 != ftype:
-					continue
- 				
-				if ftype2 == "friend.gml":
-					g = read(path+fname, format="gml").as_undirected().simplify()
-				else:
-					g = read(path+fname, format="gml").simplify()
-			except:
-				err_list.append(fname)
- 				print fname+"Error importing a graph"
-				continue
-			
+		for fname in flist:
+ 
+			if ftype  == "friend.gml":
+				g = read(path+fname+"_"+ftype, format="gml").as_undirected().simplify()
+			else:
+				g = read(path+fname+"_"+ftype, format="gml").simplify()
+			 
  			##Calculate correlation between centrality scores and gpa
 			cen_score_arr_all = calCentrality(g, directed)
 			cen_arr,corr_val_arr, pval_arr = Centrality_grade_correlation_main(g, directed, cen_arr,cen_score_arr_all)
@@ -252,11 +245,11 @@ def main_structure():
  
 		for cen in cen_arr:
 			f_w.write("\n"+cen+"\n")
-			f_w.write("DeptName, Correlation score, p-value\n")
-			for fname in corr_hash[cen].keys():
+			f_w.write("DeptName, Correlation score, p-value (2-tailed)\n")
+			for fname in flist:
 				cval = corr_hash[cen][fname]
 				pval = pval_hash[cen][fname]
-				tow = "%10s, %5.4f, %5.4f, \n " %(fname, cval, pval)
+				tow = "%10s, %5.4f, %5.4f  \n " %(fname, cval, pval)
 				f_w.write(tow)
 		f_w.close()
 					
@@ -266,7 +259,8 @@ def main_structure():
 			f_stat.write("\n"+cen+"\n")
  			f_gpa.write("GPA of top"+str(k)+": maxTopK(maxAll), minTopK(minAll), avgTopK(avgAll)\n")
 			f_gen.write("Gender of top"+str(k)+": MaleTopK(MaleAll), FemaleTopK(FemaleAll)\n")
-			for fname in corr_hash[cen].keys():
+			
+			for fname in flist:
 			 
 				gpaK_arr = gpa_topK_hash[cen][fname]
 				
@@ -288,9 +282,106 @@ def main_structure():
 		f_gen.close()
 		f_stat.close() 
 			
+def main_TopBottomKOnly():
+	path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
+	result_path = "/home/amm/Desktop/sna-project/sna-git/result/analysis/"
+	
+	k = 10 # top k students with the highest/lowest centrality scores
+	
+	for ftype in [ "friend.gml","bf.gml", "study.gml"]: #[ "bf.gml","friend.gml", "study.gml"]:
+		print ftype
+		if ftype == "friend.gml":
+			directed = False
+			cen_name_arr = ["Degree", "Betweenness"]
+		else:
+			directed = True
+			cen_name_arr = ["Indeg", "Outdeg", "Hub", "Authority", "Betweenness"]
+ 		
+ 		err_list = []
+ 		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
+
+ 		cen_topK_hash = dict()
+ 		cen_bottomK_hash = dict()
+ 		gpa_topK_hash = dict()
+ 		gpa_bottomK_hash = dict()		
+ 		 
+ 		gpa_all_hash = dict()
+  		cen_all_hash = dict()
+ 		size_hash = dict()
+ 		
+ 		for cen in cen_name_arr:
+ 			cen_topK_hash[cen] = dict()
+			cen_bottomK_hash[cen] = dict()
+			cen_all_hash[cen] = dict()
 			
-#main_structure()
-main_powerlaw()
+			gpa_topK_hash[cen] = dict() 		
+ 			gpa_bottomK_hash[cen] = dict() 		
+					
+		for fname in flist:
+			print path+fname+"_"+ftype 
+   			#try:
+ 
+			if ftype  == "friend":
+					
+				g = read(path+fname+"_"+ftype , format="gml").as_undirected().simplify()
+			else:
+				g = read(path+fname+"_"+ftype , format="gml").simplify()
+			'''
+			except e:
+				print e
+				err_list.append(fname)
+ 				print fname+"Error importing a graph"
+				continue
+			'''
+ 			## CalCentrality returns
+ 			## Directed: indegree_arr, outdegree_arr, hub_arr, authority_arr, betweenness_arr 
+ 			## Undirected: degree, betweenness 
+ 			cen_score_arr_all = calCentrality(g, directed)
+ 			id_arr = g.vs["id"]
+ 			node_arr = g.vs()
+ 			for cen_name, cen_score_arr in zip(cen_name_arr, cen_score_arr_all):
+ 				
+				topK_nodeid_arr, topK_score_arr = myutil.getTopK(cen_score_arr, id_arr, k+1)
+				bottomK_nodeid_arr, bottomK_score_arr = myutil.getBottomK(cen_score_arr, id_arr, k+1)
+				
+				topK_gpa, topK_gender_arr  = myutil.getTopKAtt(topK_nodeid_arr,node_arr,k )
+				bottomK_gpa, bottomK_gender_arr  = myutil.getTopKAtt(bottomK_nodeid_arr,node_arr,k ) 
+ 
+				
+				cen_topK_hash[cen_name][fname] =  topK_score_arr
+				cen_bottomK_hash[cen_name][fname] = bottomK_score_arr[::-1]
+ 				
+				gpa_topK_hash[cen_name][fname] = topK_gpa	
+				gpa_bottomK_hash[cen_name][fname] = bottomK_gpa[::-1]
+				
+ 				
+ 		
+		for cen_name in cen_name_arr:
+			f_gpaH = open(result_path+"GPA_of_topK_"+cen_name+"_Centrality_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
+			f_gpaL = open(result_path+"GPA_of_bottomK_"+cen_name+"Centrality_wholegraph_allDept_"+ftype.replace(".gml",".csv"),"w")
+			 
+			for fname in flist:
+				f_gpaH.write( fname+"\n")
+				f_gpaL.write( fname+"\n")
+				
+				topK_score_arr = cen_topK_hash[cen_name][fname]
+				topK_gpa = gpa_topK_hash[cen_name][fname]
+				
+				for score, gpa in zip( topK_score_arr, topK_gpa):
+					tow = "%5.2f, %5.2f\n" %(score, gpa)
+					f_gpaH.write(tow)
+					
+				bottomK_score_arr = cen_bottomK_hash[cen_name][fname]
+				bottomK_gpa = gpa_bottomK_hash[cen_name][fname]
+				
+				for score, gpa in zip( bottomK_score_arr, bottomK_gpa):
+					tow= "%5.2f, %5.2f\n" %(score, gpa)
+					f_gpaL.write(tow)
+			f_gpaH.close()
+			f_gpaL.close()
+				
+main_structure()
+#main_TopBottomKOnly()
 '''
 Structure properties:
 - Centrality 

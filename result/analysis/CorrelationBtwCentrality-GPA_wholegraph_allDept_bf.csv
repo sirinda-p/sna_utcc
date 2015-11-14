@@ -1,81 +1,81 @@
 
 Indeg
-DeptName, Correlation score, p-value
-Niti55_bf.gml, 0.1571, 0.2348, 
- HM Thai57_bf.gml, 0.6493, 0.0008, 
- HM Korea57_bf.gml, 0.4108, 0.0006, 
- ICT57-All_bf.gml, 0.2266, 0.0791, 
- EC55_bf.gml, 0.3676, 0.0022, 
- Eng55_bf.gml, 0.3116, 0.1811, 
- HM Act57_bf.gml, 0.4488, 0.0166, 
- Biz55_bf.gml, 0.2561, 0.0021, 
- Niti56_bf.gml, 0.3621, 0.0066, 
- Ac57_bf.gml, 0.1529, 0.2097, 
- Nited56_bf.gml, 0.2931, 0.0028, 
- ICT56_bf.gml, 0.3881, 0.0256, 
- ICT55_bf.gml, 0.0032, 0.9820, 
+DeptName, Correlation score, p-value (2-tailed)
+      Ac57, 0.1529, 0.2097  
+      Eng55, 0.3116, 0.1811  
+      ICT55, 0.0032, 0.9820  
+      ICT56, 0.3881, 0.0256  
+  ICT57-All, 0.2266, 0.0791  
+     Niti55, 0.1571, 0.2348  
+     Niti56, 0.3621, 0.0066  
+   HM Act57, 0.4488, 0.0166  
+ HM Korea57, 0.4108, 0.0006  
+  HM Thai57, 0.6493, 0.0008  
+    Nited56, 0.2931, 0.0028  
+      Biz55, 0.2561, 0.0021  
+       EC55, 0.3676, 0.0022  
  
 Outdeg
-DeptName, Correlation score, p-value
-Niti55_bf.gml, 0.1578, 0.2325, 
- HM Thai57_bf.gml, 0.4351, 0.0380, 
- HM Korea57_bf.gml, 0.2394, 0.0528, 
- ICT57-All_bf.gml, 0.0183, 0.8889, 
- EC55_bf.gml, 0.2314, 0.0596, 
- Eng55_bf.gml, 0.4622, 0.0402, 
- HM Act57_bf.gml, 0.5230, 0.0043, 
- Biz55_bf.gml, 0.2244, 0.0073, 
- Niti56_bf.gml, 0.3588, 0.0072, 
- Ac57_bf.gml, 0.1740, 0.1528, 
- Nited56_bf.gml, 0.2153, 0.0297, 
- ICT56_bf.gml, 0.0468, 0.7957, 
- ICT55_bf.gml, 0.0529, 0.7068, 
+DeptName, Correlation score, p-value (2-tailed)
+      Ac57, 0.1740, 0.1528  
+      Eng55, 0.4622, 0.0402  
+      ICT55, 0.0529, 0.7068  
+      ICT56, 0.0468, 0.7957  
+  ICT57-All, 0.0183, 0.8889  
+     Niti55, 0.1578, 0.2325  
+     Niti56, 0.3588, 0.0072  
+   HM Act57, 0.5230, 0.0043  
+ HM Korea57, 0.2394, 0.0528  
+  HM Thai57, 0.4351, 0.0380  
+    Nited56, 0.2153, 0.0297  
+      Biz55, 0.2244, 0.0073  
+       EC55, 0.2314, 0.0596  
  
 Hub
-DeptName, Correlation score, p-value
-Niti55_bf.gml, 0.0313, 0.8139, 
- HM Thai57_bf.gml, 0.4446, 0.0335, 
- HM Korea57_bf.gml, 0.2143, 0.0841, 
- ICT57-All_bf.gml, 0.1679, 0.1958, 
- EC55_bf.gml, 0.0467, 0.7075, 
- Eng55_bf.gml, 0.2217, 0.3475, 
- HM Act57_bf.gml, 0.4806, 0.0096, 
- Biz55_bf.gml, 0.1239, 0.1420, 
- Niti56_bf.gml, 0.2922, 0.0304, 
- Ac57_bf.gml, -0.0075, 0.9512, 
- Nited56_bf.gml, 0.1274, 0.2020, 
- ICT56_bf.gml, 0.1410, 0.4337, 
- ICT55_bf.gml, 0.0648, 0.6449, 
+DeptName, Correlation score, p-value (2-tailed)
+      Ac57, -0.0075, 0.9512  
+      Eng55, 0.2217, 0.3475  
+      ICT55, 0.0648, 0.6449  
+      ICT56, 0.1410, 0.4337  
+  ICT57-All, 0.1679, 0.1958  
+     Niti55, 0.0313, 0.8139  
+     Niti56, 0.2922, 0.0304  
+   HM Act57, 0.4806, 0.0096  
+ HM Korea57, 0.2143, 0.0841  
+  HM Thai57, 0.4446, 0.0335  
+    Nited56, 0.1274, 0.2020  
+      Biz55, 0.1239, 0.1420  
+       EC55, 0.0467, 0.7075  
  
 Authority
-DeptName, Correlation score, p-value
-Niti55_bf.gml, -0.1085, 0.4134, 
- HM Thai57_bf.gml, 0.6307, 0.0013, 
- HM Korea57_bf.gml, 0.0633, 0.6139, 
- ICT57-All_bf.gml, 0.2946, 0.0212, 
- EC55_bf.gml, -0.0096, 0.9384, 
- Eng55_bf.gml, 0.1752, 0.4600, 
- HM Act57_bf.gml, 0.3824, 0.0446, 
- Biz55_bf.gml, 0.2320, 0.0055, 
- Niti56_bf.gml, 0.3479, 0.0092, 
- Ac57_bf.gml, -0.0551, 0.6531, 
- Nited56_bf.gml, 0.1875, 0.0591, 
- ICT56_bf.gml, 0.4746, 0.0053, 
- ICT55_bf.gml, -0.0235, 0.8672, 
+DeptName, Correlation score, p-value (2-tailed)
+      Ac57, -0.0551, 0.6531  
+      Eng55, 0.1752, 0.4600  
+      ICT55, -0.0235, 0.8672  
+      ICT56, 0.4746, 0.0053  
+  ICT57-All, 0.2946, 0.0212  
+     Niti55, -0.1085, 0.4134  
+     Niti56, 0.3479, 0.0092  
+   HM Act57, 0.3824, 0.0446  
+ HM Korea57, 0.0633, 0.6139  
+  HM Thai57, 0.6307, 0.0013  
+    Nited56, 0.1875, 0.0591  
+      Biz55, 0.2320, 0.0055  
+       EC55, -0.0096, 0.9384  
  
 Betweenness
-DeptName, Correlation score, p-value
-Niti55_bf.gml, 0.0163, 0.9027, 
- HM Thai57_bf.gml, 0.1670, 0.4462, 
- HM Korea57_bf.gml, 0.2437, 0.0487, 
- ICT57-All_bf.gml, -0.1539, 0.2365, 
- EC55_bf.gml, 0.0804, 0.5178, 
- Eng55_bf.gml, 0.0092, 0.9691, 
- HM Act57_bf.gml, 0.3546, 0.0641, 
- Biz55_bf.gml, 0.1252, 0.1377, 
- Niti56_bf.gml, 0.0266, 0.8473, 
- Ac57_bf.gml, -0.1413, 0.2467, 
- Nited56_bf.gml, 0.1333, 0.1817, 
- ICT56_bf.gml, -0.1329, 0.4610, 
- ICT55_bf.gml, -0.0642, 0.6479, 
+DeptName, Correlation score, p-value (2-tailed)
+      Ac57, -0.1413, 0.2467  
+      Eng55, 0.0092, 0.9691  
+      ICT55, -0.0642, 0.6479  
+      ICT56, -0.1329, 0.4610  
+  ICT57-All, -0.1539, 0.2365  
+     Niti55, 0.0163, 0.9027  
+     Niti56, 0.0266, 0.8473  
+   HM Act57, 0.3546, 0.0641  
+ HM Korea57, 0.2437, 0.0487  
+  HM Thai57, 0.1670, 0.4462  
+    Nited56, 0.1333, 0.1817  
+      Biz55, 0.1252, 0.1377  
+       EC55, 0.0804, 0.5178  
  

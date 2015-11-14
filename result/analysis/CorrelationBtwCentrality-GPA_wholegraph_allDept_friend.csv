@@ -1,33 +1,33 @@
 
 Degree
-DeptName, Correlation score, p-value
-ICT55_friend.gml, 0.1266, 0.3663, 
- ICT56_friend.gml, 0.1086, 0.5476, 
- ICT57-All_friend.gml, 0.0904, 0.4882, 
- EC55_friend.gml, 0.2294, 0.0619, 
- Niti56_friend.gml, 0.3725, 0.0051, 
- HM Thai57_friend.gml, 0.7503, 0.0000, 
- Nited56_friend.gml, 0.4204, 0.0000, 
- HM Korea57_friend.gml, 0.3940, 0.0011, 
- Ac57_friend.gml, -0.0294, 0.8106, 
- Niti55_friend.gml, 0.2857, 0.0283, 
- HM Act57_friend.gml, 0.5299, 0.0037, 
- Biz55_friend.gml, 0.2679, 0.0013, 
- Eng55_friend.gml, 0.3854, 0.0933, 
+DeptName, Correlation score, p-value (2-tailed)
+      Ac57, -0.0294, 0.8106  
+      Eng55, 0.3854, 0.0933  
+      ICT55, 0.1266, 0.3663  
+      ICT56, 0.1086, 0.5476  
+  ICT57-All, 0.0904, 0.4882  
+     Niti55, 0.2857, 0.0283  
+     Niti56, 0.3725, 0.0051  
+   HM Act57, 0.5299, 0.0037  
+ HM Korea57, 0.3940, 0.0011  
+  HM Thai57, 0.7503, 0.0000  
+    Nited56, 0.4204, 0.0000  
+      Biz55, 0.2679, 0.0013  
+       EC55, 0.2294, 0.0619  
  
 Betweenness
-DeptName, Correlation score, p-value
-ICT55_friend.gml, 0.1169, 0.4044, 
- ICT56_friend.gml, 0.0361, 0.8421, 
- ICT57-All_friend.gml, 0.0962, 0.4608, 
- EC55_friend.gml, -0.0256, 0.8373, 
- Niti56_friend.gml, 0.0688, 0.6178, 
- HM Thai57_friend.gml, 0.3585, 0.0930, 
- Nited56_friend.gml, 0.1780, 0.0735, 
- HM Korea57_friend.gml, 0.2734, 0.0263, 
- Ac57_friend.gml, 0.0101, 0.9343, 
- Niti55_friend.gml, 0.1008, 0.4474, 
- HM Act57_friend.gml, 0.4049, 0.0326, 
- Biz55_friend.gml, 0.1307, 0.1211, 
- Eng55_friend.gml, 0.2143, 0.3642, 
+DeptName, Correlation score, p-value (2-tailed)
+      Ac57, 0.0101, 0.9343  
+      Eng55, 0.2143, 0.3642  
+      ICT55, 0.1169, 0.4044  
+      ICT56, 0.0361, 0.8421  
+  ICT57-All, 0.0962, 0.4608  
+     Niti55, 0.1008, 0.4474  
+     Niti56, 0.0688, 0.6178  
+   HM Act57, 0.4049, 0.0326  
+ HM Korea57, 0.2734, 0.0263  
+  HM Thai57, 0.3585, 0.0930  
+    Nited56, 0.1780, 0.0735  
+      Biz55, 0.1307, 0.1211  
+       EC55, -0.0256, 0.8373  
  
