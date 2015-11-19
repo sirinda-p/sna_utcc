@@ -1,0 +1,28 @@
+Hi David
+
+I have some questions as follows:
+1. What is # age in days of App launch from App installation INTEGER? 
+Is it (the latest date that a user use the app) - (the installaion date)? 
+
+2. What is # Date of Last Update by SDK (still operating) DATETIME? 
+3. What is # Push Token revoked TRUE/FALSE? (This attribute is actually in DATETIME)
+
+
+For the following attributes, negative_feedback and uninstalled, I will convert them to number of days the users 
+blocked push notification/uninstalled the app since they fisrt used the app (install.created).
+
+where
+negative_feedback = # User has blocked push after initially accepting TRUE/FALSE (it is in DATETIME) 
+uninstalled = # Did the user remove this App TRUE/FALSE (it is in DATETIME) 
+
+So we will get
+blocked_push_days = negative_feedback - install.created 
+uninstalled_days = uninstalled - install.created 
+
+This is from my assumption that dissatisfied users will block push notification or uninstall the app
+sooner than satisfied users after their first date of using the app.
+
+And I won't use the attributes: install.created, negative_feedback, uninstalled_days.  
+
+I also think I will convert the attributes in question #2 (SDK last update) and #3 (Push token revoked) 
+to number of days from some reference date (maybe the installation date? do we have the installation date?) 

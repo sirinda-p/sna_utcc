@@ -1,0 +1,21 @@
+new_att_name_arr
+['ID', 'AllowPush', 'AdOptedIn', 'NumCampaignMatch', 'Carrier', 'AppVersion', 'AllowiBeacon', 'AllowGeo', 'AllowFeaturePush', 'ScreenHeight', 'AllowBT', 'HaveUniqueGlobalID', 'NumCrash', 'DailyUsage', 'LastUpdateDays', 'DeviceModel', 'BlockPushTF', 'BlockPushDays', 'OS', 'OSVersion', 'RevokePushTF', 'RevokePushDays', 'SignIn', 'UninstalledTF', 'UninstalledDays', 'ScreenWidth', 'EmailExist', 'EmailAddress', 'InstallDays', 'PushCount', 'Timezone', 'UserType', 'Questions', 'CorrectQuestion']
+33
+
+RevokePush  before first use - most 
+RevokePush after first use - few
+on same day (ignore time) - few 
+
+RevokePushTF 
+Get RevokeDays 
+RevokePushBafore = 1 if RevokeDays <0, = 0 otherwise
+RevokePushSameDay = 1 if RevokeDays = 0 , = 0 otherwise
+RevokePushAfter = RevokeDays if RevokeDays>0, = 0 otherwise
+
+
+BlockPush and Uninstalled on same day same time
+BlockPushTF
+Get BlockPushDays and UninstalledDays 
+BlockPushSameday,  Uninstalled = 1 if Days = 0,= 0 otherwise
+BlockPushAfter,  Uninstalled = 1 if Days > 0,= 0 otherwise
+
