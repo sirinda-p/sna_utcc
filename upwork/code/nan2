@@ -1,4 +1,0 @@
-38
-Imputer(axis=0, copy=True, missing_values='NaN', strategy='mean', verbose=0)
-38
-['0' '0' '0' ..., '0' '0' '0']

@@ -4,13 +4,13 @@ import collections, itertools
 def feature_stat():
 	
 	original = False
-	machine = "amm"
+	machine = "aws"
 	if machine == "amm":
 		prefix = "/home/amm/"
 	else:
-		prefix = "/home/ubuntu/"
+		prefix = "/home/ubuntu/Desktop/sna_utcc/"
 	
-	path = prefix+"Desktop/upwork/data/"
+	path = prefix+"/upwork/data/"
 	f_r = open(path+"appt_dump_transformed.csv", "r")
 	
 	if original:
@@ -22,9 +22,9 @@ def feature_stat():
 	"CorrectQuestion"]
 	else:
 		f_r = open(path+"appt_dump_transformed.csv", "r")	
-		att_name  = ["ID",'AllowPush', 'AdOptedIn', 'NumCampaignMatch', 'Carrier', 'AppVersion', 
+		att_name = ['ID', 'AllowPush', 'AdOptedIn', 'NumCampaignMatch', 'Carrier', 'AppVersion', 
 	'AllowiBeacon', 'AllowGeo', 'AllowFeaturePush', 'ScreenHeight', 'AllowBT', 'HaveUniqueGlobalID', 
-	'NumCrash', 'DailyUsage', 'LastUpdateDays', 'DeviceModel', 'BlockPushTF', 'BlockPushSameday', 'BlockPushAfterDays', 
+	'NumCrash', 'DailyUsage','Country', 'LastUpdateDays', 'DeviceModel', 'BlockPushTF', 'BlockPushSameday', 'BlockPushAfterDays', 
 	'OS', 'OSVersion', 'RevokePushTF', 'RevokePushBefore', 'RevokePushSameday', 'RevokePushAfterDays', 'SignIn', 
 	'UninstalledTF', 'UninstalledSameday', 'UninstalledAfter', 'ScreenWidth', 'EmailExist', 'EmailAddress', 
 	'InstallDays', 'PushCount', 'Timezone', 'UserType', 'Questions', 'CorrectQuestion']

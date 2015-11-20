@@ -1,0 +1,91 @@
+39
+Cluster no 0
+AllowPush: False
+AllowGeo: False
+AllowFeaturePush: False
+AllowBT: False
+EmailAddress: True
+RevokePushBefore: True
+UninstalledTF: False
+UninstalledSameday: False
+NumCampaignMatch: 0.0
+NumCrash: 0.0
+InstallDays: 0.0
+PushCount: 0.0
+CorrectQuestion: 0.0
+RevokePushAfterDays: 0.0
+UninstalledAfter: 0.0
+LastUpdateDays: 0.517985611511
+
+Cluster no 1
+AllowPush: False
+AllowGeo: False
+AllowFeaturePush: False
+AllowBT: False
+EmailAddress: True
+RevokePushBefore: True
+UninstalledTF: False
+UninstalledSameday: False
+NumCampaignMatch: 0.0
+NumCrash: 0.0
+InstallDays: 0.0
+PushCount: 0.0
+CorrectQuestion: 0.0
+RevokePushAfterDays: 0.0
+UninstalledAfter: 0.0
+LastUpdateDays: 0.625
+
+Cluster no 2
+AllowPush: False
+AllowGeo: False
+AllowFeaturePush: False
+AllowBT: True
+EmailAddress: True
+RevokePushBefore: True
+UninstalledTF: False
+UninstalledSameday: False
+NumCampaignMatch: 0.0
+NumCrash: 0.0
+InstallDays: 0.0
+PushCount: 0.0
+CorrectQuestion: 0.0
+RevokePushAfterDays: 0.0
+UninstalledAfter: 0.0
+LastUpdateDays: 0.669172932331
+
+Cluster no 3
+AllowPush: False
+AllowGeo: True
+AllowFeaturePush: True
+AllowBT: True
+EmailAddress: True
+RevokePushBefore: False
+UninstalledTF: False
+UninstalledSameday: False
+NumCampaignMatch: 0.0
+NumCrash: 0.0
+InstallDays: 0.0
+PushCount: 0.0
+CorrectQuestion: 0.0
+RevokePushAfterDays: 0.0
+UninstalledAfter: 0.0
+LastUpdateDays: 0.421538461538
+
+Cluster no 4
+AllowPush: False
+AllowGeo: True
+AllowFeaturePush: True
+AllowBT: True
+EmailAddress: True
+RevokePushBefore: False
+UninstalledTF: False
+UninstalledSameday: False
+NumCampaignMatch: 0.0
+NumCrash: 0.0
+InstallDays: 0.0
+PushCount: 0.0
+CorrectQuestion: 0.0
+RevokePushAfterDays: 0.0
+UninstalledAfter: 0.0
+LastUpdateDays: 0.647727272727
+

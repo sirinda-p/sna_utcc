@@ -1,0 +1,23 @@
+After I explored the dataset, I would like to confirm with you that:
+
+1. There are logs of a mobile app (from the data, it seems like all of them are from iOS devices). 
+ 
+2. According to the attribute explanation, the total number of attrbutes is 36. 
+
+3. Some attributes do not have TRUE/FALSE values, but are in DATETIME.  
+Those attributes are 
+# User has blocked push after initially accepting
+# Push Token revoked TRUE/FALSE
+# Did the user remove this App TRUE/FALSE 
+
+4. There are 94 rows that have 37 attributes. The extra attribute is between 
+
+the attribute "# User’s Device Model STRING eg iphone"  and
+the atrribute "# User has blocked push after initially accepting TRUE/FALSE" 
+
+Values of the extra attribute are 
+['1 from StreetHawk', '8 from StreetHawk', '4 from StreetHawk', '3 from StreetHawk', '2 from StreetHawk', '7 from StreetHawk']
+
+Should I ignore the extra attribute? I don't know what it is. 
+
+

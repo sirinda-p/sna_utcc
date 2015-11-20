@@ -1,5 +1,6 @@
 import datetime
 import shutil
+import pygeoip
 
 def isEnglish(s):
 	try:
@@ -9,13 +10,13 @@ def isEnglish(s):
  		return False
         
 def checkFile():
-	machine = "aws"
+		
 	if machine == "amm":
 		prefix = "/home/amm/"
 	else:
-		prefix = "/home/ubuntu/"
+		prefix = "/home/ubuntu/Desktop/sna_utcc/"
 	
-	path = prefix+"Desktop/upwork/data/"
+	path = prefix+"upwork/data/"
 	original_filename = "appt_dump.csv"
 	new_filename = "appt_dump_rewritten.csv"
 	f_r = open(path+original_filename, "r")
@@ -82,13 +83,16 @@ def threedotnumber(dotted_number, need2num=False):
 	return number
 					
 def transformFeature():
- 	machine = "amm"
+ 	
+ 	machine = "aws"
 	if machine == "amm":
 		prefix = "/home/amm/"
 	else:
-		prefix = "/home/ubuntu/"
+		prefix = "/home/ubuntu/Desktop/sna_utcc/"
 	
-	path = prefix+"Desktop/upwork/data/"
+	gi = pygeoip.GeoIP(prefix+"/upwork/data/GeoLiteCity.dat")
+
+	path = prefix+"/upwork/data/"
 	f_r = open(path+"appt_dump_rewritten.csv", "r")
 	f_w = open(path+"appt_dump_transformed.csv", "w")
 	## Make original features 
@@ -113,7 +117,7 @@ def transformFeature():
 	
  	datetime_arr_list = [ "StartDate", "LastUpdateDate","BlockPush","RevokePush","Uninstalled"]
 	special_format = ["AppVersion", "OSVersion","Timezone"]
-	ignore_list = ["ID","smart-ignore", "mode-ignore", "IP","sdk"] 
+	ignore_list = ["ID","smart-ignore", "mode-ignore", "sdk"] 
 	
 	num_att = len(att_name)
  	len_arr = []
@@ -131,6 +135,7 @@ def transformFeature():
 	asciirun = 0
 	myhash = dict()
 	new_att_name_arr.append("ID")
+	countline = 0
 	for line in f_r.readlines():
 		arr = line.strip().split(",") 
 		norm_arr = []
@@ -138,8 +143,20 @@ def transformFeature():
 		i=1 
 		norm_arr.append( arr[0])
  		id = arr[0]
+ 		countline += 1
+ 		print countline
  		while i<len(arr):
-  			if  att_name[i] in  boolean_arr_list:
+			if att_name[i] == "IP":
+				try:
+					rec = gi.record_by_addr(arr[i])
+					country = rec['country_name']
+				except:
+					country = "Unknown" 
+				
+				norm_arr.append(str(country).replace(",","-"))
+				
+				if firstLine: new_att_name_arr.append("Country")
+  			elif  att_name[i] in  boolean_arr_list:
 				#print att_name[i]
 				if arr[i].lower()=="true":
 					norm_arr.append(1)
@@ -160,8 +177,7 @@ def transformFeature():
 			
  			elif att_name[i] in string_arr_list :
 				#Change category to integer
-				if 
-				if not isEnglish(arr[i][0]) or arr[i][0] == "\\":
+ 				if not isEnglish(arr[i][0]) or arr[i][0] == "\\":
 					hashval = hash(arr[i])
 					#print arr[i][0] 
 					if hashval not in myhash:
@@ -320,10 +336,13 @@ def transformFeature():
 			f_w.write("\n")
 		firstLine = False
  		f_w.write(str(norm_arr).strip("[").strip("]").replace("'","")+"\n")
- 		if len(norm_arr) != 38:
+ 		if len(norm_arr) != 39:
 			print "incorrect #norm_arr +"+str(len(norm_arr))
 	
 	f_r.close()
 	f_w.close()
 
 transformFeature()
+#steps
+#1. extract.py
+#2. normalize.py
