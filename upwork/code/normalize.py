@@ -96,10 +96,6 @@ def normalize():
 		
 		imp.fit(newb)
 		impb = imp.transform(newb)
-		#print att_name
-		#print impb
-		#print ""
-		#print impb.shape
 		original_data = np.concatenate((original_data,  impb), axis=0)
 			
   	
@@ -129,19 +125,13 @@ def normalize():
 		if att_name in ignore_arr_list: continue
 		if att_name in select_features:
 			val_arr = np.array([[float(val.strip()) for val in att_value_hash[att_name]]]).transpose()
-			#print val_arr.transpose()
-			#print len(val_arr[0])
-			#min_max_scaler.fit(val_arr )	
+			 
 			minmax_hash[att_name] = (min(val_arr), max(val_arr))
 			
 			norm_val_arr = min_max_scaler.fit_transform(val_arr )	
 			norm_value_hash[att_name] = norm_val_arr.transpose()
 			newname_arr.append(att_name)
-	'''
-	for name  in minmax_hash.keys():
-		print name
-		print (minmax_hash[name][0][0], minmax_hash[name][1][0])
-		'''
+	 
 	## 1-to-k encode categorical data 
 	newcatname_arr = []
 	for att_name in   category_arr_list:
