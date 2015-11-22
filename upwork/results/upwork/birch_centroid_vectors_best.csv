@@ -1,0 +1,9 @@
+,Cluster #0,Cluster #1,Cluster #2,Cluster #3,Cluster #4,Cluster #5,Cluster #6,Cluster #7,Cluster #8,Cluster #9
+AllowGeo,0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False)
+DeviceModel,iPhone 5s,iPad mini 1G,iPhone 6,iPod touch 5G,iPhone 5,iPhone 6 Plus,iPhone 5c,iPhone 4S,iPhone 6,iPad mini 2G
+InstallDays,11.0444,11.374,28.6594,4.3289,12.8249,11.3135,8.1153,9.1606,6.48,3.375
+RevokePushAfterDays,0.3531,0.0417,12.2118,0,0.2614,1.7873,0.3818,0.0615,1.32,0
+RevokePushBefore,0.7642 (True),0.5979 (True),0.4286 (False),0.2006 (False),0.7043 (True),0.6667 (True),0.6545 (True),0.6000 (True),0.2000 (False),0.7500 (True)
+UninstalledAfter,2.6334,0.2125,0.3081,0,3.7791,9.7333,0,7.332,23.76,0
+UninstalledSameday,0.2179 (False),0.0125 (False),0.0139 (False),0.0000 (False),0.1790 (False),0.1875 (False),0.0000 (False),0.4080 (False),1.0000 (True),0.0000 (False)
+UninstalledTF,0.1053 (False),0.5000 (True),0.4031 (False),0.6705 (True),0.3472 (False),0.2871 (False),0.4000 (False),0.1804 (False),0.0000 (False),0.5000 (True)

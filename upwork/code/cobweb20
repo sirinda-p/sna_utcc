@@ -1,0 +1,93 @@
+39
+pca=20, ncom=1
+conceptual clustering
+it: 0
+set([u'Concept22', u'Concept80'])
+(2, 0.21202277408232284)
+set([u'Concept22', u'Concept1933', u'Concept7753'])
+(3, 0.15263903554959207)
+set([u'Concept1155', u'Concept1933', u'Concept7753', u'Concept29301'])
+(4, 0.067969797409706698)
+set([u'Concept20314', u'Concept1155', u'Concept7753', u'Concept35877', u'Concept29301'])
+(5, 0.068849198910075751)
+set([u'Concept29301', u'Concept56602', u'Concept1155', u'Concept17343', u'Concept20314', u'Concept35877'])
+(6, 0.073003177517449169)
+set([u'Concept56602', u'Concept1155', u'Concept15083', u'Concept17343', u'Concept29301', u'Concept20314', u'Concept17724'])
+(7, 0.062539037573379211)
+set([u'Concept2690671', u'Concept29301', u'Concept1155', u'Concept56602', u'Concept106442', u'Concept17343', u'Concept20314', u'Concept17724'])
+(8, 0.054731860182263677)
+set([u'Concept3055339', u'Concept2931502', u'Concept29301', u'Concept1155', u'Concept17724', u'Concept56602', u'Concept17343', u'Concept2911689', u'Concept20314'])
+(9, 0.033099317805419783)
+set([u'Concept29301', u'Concept1155', u'Concept56602', u'Concept183640', u'Concept17724', u'Concept17343', u'Concept5896', u'Concept3420115', u'Concept20314', u'Concept3276465'])
+(10, 0.029053669841778977)
+kbest
+(2, 0.21202277408232284)
+pca=20, ncom=3
+conceptual clustering
+it: 0
+set([u'Concept3598151', u'Concept3597169'])
+(2, 0.13401581298892695)
+set([u'Concept3598151', u'Concept3617112', u'Concept3617416'])
+(3, 0.094985783696029849)
+set([u'Concept3598151', u'Concept3624000', u'Concept3617112', u'Concept3606986'])
+(4, 0.076188489929549935)
+set([u'Concept3598151', u'Concept3624000', u'Concept3607417', u'Concept3659862', u'Concept3606986'])
+(5, 0.077706537469980963)
+set([u'Concept3598151', u'Concept3624000', u'Concept3659862', u'Concept3719639', u'Concept3607417', u'Concept5169102'])
+(6, 0.074846181586381316)
+set([u'Concept3598151', u'Concept3624000', u'Concept3659862', u'Concept3719639', u'Concept3607417', u'Concept5474435'])
+(7, 0.074846181586381316)
+set([u'Concept3624000', u'Concept3659862', u'Concept3597646', u'Concept3719639', u'Concept3607417', u'Concept3600389', u'Concept3600543', u'Concept5779743'])
+(8, 0.036259087211608337)
+set([u'Concept3624000', u'Concept3659862', u'Concept3597646', u'Concept3658564', u'Concept3719639', u'Concept3607417', u'Concept3600389', u'Concept3618864', u'Concept6085140'])
+(9, 0.036250074230396868)
+set([u'Concept3624000', u'Concept6390649', u'Concept3659862', u'Concept3597646', u'Concept3658564', u'Concept3719639', u'Concept3607417', u'Concept3600389', u'Concept3618864'])
+(10, 0.036250074230396868)
+kbest
+(2, 0.13401581298892695)
+pca=20, ncom=5
+conceptual clustering
+it: 0
+set([u'Concept6600457', u'Concept6601080'])
+(2, 0.13448839820494463)
+set([u'Concept6600457', u'Concept6605312', u'Concept6623341'])
+(3, 0.095320019106248363)
+set([u'Concept6611684', u'Concept6605312', u'Concept6600457', u'Concept6604517'])
+(4, 0.076670530445770407)
+set([u'Concept6611684', u'Concept6634671', u'Concept6600457', u'Concept6616194', u'Concept6604517'])
+(5, 0.077531823880838985)
+set([u'Concept6611684', u'Concept6634671', u'Concept6600457', u'Concept6616194', u'Concept6604517'])
+(6, 0.077531823880838985)
+set([u'Concept6616194', u'Concept6642956', u'Concept6611684', u'Concept6634671', u'Concept6604517', u'Concept6645020', u'Concept6600980'])
+(7, 0.064633656864177547)
+set([u'Concept6615612', u'Concept6642956', u'Concept6611684', u'Concept6634671', u'Concept6604517', u'Concept6666036', u'Concept6616194', u'Concept6645020'])
+(8, 0.038739842275374962)
+set([u'Concept6615612', u'Concept6642956', u'Concept6611684', u'Concept6634671', u'Concept6604517', u'Concept6666036', u'Concept6616194', u'Concept6645020'])
+(9, 0.038739842275374962)
+set([u'Concept6615612', u'Concept6652798', u'Concept6611684', u'Concept6843815', u'Concept6604517', u'Concept6666036', u'Concept6601840', u'Concept6616194', u'Concept6634671', u'Concept6645020'])
+(10, 0.03119612329061433)
+kbest
+(2, 0.13448839820494463)
+pca=20, ncom=7
+conceptual clustering
+it: 0
+set([u'Concept9846653', u'Concept9846675'])
+(2, 0.13448839820494463)
+set([u'Concept9874412', u'Concept9852269', u'Concept9846653'])
+(3, 0.095528077321982041)
+set([u'Concept9874412', u'Concept9852269', u'Concept9850236', u'Concept9869490'])
+(4, 0.058520382337115359)
+set([u'Concept9852269', u'Concept9850236', u'Concept11207735', u'Concept9850447', u'Concept9869490'])
+(5, 0.053072441414921408)
+set([u'Concept9852269', u'Concept11528693', u'Concept9850236', u'Concept9850447', u'Concept9869490'])
+(6, 0.053072441414921408)
+set([u'Concept9869490', u'Concept9850236', u'Concept11849651', u'Concept9922613', u'Concept9850447', u'Concept9849464', u'Concept9991601'])
+(7, 0.05845496340165366)
+set([u'Concept9869490', u'Concept9850236', u'Concept9922613', u'Concept9850447', u'Concept9849464', u'Concept9991601', u'Concept12170681'])
+(8, 0.05845496340165366)
+set([u'Concept9869490', u'Concept9855242', u'Concept9888619', u'Concept12491711', u'Concept9852462', u'Concept9922613', u'Concept9850447', u'Concept9849464', u'Concept9991601'])
+(9, 0.056506904544563384)
+set([u'Concept9869490', u'Concept9888619', u'Concept12753869', u'Concept9852462', u'Concept9922613', u'Concept9850447', u'Concept9849464', u'Concept12812850', u'Concept9991601', u'Concept9857693'])
+(10, 0.034075829675474241)
+kbest
+(2, 0.13448839820494463)

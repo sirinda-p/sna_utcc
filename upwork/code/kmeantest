@@ -1,0 +1,61 @@
+39
+pca=10, ncom=2
+#features = 8
+UninstalledSameday
+DeviceModel
+InstallDays
+RevokePushAfterDays
+RevokePushBefore
+UninstalledAfter
+AllowGeo
+UninstalledTF
+
+kmean
+(4, 0.26059070738072521)
+
+
+Cluster no 0
+0.0(False)
+-1.22124532709e-15(False)
+9.99200722163e-16(False)
+0.0625(False)
+6.47222222222
+0.180555555556
+1.19444444444
+
+
+Cluster no 1
+0.0(False)
+0.085020242915(False)
+0.712550607287(True)
+0.0283400809717(False)
+5.8016194332
+0.174089068826
+0.570850202429
+
+
+Cluster no 2
+0.0(False)
+0.172701949861(False)
+1.0(True)
+3.60822483003e-16(False)
+4.33704735376
+3.66894015169e-15
+-3.64291929955e-15
+
+
+Cluster no 3
+0.0(False)
+1.0(True)
+1.22124532709e-15(False)
+0.111111111111(False)
+15.0634920635
+1.72751322751
+2.18518518519
+UninstalledSameday:['0.0625(False)', '0.0283400809717(False)', '3.60822483003e-16(False)', '0.111111111111(False)']
+InstallDays:[6.4722222222222205, 5.8016194331983835, 4.3370473537604743, 15.063492063492063]
+RevokePushAfterDays:[0.18055555555555533, 0.17408906882591074, 3.668940151690947e-15, 1.7275132275132286]
+RevokePushBefore:['-1.22124532709e-15(False)', '0.085020242915(False)', '0.172701949861(False)', '1.0(True)']
+UninstalledAfter:[1.1944444444444446, 0.57085020242915263, -3.6429192995512949e-15, 2.1851851851851838]
+AllowGeo:['0.0(False)', '0.0(False)', '0.0(False)', '0.0(False)']
+UninstalledTF:['9.99200722163e-16(False)', '0.712550607287(True)', '1.0(True)', '1.22124532709e-15(False)']

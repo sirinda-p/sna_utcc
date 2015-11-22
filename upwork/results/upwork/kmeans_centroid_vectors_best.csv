@@ -1,0 +1,8 @@
+,Cluster #0,Cluster #1,Cluster #2,Cluster #3
+DeviceModel,iPod touch 5G,iPod touch 5G,iPod touch 5G,iPod touch 5G
+InstallDays,10.5444,9.699,4.32,9.3333
+RevokePushAfterDays,0.3741,1.0759,0,1.0448
+RevokePushBefore,0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False)
+UninstalledAfter,1.7852,1.4686,0,0.4776
+UninstalledSameday,0.0963 (False),0.0576 (False),0.0000 (False),0.0498 (False)
+UninstalledTF,0.0000 (False),0.4607 (False),1.0000 (True),0.4179 (False)

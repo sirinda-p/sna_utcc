@@ -1,0 +1,85 @@
+pca=10, ncom=1
+#features = 7
+dbscan
+(1082, 0.79306966784946964)
+birch
+(10, 0.34093766605026671)
+Affinity
+(39, 0.77571306380306715)
+kmean
+(4, 0.37357748245083328)
+
+pca=10, ncom=2
+#features = 8
+dbscan
+(1048, 0.76823665598430435)
+birch
+(10, 0.3608858705920554)
+Affinity
+(46, 0.73243567278799826)
+kmean
+(4, 0.28216018105907209)
+
+pca=10, ncom=6
+#features = 10
+dbscan
+(979, 0.5785333067949805)
+birch
+(10, 0.3011749695652699)
+Affinity
+(58, 0.58965908374376252)
+kmean
+(3, 0.26277239949716447)
+
+pca=10, ncom=7
+#features = 11
+dbscan
+(939, 0.53782774677385714)
+birch
+(9, 0.29031805626433438)
+Affinity
+(62, 0.60078165725502652)
+kmean
+(3, 0.25445823018201058)
+
+
+pca=10, ncom=8
+#features = 12
+dbscan
+(852, 0.46803877761763973)
+birch
+(10, 0.2297816502900176)
+Affinity
+(74, 0.55881522573309361)
+kmean
+(3, 0.21688491836803755)
+
+pca=10, ncom=9
+#features = 14
+
+dbscan
+(365, 0.013219264105646146)
+birch
+(3, 0.13713999398351284)
+Affinity
+(96, 0.29605490123858258)
+kmean
+(3, 0.16287694274965969)
+
+AllowBT
+AllowFeaturePush
+LastUpdateDays
+UninstalledSameday
+DeviceModel
+InstallDays
+AllowPush
+RevokePushAfterDays
+RevokePushBefore
+UninstalledAfter
+AllowGeo
+OSVersion
+UninstalledTF
+CorrectQuestion
+
+
+

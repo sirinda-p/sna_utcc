@@ -1,0 +1,37 @@
+ 
+   
+Characters of users in cluster #0:This group of users revoked push token within 1 day since first use date. These users (among 4 clusters) are least likely to uninstall the app 
+
+- Use iPod touch 5G 
+- 10.5 days of app launch from installation
+- Most of users didn't revoke push token before first use date
+- Some users revoked push token within 1 day since first use date
+- Most of users Didn't uninstall the app. Users who uninstalled did it  0-2 days after first use date
+
+Characters of users in cluster #1: This group of users revoked push token 1-2 days after first use date. 
+
+- Use iPod touch 5G 
+- 9.7 days of app launch from installation
+- Most of users didn't revoke push token before first use date
+- Some users revoked push token 1-2 day since first use.
+- Half of users didn't uninstall the app. Users who uninstalled did it 0-2 days after first use date.  
+
+Characters of users in cluster #2: This group of users didn't revoke push token but they uninstalled the app. They might received too many notifications. 
+  
+- Use iPod touch 5G 
+- 4.3 days of app launch from installation
+- All users didn't revoke push token 
+- Most of them uninstalled the app. 
+
+Characters of users in cluster #3:
+- Use iPod touch 5G 
+- 9.3 days of app launch from installation
+- Most of users didn't revoke push token before first use date
+- Some users revoked push token 1-2 day after first use.
+- Half of users didn't uninstall the app. Users who uninstalled did it 0-2 days after first use date.  
+
+- From this result, I think users who revoked push token are more likely to continue using the app than those who din't. And the longer the user keeps the app, the more likely they continue using the app. 
+
+
+
+

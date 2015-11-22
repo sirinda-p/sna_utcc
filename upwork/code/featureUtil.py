@@ -3,14 +3,29 @@ from scikits.statsmodels.tools import categorical
 from sklearn.preprocessing import Imputer
 from sklearn.decomposition import PCA
 from sklearn import preprocessing
+from sklearn.feature_selection import VarianceThreshold
+
+def VarianceThreshold(data):
+	selector = VarianceThreshold(threshold=0.0)
+	selector.fit(data)
+	print selector.get_support()
+	
 
 def pca(ncomp, original_data, k, att_name_list, ignore_arr_list):
 	pca = PCA(n_components=ncomp)
    	transpose_data = original_data.transpose()
  	pca.fit(transpose_data) 
 	#new_data = pca.fit_transform(original_data) 
-  	topk_arr = np.abs(pca.components_[0]).argsort()[::-1][:k]
-	select_features = list(set([att_name_list[i] for i in topk_arr]).difference(set(ignore_arr_list)))
+	topk_set = set()
+	for n in range(0, ncomp):
+		fset = set(np.abs(pca.components_[n]).argsort()[::-1][:k])
+		#print fset
+		topk_set = topk_set.union(fset)
+		#print topk_set
+		#print ""
+	
+	#print [att_name_list[i] for i in list(topk_set)]
+	select_features = list(set([att_name_list[i] for i in list(topk_set)]).difference(set(ignore_arr_list)))
 	
 	return select_features
 	
@@ -59,6 +74,21 @@ def imputeMissingValue(path, fname, att_name_list, category_arr_list):
 
 	return data, att_value_hash
 
+
+def selectFeatures(att_value_hash, pca_features, ignore_features ):
+	 	
+	select_features = list(set(pca_features).difference(ignore_features))
+ 	b = np.array([att_value_hash[select_features[0]]] )
+ 	#print b.shape
+	data = np.array(b )
+	#print data.shape
+ 	for newname in select_features[1::]:
+ 		b = np.array([att_value_hash[newname]])
+ 		#print b.shape
+		data = np.concatenate((data,  b), axis=0)
+	
+	return np.transpose(data), select_features
+	
 def normalize(att_value_hash, boolean_arr_list, integer_arr_list, ignore_arr_list, select_features, category_arr_list):
 	
 	min_max_scaler = preprocessing.MinMaxScaler()

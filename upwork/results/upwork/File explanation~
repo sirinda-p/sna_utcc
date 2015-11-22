@@ -1,0 +1,18 @@
+I have uploaded files containing results and discussion as follows: 
+(You may read them in order as shown here)
+
+1. clustering_steps.docx - A document explain how I did all clustering algorithms with some data exploration. 
+
+2. experiment_summary - A summary of all clustering results 
+
+3. Files containing centroid vectors:
+
+kmeans_centroid_vectors_best.csv  
+birch_centroid_vectors_best.csv
+affinity_centroid_vectors_best.csv
+
+4. kmeans_result.docx - kmeans clustering result on Friday Nov 20, 2015. I reran this experiment with more parameter settings. See the new results in xx
+
+5. kmeans_summary_all.docx - A document explains how I did kmeans clustering. I rewrote and renamed it to clustering_steps.docx. So you may skip this file if you'd like. 
+
+Please let me know if you have any questions. I am making my code reproducible and adding comments.  How would you like the final code look like? 

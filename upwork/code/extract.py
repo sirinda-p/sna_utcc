@@ -341,8 +341,4 @@ def transformFeature():
 	
 	f_r.close()
 	f_w.close()
-
-transformFeature()
-#steps
-#1. extract.py
-#2. normalize.py
+ 
