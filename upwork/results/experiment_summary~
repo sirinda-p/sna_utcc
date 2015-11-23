@@ -159,8 +159,6 @@ Characters of users in cluster #9:
 Values of centroid vectors from k-means algorithm are in
 birch_centroid_vectors_best.scv
 
-
-
 3. Affinity propagation
  
 #features = 7 from Set1

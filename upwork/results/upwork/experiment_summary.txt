@@ -171,12 +171,46 @@ It seems that the clusters are mainly divided by device model.
 Note that Silhouette coefficient from Affinity propagation is highest because it returned higher number of clusters (Silhouette coefficient tend to be higher when there are many clusters) 
 
 4. Cobweb 
+#features = 7 from Set1
+#clusters = 4 
+Silhouette coefficient = 0.1064984470764636
 
-Each concept correspons to one cluster. The advantage of cobweb is that it returns a description of a concept. Categorical and boolean features are printed with their counts. Numerical features are printed with their means and standard deviation in parenthesis. 
+Each concept correspons to one cluster. The advantage of cobweb is that it returns a description of a concept. Here is the clustering result.
 
-** The cobweb algorithm is still running. I wil update this section when its dones **
+Cluster#1 (u'Concept13301') (537 users)
+- Characters: 
+- Majority of them (176 users) use iPhone 6
+- 4 days of app launch from installation
+- Almost all of users (535 users)  didn't revoke push token before first use date
+- All of users didn't uninstall the app
 
-Note that the silhouette coefficient was calculated using different data format than the format that cobweb learned. (The silhouette coefficient is based on a distance function but cobweb algorithm clusters data based on probability. )
+Cluster#2 (u'Concept6118') (499 users)
+- Characters: 
+- Majority of them (168 users) use iPhone 6
+- 11-12 days of app launch from installation
+- All of users  didn't revoke push token before first use date
+- All of them didn't uninstall the app
+
+Cluster#3 (u'Concept3610') (34 users)
+- Characters: 
+- Majority of them (16 users) use iPhone 6
+- 28 days of app launch from installation
+- All of users revoked push token 19 days after first use date
+- All of users didn't uninstall the app
+
+Cluster#4 (u'Concept2662') (58 users)
+- Characters: 
+- Majority of them (22 users) use iPhone 6
+- 6 days of app launch from installation
+- All of users revoked push token 0-1 days after first use date
+- All of users  uninstalled the app 19-20 days after first use
+
+Original descriptions of each concept are in cobweb_cluster_description.txt
+
+
+Note that the silhouette coefficient was calculated using different data format than the format that cobweb learned. 
+So it's a little bit unfair to Cobweb to be compared using this metric. But Cobweb doesn't provide any metric to select the best clustering result.
+(The silhouette coefficient is based on a distance function but cobweb algorithm clusters data based on probability. )
 
 
 

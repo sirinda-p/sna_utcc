@@ -9,20 +9,11 @@ def isEnglish(s):
 	except:
  		return False
         
-def checkFile():
+def checkFile(datapath, original_filename, max_num_att ):
 		
-	if machine == "amm":
-		prefix = "/home/amm/"
-	else:
-		prefix = "/home/ubuntu/Desktop/sna_utcc/"
-	
-	path = prefix+"upwork/data/"
-	original_filename = "appt_dump.csv"
-	new_filename = "appt_dump_rewritten.csv"
+	new_filename =original_filename.replace(".csv","_checked.csv")
 	f_r = open(path+original_filename, "r")
-	
-	num_att = 36
-	
+
 	rewrite = False
 	lines = f_r.readlines()
 	f_r.close()
@@ -30,11 +21,12 @@ def checkFile():
 	for line in lines :
 		arr = line.strip().split(",") 
 		
-		## Check format of each attribute
-		if len(arr) > num_att:
+		## Check if each line contains more than max_num_att, the maximum number of features
+		if len(arr) > max_num_att:
 			rewrite = True 
 			break
-	
+			
+	## If yes, exclude the extra feature and rewrite the file
 	if rewrite:
 		lno =0 
 		f_w = open(path+new_filename, "w")
@@ -66,6 +58,7 @@ def checkFile():
 				
 	f_r.close()
 	
+	return  new_filename
 
 
 def threedotnumber(dotted_number, need2num=False):

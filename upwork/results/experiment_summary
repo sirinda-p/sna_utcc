@@ -171,7 +171,7 @@ It seems that the clusters are mainly divided by device model.
 Note that Silhouette coefficient from Affinity propagation is highest because it returned higher number of clusters (Silhouette coefficient tend to be higher when there are many clusters) 
 
 4. Cobweb 
-
+(kpca=30, kcomp=1, no carrier features)
 
 
 5. DBSCAN: returned very poor clustering results. So I won't discuss about it. 
