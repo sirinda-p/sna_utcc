@@ -8,20 +8,27 @@ import clusterUtil as mycluster
 		
 def main():
 	
-	 
-	prefix = "/home/amm/Desktop/upwork/"
+	machine = "aws"
+	if machine == "amm":
+		prefix = "/home/amm/Desktop/upwork/"
+	else:
+		prefix = "/home/ubuntu/Desktop/sna_utcc/upwork/"
+ 
+	#prefix = "/home/amm/Desktop/upwork/"	
 	
 	datapath = prefix+"data/"
 	resultpath = prefix+"results/"
 	
-	original_filename = "appt_dump.csv" 
+	original_filename = "appt_dump.csv"
+	 
+	for original_filename in ["active_paid.csv","churn_free.csv","churn_paid.csv"]:
+		max_num_att = 36
 	
-	max_num_att = 36
-	
-	#checked_fname = extUtil.checkFile(datapath, original_filename, max_num_att )
-	checked_fname = original_filename.replace(".csv","_checked.csv")
-	#transformed_fname =  "appt_dump_transformed.csv"
-	transformed_fname = extUtil.transformFeature(datapath, checked_fname)
+		checked_fname = extUtil.checkFile(datapath, original_filename, max_num_att )
+		#checked_fname = original_filename.replace(".csv","_checked.csv")
+		#transformed_fname =  "appt_dump_transformed.csv"
+		transformed_fname = extUtil.transformFeature(datapath, checked_fname)
+		
  	''' 
 	## New feature names after data transformation
 	att_name_list = ["ID", "AllowPush", "AdOptedIn", "NumCampaignMatch", "Carrier", "AppVersion", 

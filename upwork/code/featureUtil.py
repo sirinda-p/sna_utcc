@@ -3,14 +3,68 @@ from scikits.statsmodels.tools import categorical
 from sklearn.preprocessing import Imputer
 from sklearn.decomposition import PCA
 from sklearn import preprocessing
-from sklearn.feature_selection import VarianceThreshold
+#from sklearn.feature_selection import VarianceThreshold
 
+'''
 def VarianceThreshold(data):
 	selector = VarianceThreshold(threshold=0.0)
 	selector.fit(data)
 	print selector.get_support()
-	
+'''	
 
+def makeXYforClassifier(datapath, fname_arr): ## fname[0] = class 0 and fname[1] = class 1
+	
+ 	## Feature names after data transformation
+	att_name_list = ["ID", "AllowPush", "AdOptedIn", "NumCampaignMatch", "Carrier", "AppVersion", 
+	"AllowiBeacon", "AllowGeo", "AllowFeaturePush", "ScreenHeight", "AllowBT", "HaveUniqueGlobalID", 
+	"NumCrash", "DailyUsage","Country", "LastUpdateDays", "DeviceModel", "BlockPushTF", "BlockPushSameday", "BlockPushAfterDays", 
+	"OS", "OSVersion", "RevokePushTF", "RevokePushBefore", "RevokePushSameday", "RevokePushAfterDays", "SignIn", 
+	"UninstalledTF", "UninstalledSameday", "UninstalledAfter", "ScreenWidth", "EmailExist", "EmailAddress", 
+	"InstallDays", "PushCount", "Timezone", "UserType", "Questions", "CorrectQuestion"]
+	
+	## Boolean feature list (integer in this case)
+	boolean_arr_list = ["AllowPush", "AdOptedIn", "AllowiBeacon","AllowGeo","AllowFeaturePush","AllowBT",
+	"HaveUniqueGlobalID","SignIn","EmailExist","EmailAddress","BlockPushTF","BlockPushSameday","RevokePushTF",
+	"RevokePushBefore", "RevokePushSameday", "UninstalledTF","UninstalledSameday"]
+	
+	## Categorical feature list
+	category_arr_list = ["AppVersion","Carrier", "DeviceModel","OS","UserType", "OSVersion","Timezone","ScreenWidth","ScreenHeight","Country" ] 
+ 	
+	numerical_arr_list = ["NumCampaignMatch","NumCrash","DailyUsage","InstallDays",
+	"PushCount","Questions","CorrectQuestion", "BlockPushAfterDays", "RevokePushAfterDays", "UninstalledAfter", "LastUpdateDays"]
+	
+	## Low variance features will be excluded
+	ignore_arr_list = ["ID", "AdOptedIn","Carrier","AllowiBeacon","HaveUniqueGlobalID","OS","SignIn","EmailExist","UserType"]
+ 	c = 0
+ 	ncomp = 1
+ 	kpca = 35
+ 	for fname in fname_arr:
+		
+		## Impute missing data (separately so that the mean values won't be distorted by the other class)
+		original_data, att_value_hash =  imputeMissingValue(datapath, fname, att_name_list, category_arr_list)
+		selected_features =  pca(ncomp, original_data, kpca, att_name_list, ignore_arr_list)
+		## Normalize selected features
+		data, newname_arr, newcatname_arr, minmax_hash =  normalize(att_value_hash, boolean_arr_list, numerical_arr_list, ignore_arr_list, selected_features, category_arr_list)
+		
+		
+		if c == 0:
+			XData =  np.transpose(data) # one row = one sample
+			(ncol, nrow) = data.shape
+			YData = np.zeros((1,nrow)) 
+			c += 1
+			
+  		else:
+			(ncol, nrow) = data.shape
+			YData = np.append(YData,np.ones((1,nrow)) )	
+			XData =  np.vstack([XData, np.transpose(data)]) # one row = one sample
+ 			 
+					
+  	
+	return XData, YData, newname_arr
+		
+	
+	
+	
 def pca(ncomp, original_data, k, att_name_list, ignore_arr_list):
 	pca = PCA(n_components=ncomp)
    	transpose_data = original_data.transpose()
