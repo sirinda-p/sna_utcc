@@ -19,10 +19,10 @@ def main():
 	max_num_att = 36
 	
 	#checked_fname = extUtil.checkFile(datapath, original_filename, max_num_att )
-	#checked_fname = original_filename.replace(".csv","_checked.csv")
-	transformed_fname =  "appt_dump_transformed.csv"
-	#transformed_fname = extUtil.transformFeature(datapath, checked_fname)
- 	 
+	checked_fname = original_filename.replace(".csv","_checked.csv")
+	#transformed_fname =  "appt_dump_transformed.csv"
+	transformed_fname = extUtil.transformFeature(datapath, checked_fname)
+ 	''' 
 	## New feature names after data transformation
 	att_name_list = ["ID", "AllowPush", "AdOptedIn", "NumCampaignMatch", "Carrier", "AppVersion", 
 	"AllowiBeacon", "AllowGeo", "AllowFeaturePush", "ScreenHeight", "AllowBT", "HaveUniqueGlobalID", 
@@ -73,12 +73,12 @@ def main():
 			select_features = futil.pca(ncomp, original_data, kpca, att_name_list, ignore_arr_list)
 			
 			
-			''' Uncomment these lines of code to print selected features
+			# Uncomment these lines of code to print selected features
 			print "#features = "+str(len(select_features))
 			for f in select_features:
 				print f
 			print ""
-			''' 
+		 
 			
 			## Normalize selected features
 			data, newname_arr, newcatname_arr, minmax_hash = futil.normalize(att_value_hash, boolean_arr_list, integer_arr_list, ignore_arr_list, select_features, category_arr_list)
@@ -133,6 +133,6 @@ def main():
 						tow += ","+val
 					f_w.write(tow+"\n")
 				f_w.close()
-				 
+				''' 
 main()
 		

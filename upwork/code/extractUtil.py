@@ -90,7 +90,7 @@ def transformFeature(datapath, checked_fname):
 
 	
 	f_r = open(datapath+checked_fname, "r")
-	transformed_fname = checked_fname.replace("checked", "transformed")
+	transformed_fname = checked_fname.replace("checked", "transformed_continent")
 	f_w = open(datapath+transformed_fname, "w")
 	
 	## Transform  original features 
@@ -149,13 +149,13 @@ def transformFeature(datapath, checked_fname):
 			if att_name[i] == "IP":
 				try:
 					rec = gi.record_by_addr(arr[i])
-					country = rec['country_name']
+					country = rec['continent']
 				except:
 					country = "Unknown" 
 				
 				norm_arr.append(str(country).replace(",","-"))
 				
-				if firstLine: new_att_name_arr.append("Country")
+				if firstLine: new_att_name_arr.append("continent'")
   			elif  att_name[i] in  boolean_arr_list:
 				#print att_name[i]
 				if arr[i].lower()=="true":

@@ -4,14 +4,14 @@ import collections, itertools
 def feature_stat():
 	
 	original = False
-	machine = "aws"
+	machine = "amm"
 	if machine == "amm":
-		prefix = "/home/amm/"
+		prefix = "/home/amm/Desktop/"
 	else:
 		prefix = "/home/ubuntu/Desktop/sna_utcc/"
 	
 	path = prefix+"/upwork/data/"
-	f_r = open(path+"appt_dump_transformed.csv", "r")
+	f_r = open(path+"appt_dump_transformed_continent.csv", "r")
 	
 	if original:
 		f_r = open(path+"appt_dump_rewritten.csv", "r")
@@ -21,16 +21,26 @@ def feature_stat():
 	"Uninstalled","ScreenWidth","EmailExist","EmailAddress","InstallDays","PushCount","Timezone","sdk","UserType","Questions",
 	"CorrectQuestion"]
 	else:
-		f_r = open(path+"appt_dump_transformed.csv", "r")	
+		f_r = open(path+"appt_dump_transformed_continent.csv", "r")	
 		att_name = ['ID', 'AllowPush', 'AdOptedIn', 'NumCampaignMatch', 'Carrier', 'AppVersion', 
 	'AllowiBeacon', 'AllowGeo', 'AllowFeaturePush', 'ScreenHeight', 'AllowBT', 'HaveUniqueGlobalID', 
 	'NumCrash', 'DailyUsage','Country', 'LastUpdateDays', 'DeviceModel', 'BlockPushTF', 'BlockPushSameday', 'BlockPushAfterDays', 
 	'OS', 'OSVersion', 'RevokePushTF', 'RevokePushBefore', 'RevokePushSameday', 'RevokePushAfterDays', 'SignIn', 
 	'UninstalledTF', 'UninstalledSameday', 'UninstalledAfter', 'ScreenWidth', 'EmailExist', 'EmailAddress', 
 	'InstallDays', 'PushCount', 'Timezone', 'UserType', 'Questions', 'CorrectQuestion']
-	## Make original features 
-	## Normalize features
-	## Feature selection 
+	
+	## Boolean feature list
+	boolean_arr_list = ["AllowPush", "AdOptedIn", "AllowiBeacon","AllowGeo","AllowFeaturePush","AllowBT",
+	"HaveUniqueGlobalID","SignIn","EmailExist","EmailAddress","BlockPushTF","BlockPushSameday","RevokePushTF",
+	"RevokePushBefore", "RevokePushSameday", "UninstalledTF","UninstalledSameday"]
+	
+	## Categorical feature list
+	category_arr_list = ["AppVersion","Carrier", "DeviceModel","OS","UserType", "OSVersion","Timezone","ScreenWidth","ScreenHeight","Country" ] 
+ 	
+	integer_arr_list = ["NumCampaignMatch","NumCrash","DailyUsage","InstallDays",
+	"PushCount","Questions","CorrectQuestion", "BlockPushAfterDays", "RevokePushAfterDays", "UninstalledAfter", "LastUpdateDays"]
+	
+	Uni_arr_list = "AdOptedIn", "AllowiBeacon","HaveUniqueGlobalID","OS","SignIn","EmailExist","UserType"
 
 	num_att = len(att_name)
   
