@@ -21,7 +21,7 @@ def main():
 	
 	original_filename = "appt_dump.csv"
 	 
-	for original_filename in ["active_paid.csv","churn_free.csv","churn_paid.csv"]:
+	for original_filename in ["churn.csv","active.csv","paid.csv", "free.csv","active_paid.csv","active_free.csv","churn_free.csv","churn_paid.csv"]:
 		max_num_att = 36
 	
 		checked_fname = extUtil.checkFile(datapath, original_filename, max_num_att )

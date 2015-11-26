@@ -12,8 +12,8 @@ def VarianceThreshold(data):
 	print selector.get_support()
 '''	
 
-def makeXYforClassifier(datapath, fname_arr): ## fname[0] = class 0 and fname[1] = class 1
-	
+def makeXYforClassifier_combinedData(datapath, fname_arr, ncomp, kpca): ## fname[0] = class 0 and fname[1] = class 1
+ 
  	## Feature names after data transformation
 	att_name_list = ["ID", "AllowPush", "AdOptedIn", "NumCampaignMatch", "Carrier", "AppVersion", 
 	"AllowiBeacon", "AllowGeo", "AllowFeaturePush", "ScreenHeight", "AllowBT", "HaveUniqueGlobalID", 
@@ -36,31 +36,38 @@ def makeXYforClassifier(datapath, fname_arr): ## fname[0] = class 0 and fname[1]
 	## Low variance features will be excluded
 	ignore_arr_list = ["ID", "AdOptedIn","Carrier","AllowiBeacon","HaveUniqueGlobalID","OS","SignIn","EmailExist","UserType"]
  	c = 0
- 	ncomp = 1
- 	kpca = 35
+ 
+ 	att_value_hash = dict()
+ 	for att_name in att_name_list:
+		att_value_hash[att_name] = []
+	
  	for fname in fname_arr:
 		
 		## Impute missing data (separately so that the mean values won't be distorted by the other class)
-		original_data, att_value_hash =  imputeMissingValue(datapath, fname, att_name_list, category_arr_list)
-		selected_features =  pca(ncomp, original_data, kpca, att_name_list, ignore_arr_list)
-		## Normalize selected features
-		data, newname_arr, newcatname_arr, minmax_hash =  normalize(att_value_hash, boolean_arr_list, numerical_arr_list, ignore_arr_list, selected_features, category_arr_list)
-		
-		
+		imp_data, att_value_hash =  imputeMissingValue(datapath, fname, att_name_list, category_arr_list, att_value_hash)
+	
 		if c == 0:
-			XData =  np.transpose(data) # one row = one sample
-			(ncol, nrow) = data.shape
+			imp_data_all = imp_data
+			(ncol, nrow) = imp_data.shape # each row = one feature
 			YData = np.zeros((1,nrow)) 
-			c += 1
+		else:
+			imp_data_all = np.vstack([imp_data_all, imp_data]) 
+			(ncol, nrow) = imp_data.shape
+ 			YData = np.append(YData,np.ones((1,nrow)) )	
+	
 			
-  		else:
-			(ncol, nrow) = data.shape
-			YData = np.append(YData,np.ones((1,nrow)) )	
-			XData =  np.vstack([XData, np.transpose(data)]) # one row = one sample
- 			 
-					
-  	
-	return XData, YData, newname_arr
+	selected_features, transformed_data =  pca(ncomp, imp_data_all, kpca, att_name_list, ignore_arr_list)
+	
+	## Normalize selected features
+	data, newname_arr, newcatname_arr, minmax_hash =  normalize(att_value_hash, boolean_arr_list, numerical_arr_list, ignore_arr_list, selected_features, category_arr_list)
+	
+	XData =  np.transpose(data) # one row = one sample
+	'''	 
+  	print XData.shape
+  	print transformed_data.shape
+  	print YData.shape
+	'''
+	return XData, YData, newname_arr, transformed_data
 		
 	
 	
@@ -69,7 +76,7 @@ def pca(ncomp, original_data, k, att_name_list, ignore_arr_list):
 	pca = PCA(n_components=ncomp)
    	transpose_data = original_data.transpose()
  	pca.fit(transpose_data) 
-	#new_data = pca.fit_transform(original_data) 
+	
 	topk_set = set()
 	for n in range(0, ncomp):
 		fset = set(np.abs(pca.components_[n]).argsort()[::-1][:k])
@@ -81,17 +88,16 @@ def pca(ncomp, original_data, k, att_name_list, ignore_arr_list):
 	#print [att_name_list[i] for i in list(topk_set)]
 	select_features = list(set([att_name_list[i] for i in list(topk_set)]).difference(set(ignore_arr_list)))
 	
-	return select_features
+	transformed_data = pca.fit_transform(transpose_data) 
+	return select_features, transformed_data
 	
-def imputeMissingValue(path, fname, att_name_list, category_arr_list):
+def imputeMissingValue(path, fname, att_name_list, category_arr_list, att_value_hash):
 	
 	imp = Imputer(missing_values='NaN', strategy='mean', axis=1)
 	
-	att_value_hash = dict()
+	#att_value_hash = dict()
  
-	for att_name in att_name_list:
-		att_value_hash[att_name] = []
- 
+	 
 	f_r = open(path+fname, "r")
 	for line in f_r.readlines()[1::]:
 		att_arr = line.strip().split(",") 

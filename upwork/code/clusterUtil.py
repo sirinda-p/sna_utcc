@@ -5,6 +5,9 @@ from pprint import pprint
 from random import shuffle
 from concept_formation.cobweb3 import Cobweb3Tree
 import concept_formation.cluster as cluster
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+from sklearn import metrics
 
 def kmean_bestK(data, minK, maxK):
  
@@ -28,7 +31,71 @@ def kmean_bestK(data, minK, maxK):
 			kbest = ncluster
 	print (kbest, maxsilh)
 	return centroid_best, kbest
- 	 
+  
+def kmean_plot(X, Y, transformed_data):
+	n_clusters = 2
+	k_means = skcluster.KMeans(n_clusters)
+	k_means.fit(X)
+
+    
+ 	if hasattr(k_means, 'labels_'):
+		y_pred = k_means.labels_.astype(np.int)
+	else:
+		y_pred = k_means.predict(X)
+	
+	 	
+	print('Estimated number of clusters: %d' % n_clusters)
+	print("Homogeneity: %0.3f" % metrics.homogeneity_score(Y, y_pred))
+	print("Completeness: %0.3f" % metrics.completeness_score(Y, y_pred))
+	print("V-measure: %0.3f" % metrics.v_measure_score(Y, y_pred))
+	print("Adjusted Rand Index: %0.3f"
+		  % metrics.adjusted_rand_score(Y, y_pred))
+	print("Adjusted Mutual Information: %0.3f"
+		  % metrics.adjusted_mutual_info_score(Y, y_pred))
+	print("Silhouette Coefficient: %0.3f"
+		  % metrics.silhouette_score(X, y_pred))
+	print transformed_data.shape
+	print len(transformed_data[:, 0])
+	 
+	# plot
+	colors = np.array([x for x in 'bgrcmykbgrcmykbgrcmykbgrcmyk'])
+	colors = np.hstack([colors] * 20)
+
+	plt.subplot(111)
+	plt.scatter(transformed_data[:, 0], transformed_data[:, 1], color=colors[y_pred].tolist(), s=10)
+	
+	 
+	centers = k_means.cluster_centers_
+	center_colors = colors[:len(centers)]
+	plt.scatter(centers[:, 0], centers[:, 1], s=100, c=center_colors)
+	
+	plt.xlim(-2, 2)
+	plt.ylim(-2, 2)
+	plt.xticks(())
+	plt.yticks(())
+	
+	plt.show()
+	''' 
+	# Plot result
+
+	ax = plt.figure()
+	colors = ['#4EACC5', '#FF9C34', '#4E9A06','m']
+	ax = plt.subplot(111)
+	
+	# KMeans
+ 	for k, col in zip(range(n_clusters), colors):
+		my_members = k_means_labels == k
+		cluster_center = k_means_cluster_centers[k]
+		ax.plot(X[my_members, 0], X[my_members, 1], 'w',
+				markerfacecolor=col, marker='.')
+		ax.plot(cluster_center[0], cluster_center[1], 'o', markerfacecolor=col,
+				markeredgecolor='k', markersize=6)
+	ax.set_title('KMeans')
+	ax.set_xticks(())
+	ax.set_yticks(())
+	
+	'''
+
 def affinity(data):
 	maxsilh = float('-inf')
 	centroid_best = []
