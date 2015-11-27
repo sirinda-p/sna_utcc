@@ -1,0 +1,32 @@
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+(96,)
+(159,)
+[  9.98280552e-01   9.81958372e-04]
+active_free_transformed_continent.csv-churn_free_transformed_continent.csv
+(375,)
+(1226,)
+[ 0.36661448  0.35165959]
+churn_transformed_continent.csv-active_transformed_continent.csv
+(914,)
+(1385,)
+[ 0.98717666  0.00680486]
+paid_transformed_continent.csv-free_transformed_continent.csv
+(159,)
+(1385,)
+[ 0.98502987  0.00895918]
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+(96,)
+(159,)
+0.999262509903
+active_free_transformed_continent.csv-churn_free_transformed_continent.csv
+(375,)
+(1226,)
+0.718274069367
+churn_transformed_continent.csv-active_transformed_continent.csv
+(914,)
+(1385,)
+0.993981521726
+paid_transformed_continent.csv-free_transformed_continent.csv
+(159,)
+(1385,)
+0.993989048723

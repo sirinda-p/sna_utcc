@@ -8,7 +8,7 @@ import concept_formation.cluster as cluster
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from sklearn import metrics
-
+from numpy.random import random
 def kmean_bestK(data, minK, maxK):
  
 	## perform k-mean and select the best k
@@ -32,18 +32,26 @@ def kmean_bestK(data, minK, maxK):
 	print (kbest, maxsilh)
 	return centroid_best, kbest
   
-def kmean_plot(X, Y, transformed_data):
+def kmean_plot(X, Y, transformed_data, fname0, fname1,path):
 	n_clusters = 2
-	k_means = skcluster.KMeans(n_clusters)
-	k_means.fit(X)
+	algorithm = "kmean"
+	'''
+	if algorithm == "birch":
+		clusterer = skcluster.Birch(n_clusters=n_clusters,  compute_labels=True)
+		clusterer.fit(X)
+		clusterer.fit_predict(X)
+ 	else:
+		clusterer = skcluster.KMeans(n_clusters)
+		clusterer.fit(X)
 
     
- 	if hasattr(k_means, 'labels_'):
-		y_pred = k_means.labels_.astype(np.int)
+ 	if hasattr(clusterer, 'labels_'):
+		y_pred = clusterer.labels_.astype(np.int)
 	else:
-		y_pred = k_means.predict(X)
+		y_pred = clusterer.predict(X)
 	
-	 	
+	
+	 
 	print('Estimated number of clusters: %d' % n_clusters)
 	print("Homogeneity: %0.3f" % metrics.homogeneity_score(Y, y_pred))
 	print("Completeness: %0.3f" % metrics.completeness_score(Y, y_pred))
@@ -54,28 +62,48 @@ def kmean_plot(X, Y, transformed_data):
 		  % metrics.adjusted_mutual_info_score(Y, y_pred))
 	print("Silhouette Coefficient: %0.3f"
 		  % metrics.silhouette_score(X, y_pred))
-	print transformed_data.shape
-	print len(transformed_data[:, 0])
-	 
+ '''
 	# plot
 	colors = np.array([x for x in 'bgrcmykbgrcmykbgrcmykbgrcmyk'])
 	colors = np.hstack([colors] * 20)
-
+ 
 	plt.subplot(111)
-	plt.scatter(transformed_data[:, 0], transformed_data[:, 1], color=colors[y_pred].tolist(), s=10)
+ 	zeroindex_arr =[]
+	oneindex_arr = []
+	c = 0
+	for i in Y:
+		if i ==0:
+			zeroindex_arr.append(c)
+		else:
+			oneindex_arr.append(c)
+		c+=1
+	 
+	 
+	#print  transformed_data[zeroindex_arr, 0] 
+ 	#plt.scatter(x,y)
+ 	#plt.scatter(transformed_data[:, 0], transformed_data[:, 1],  c=colors[y_pred].tolist())
+ 	#plt.scatter(random(10), random(10), marker='x', color=colors[0])
+	l0 = plt.scatter(transformed_data[zeroindex_arr, 0], transformed_data[zeroindex_arr,1]  )
+	l1 = plt.scatter(transformed_data[oneindex_arr, 0], transformed_data[oneindex_arr,1], c=colors[1].tolist())
+	l0legend = fname0.replace("_transformed_continent.csv","")
+	l1legend = fname1.replace("_transformed_continent.csv","")
+	plt.legend((l0, l1),
+           (l0legend, l1legend),
+           scatterpoints=1,
+           loc='lower left',
+            fontsize=8)
+	fname = l0legend+"-"+l1legend+".png"
+	plt.savefig(path+fname)
+	
+	''' 
+	centers = clusterer.cluster_centers_
+	center_colors = colors[:len(centers)]
+ 	plt.scatter(centers[:, 0], centers[:, 1], s=100, c=center_colors)
+	print centers[:, 0]
+	print centers[:, 1]
+	print y_pred[0:10]
 	
 	 
-	centers = k_means.cluster_centers_
-	center_colors = colors[:len(centers)]
-	plt.scatter(centers[:, 0], centers[:, 1], s=100, c=center_colors)
-	
-	plt.xlim(-2, 2)
-	plt.ylim(-2, 2)
-	plt.xticks(())
-	plt.yticks(())
-	
-	plt.show()
-	''' 
 	# Plot result
 
 	ax = plt.figure()

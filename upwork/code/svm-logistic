@@ -1,0 +1,5 @@
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+(96,)
+(159,)
+{'penalty': 'l2', 'loss': 'squared_hinge', 'C': 1}
+0.993710691824

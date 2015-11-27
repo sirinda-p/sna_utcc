@@ -1,0 +1,16 @@
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+(96,)
+(159,)
+[  1.09978315e+06   1.08180138e+03]
+active_free_transformed_continent.csv-churn_free_transformed_continent.csv
+(375,)
+(1226,)
+[ 1505.54268127  1444.1287472 ]
+churn_transformed_continent.csv-active_transformed_continent.csv
+(914,)
+(1385,)
+[ 227768.92229682    1570.06962039]
+paid_transformed_continent.csv-free_transformed_continent.csv
+(159,)
+(1385,)
+[ 227887.70711897    2072.71481621]

@@ -38,28 +38,35 @@ def makeXYforClassifier_combinedData(datapath, fname_arr, ncomp, kpca): ## fname
  	c = 0
  
  	att_value_hash = dict()
- 	for att_name in att_name_list:
-		att_value_hash[att_name] = []
+ 	 
 	
  	for fname in fname_arr:
 		
 		## Impute missing data (separately so that the mean values won't be distorted by the other class)
-		imp_data, att_value_hash =  imputeMissingValue(datapath, fname, att_name_list, category_arr_list, att_value_hash)
-	
+		imp_data, att_value_hash_each =  imputeMissingValue(datapath, fname, att_name_list, category_arr_list )
+		
 		if c == 0:
-			imp_data_all = imp_data
+			imp_data_all = np.transpose(imp_data) ## each row = one sample
 			(ncol, nrow) = imp_data.shape # each row = one feature
-			YData = np.zeros((1,nrow)) 
-		else:
-			imp_data_all = np.vstack([imp_data_all, imp_data]) 
-			(ncol, nrow) = imp_data.shape
- 			YData = np.append(YData,np.ones((1,nrow)) )	
-	
+			YData = np.zeros( nrow,  dtype=int) 
 			
-	selected_features, transformed_data =  pca(ncomp, imp_data_all, kpca, att_name_list, ignore_arr_list)
+			for key in att_value_hash_each.keys():
+				att_value_hash[key]  = att_value_hash_each[key]
+		else:
+ 			
+			imp_data_all = np.vstack([imp_data_all, np.transpose(imp_data)]) 
+			(ncol, nrow) = imp_data.shape
+ 			YData = np.append(YData,np.ones( nrow,  dtype=int ) )	
+ 			for key in att_value_hash_each.keys():
+				att_value_hash[key]  += att_value_hash_each[key]
+		#print YData.shape 
+		c += 1
+	
+	#selected_features, transformed_data =  pca(ncomp, np.transpose(imp_data_all), kpca, att_name_list, ignore_arr_list)
 	
 	## Normalize selected features
-	data, newname_arr, newcatname_arr, minmax_hash =  normalize(att_value_hash, boolean_arr_list, numerical_arr_list, ignore_arr_list, selected_features, category_arr_list)
+	selected_features = list(set(att_name_list).difference(ignore_arr_list))
+ 	data, newname_arr, newcatname_arr, minmax_hash =  normalize(att_value_hash, boolean_arr_list, numerical_arr_list, ignore_arr_list, selected_features, category_arr_list)
 	
 	XData =  np.transpose(data) # one row = one sample
 	'''	 
@@ -67,7 +74,7 @@ def makeXYforClassifier_combinedData(datapath, fname_arr, ncomp, kpca): ## fname
   	print transformed_data.shape
   	print YData.shape
 	'''
-	return XData, YData, newname_arr, transformed_data
+	return XData, YData, newname_arr 
 		
 	
 	
@@ -89,14 +96,16 @@ def pca(ncomp, original_data, k, att_name_list, ignore_arr_list):
 	select_features = list(set([att_name_list[i] for i in list(topk_set)]).difference(set(ignore_arr_list)))
 	
 	transformed_data = pca.fit_transform(transpose_data) 
+	print  sum(pca.explained_variance_ratio_)
 	return select_features, transformed_data
 	
-def imputeMissingValue(path, fname, att_name_list, category_arr_list, att_value_hash):
+def imputeMissingValue(path, fname, att_name_list, category_arr_list ):
 	
 	imp = Imputer(missing_values='NaN', strategy='mean', axis=1)
 	
-	#att_value_hash = dict()
- 
+	att_value_hash = dict()
+	for name in att_name_list:
+		att_value_hash[name] = []
 	 
 	f_r = open(path+fname, "r")
 	for line in f_r.readlines()[1::]:

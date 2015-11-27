@@ -1,0 +1,28 @@
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+(96,)
+(159,)
+{'penalty': 'l2', 'loss': 'squared_hinge', 'C': 1}
+0.993710691824
+{'penalty': 'l1', 'C': 1}
+0.981132075472
+active_free_transformed_continent.csv-churn_free_transformed_continent.csv
+(375,)
+(1226,)
+{'penalty': 'l2', 'loss': 'hinge', 'C': 1000}
+0.91924959217
+{'penalty': 'l2', 'C': 1000}
+0.942903752039
+churn_transformed_continent.csv-active_transformed_continent.csv
+(914,)
+(1385,)
+{'penalty': 'l2', 'loss': 'hinge', 'C': 100}
+0.93357400722
+{'penalty': 'l1', 'C': 1}
+0.929963898917
+paid_transformed_continent.csv-free_transformed_continent.csv
+(159,)
+(1385,)
+{'penalty': 'l2', 'loss': 'hinge', 'C': 1}
+0.952346570397
+{'penalty': 'l1', 'C': 1}
+0.968231046931

@@ -1,0 +1,28 @@
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+svm
+{'penalty': 'l2', 'loss': 'squared_hinge', 'C': 1}
+0.993710691824
+logistic regression
+{'penalty': 'l1', 'C': 1}
+0.981132075472
+active_free_transformed_continent.csv-churn_free_transformed_continent.csv
+svm
+{'penalty': 'l2', 'loss': 'squared_hinge', 'C': 1000}
+0.831973898858
+logistic regression
+{'penalty': 'l2', 'C': 1000}
+0.942903752039
+churn_transformed_continent.csv-active_transformed_continent.csv
+svm
+{'penalty': 'l2', 'loss': 'hinge', 'C': 1000}
+0.924909747292
+logistic regression
+{'penalty': 'l1', 'C': 1}
+0.929963898917
+paid_transformed_continent.csv-free_transformed_continent.csv
+svm
+{'penalty': 'l2', 'loss': 'hinge', 'C': 1}
+0.953068592058
+logistic regression
+{'penalty': 'l1', 'C': 1}
+0.968231046931
