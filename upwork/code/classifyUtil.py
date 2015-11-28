@@ -33,7 +33,7 @@ def logistic_plot():
 	for neg_tuple in sorted_negative_coef[0:20]:
 		print neg_tuple
  
-def logistic(X, Y):
+def logistic(X, Y, att_name_arr):
 	## Build a logistic regression 
 	param_grid = {'penalty':['l2', 'l1'],'C': [0.1, 1, 10, 100, 1000]},
   	logit =  linear_model.LogisticRegression()
@@ -42,8 +42,9 @@ def logistic(X, Y):
 	estimator.fit(X, Y)
 	best_estimator = estimator.best_estimator_
 	acc_score = best_estimator.score(X,Y)
-	print estimator.best_params_
-	print acc_score
+	coef_arr = best_estimator.coef_[0]
+	print "Prediction accuracy = "+str(acc_score)
+	printCoef(coef_arr, att_name_arr)
 	
 	
 def svm(X, Y, att_name_arr):
@@ -82,7 +83,7 @@ def printCoef(coef_arr, att_name_arr):
 	print "\nTop 20 negative features"
 	for neg_tuple in sorted_negative_coef[0:20]:
 		print str(i)+"."+str(neg_tuple)
-	
+		i += 1
  		
 def pca_logistic(X, Y):
  

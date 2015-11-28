@@ -1,0 +1,8 @@
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+logistic
+active_free_transformed_continent.csv-churn_free_transformed_continent.csv
+logistic
+churn_transformed_continent.csv-active_transformed_continent.csv
+logistic
+paid_transformed_continent.csv-free_transformed_continent.csv
+logistic
