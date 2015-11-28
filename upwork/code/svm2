@@ -1,0 +1,16 @@
+active_paid_transformed_continent.csv-churn_paid_transformed_continent.csv
+svm
+93
+93
+active_free_transformed_continent.csv-churn_free_transformed_continent.csv
+svm
+99
+99
+churn_transformed_continent.csv-active_transformed_continent.csv
+svm
+105
+105
+paid_transformed_continent.csv-free_transformed_continent.csv
+svm
+105
+105

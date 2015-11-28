@@ -28,13 +28,13 @@ def makeXYforClassifier_combinedData(datapath, fname_arr, ncomp, kpca): ## fname
 	"RevokePushBefore", "RevokePushSameday", "UninstalledTF","UninstalledSameday"]
 	
 	## Categorical feature list
-	category_arr_list = ["AppVersion","Carrier", "DeviceModel","OS","UserType", "OSVersion","Timezone","ScreenWidth","ScreenHeight","Country" ] 
+	category_arr_list = ["AppVersion","Country","Carrier", "DeviceModel","OS","UserType", "OSVersion","Timezone","ScreenWidth","ScreenHeight" ] 
  	
 	numerical_arr_list = ["NumCampaignMatch","NumCrash","DailyUsage","InstallDays",
 	"PushCount","Questions","CorrectQuestion", "BlockPushAfterDays", "RevokePushAfterDays", "UninstalledAfter", "LastUpdateDays"]
 	
 	## Low variance features will be excluded
-	ignore_arr_list = ["ID", "AdOptedIn","Carrier","AllowiBeacon","HaveUniqueGlobalID","OS","SignIn","EmailExist","UserType"]
+	ignore_arr_list = ["ID","Timezone" ,"Carrier", "HaveUniqueGlobalID" ,"UserType","Country", "UninstalledAfter","UninstalledTF", "UninstalledTF","UninstalledSameday"]
  	c = 0
  
  	att_value_hash = dict()
@@ -113,7 +113,7 @@ def imputeMissingValue(path, fname, att_name_list, category_arr_list ):
  		 
 		for val, att_name in zip(att_arr,att_name_list):
  			val = val.strip() 
- 			if val == "None":
+ 			if val == "None" or val == "NA" :
 				val = np.nan 
  			att_value_hash[att_name].append(val)
 	

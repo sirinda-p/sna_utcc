@@ -1,6 +1,6 @@
 import featureUtil as futil
 import sklearn.linear_model as linmodel
-import operator
+
 
 import clusterUtil as mycluster
 import extractUtil as extUtil
@@ -57,8 +57,9 @@ def main():
 		print fname0+"-"+fname1
 		XData, YData, newfeature_arr  = futil.makeXYforClassifier_combinedData(datapath, [fname0, fname1], ncomp, kpca)
 		print "svm"
-		myclassifier.svm(XData, YData)
-		
+		print  len(newfeature_arr )
+		myclassifier.svm(XData, YData, newfeature_arr)
+		break
 		#print "logistic"
 		#myclassifier.logistic(XData, YData)
 	

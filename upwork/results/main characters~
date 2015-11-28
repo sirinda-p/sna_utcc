@@ -1,0 +1,11 @@
+Churners
+
+1. The longer the users install the app, the more likely they will stop using the app.
+2. Churners used older version of the app but they used the most up to date OS version. The older version  of the app might not work well on the newer OS version? 
+3. The higher number of questions the users  get, the more likely they will stop using the app. 
+4. Churners  allowed push notification and  blocked push feature either on same day or later after first using the app. 
+5. Churners revoked push token either before or after first using the app.
+6. Churners allowed Bluetooth.
+7. Churners used larger device models.
+8. Churners signed in (minor effect)
+

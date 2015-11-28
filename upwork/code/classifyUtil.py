@@ -4,7 +4,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.grid_search import GridSearchCV
 import matplotlib.pyplot as plt
 import numpy as np
-	
+import operator
+
 def logistic_plot():
 	## Build a logistic regression 
   	logit = linmodel.LogisticRegression()
@@ -19,17 +20,17 @@ def logistic_plot():
  		if coef >0:
 			positive_coef[feature] = coef
 		else:
-			negative_coef[feature] = coef
+			negative_coef[feature] = coef*-1
  
  	sorted_positive_coef = sorted(positive_coef.items(), key=operator.itemgetter(1),reverse=True) 
  	sorted_negative_coef = sorted(negative_coef.items(), key=operator.itemgetter(1)) 
 	#print sorted_positive_coef
- 	print "Positive features"
-	for pos_tuple in sorted_positive_coef :
+ 	print "Top 20 positive features"
+	for pos_tuple in sorted_positive_coef[0:20] :
 		print pos_tuple
 	
-	print "Negative features"
-	for neg_tuple in sorted_negative_coef:
+	print "\nTop 20 negative features"
+	for neg_tuple in sorted_negative_coef[0:20]:
 		print neg_tuple
  
 def logistic(X, Y):
@@ -45,8 +46,8 @@ def logistic(X, Y):
 	print acc_score
 	
 	
-def svm(X, Y):
-	param_grid = {'C': [0.1, 1, 10, 100, 1000], 'loss' : ['hinge', 'squared_hinge'],  'penalty':['l2']},
+def svm(X, Y, att_name_arr):
+	param_grid = { 'C': [0.1, 1, 10, 100, 1000], 'loss' : ['hinge', 'squared_hinge'],  'penalty':['l2']},
  	
 	svm = mysvm.LinearSVC()
 	
@@ -55,10 +56,33 @@ def svm(X, Y):
 	estimator.fit(X, Y)
 	best_estimator = estimator.best_estimator_
 	acc_score = best_estimator.score(X,Y)
-	''' Check out for posts on how to get informative features from svm
-	http://stackoverflow.com/questions/11116697/how-to-get-most-informative-features-for-scikit-learn-classifiers 
-	http://stats.stackexchange.com/questions/39243/how-does-one-interpret-svm-feature-weights
-	'''
+	coef_arr = best_estimator.coef_[0]
+	print "Prediction accuracy = "+str(acc_score)
+	printCoef(coef_arr, att_name_arr)
+
+def printCoef(coef_arr, att_name_arr):
+	positive_coef = dict()
+	negative_coef = dict()
+
+	for feature, coef in zip(att_name_arr, coef_arr):
+		if coef >0:
+			positive_coef[feature] = coef
+		else:
+			negative_coef[feature] = coef
+ 
+ 	sorted_positive_coef = sorted(positive_coef.items(), key=operator.itemgetter(1),reverse=True) 
+ 	sorted_negative_coef = sorted(negative_coef.items(), key=operator.itemgetter(1)) 
+	#print sorted_positive_coef
+	print "Top 20 positive features"
+	i = 1
+	for pos_tuple in sorted_positive_coef[0:20] :
+		print str(i)+"."+str(pos_tuple)
+		i+=1
+	i=1
+	print "\nTop 20 negative features"
+	for neg_tuple in sorted_negative_coef[0:20]:
+		print str(i)+"."+str(neg_tuple)
+	
  		
 def pca_logistic(X, Y):
  

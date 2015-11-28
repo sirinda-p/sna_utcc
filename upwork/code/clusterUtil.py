@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from sklearn import metrics
 from numpy.random import random
+
 def kmean_bestK(data, minK, maxK):
  
 	## perform k-mean and select the best k
