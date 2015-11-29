@@ -1,0 +1,527 @@
+
+active_paid-churn_paid
+Class 0 = active_paid, Class 1 = churn_paid
+
+SVM
+Prediction accuracy = 0.987421383648
+{'penalty': 'l2', 'loss': 'hinge', 'C': 10}
+
+Top 20 positive features
+1.('InstallDays', 5.3206950676849631)
+2.('OSVersion-901', 1.7429446289369219)
+3.('Questions', 1.0262529023557745)
+4.('BlockPushAfterDays', 1.0014402498806545)
+5.('BlockPushSameday', 0.98850417762960663)
+6.('DeviceModel-iPhone 6', 0.7627722086141514)
+7.('AllowPush', 0.73574226593934267)
+8.('OSVersion-902', 0.66209682417334503)
+9.('AppVersion-1061241', 0.64036549691397759)
+10.('AppVersion-1061240', 0.63183394205796672)
+11.('AllowBT', 0.59171422737655732)
+12.('DeviceModel-Unknown iPhone8', 0.34459256882628331)
+13.('RevokePushAfterDays', 0.27314241818213436)
+14.('ScreenHeight-736', 0.27034105132260278)
+15.('ScreenWidth-414', 0.27034105132260278)
+16.('DeviceModel-iPad Air', 0.26062291694324891)
+17.('DeviceModel-Unknown iPad5', 0.26054208616028163)
+18.('ScreenHeight-480', 0.19353027653133908)
+19.('RevokePushBefore', 0.18570106639008802)
+20.('SignIn', 0.10351197597940577)
+
+Top 20 negative features
+1.('LastUpdateDays', -8.3375280581966784)
+2.('AppVersion-1071256', -1.2024830772964086)
+3.('OSVersion-830', -1.009974829096524)
+4.('DeviceModel-iPhone 6 Plus', -0.66465381696899828)
+5.('OSVersion-813', -0.5637612603728902)
+6.('DeviceModel-iPhone 5s', -0.45138658358639)
+7.('OSVersion-712', -0.37662509980411851)
+8.('OSVersion-910', -0.36112093619347635)
+9.('DailyUsage', -0.3101718109392318)
+10.('CorrectQuestion', -0.29796034899396395)
+11.('ScreenHeight-568', -0.25532841553866781)
+12.('DeviceModel-iPhone 4S', -0.25094461449288114)
+13.('NumCampaignMatch', -0.22368496451263437)
+14.('PushCount', -0.22368496451263437)
+15.('ScreenWidth-375', -0.13882655063972665)
+16.('ScreenHeight-667', -0.13882655063972665)
+17.('AdOptedIn', -0.11598470471453491)
+18.('DeviceModel-iPhone 5c', -0.093014621598426661)
+19.('DeviceModel-iPad 4', -0.076690112079309924)
+20.('ScreenWidth-320', -0.061798139007324254)
+
+Logistic regression
+Prediction accuracy = 1.0
+{'penalty': 'l1', 'C': 100}
+
+Top 20 positive features
+1.('InstallDays', 42.557983229028565)
+2.('OSVersion-901', 11.746515741098108)
+3.('CorrectQuestion', 4.3752406814538425)
+4.('AllowBT', 4.2731651653907603)
+5.('AllowPush', 3.4702890835712026)
+6.('DeviceModel-iPhone 6', 3.3454235664132677)
+7.('AppVersion-1061241', 2.226135423067181)
+8.('AllowFeaturePush', 1.2461342818082988)
+9.('OSVersion-902', 0.99409889928168749)
+10.('ScreenWidth-414', 0.56068826545743611)
+11.('AdOptedIn', 0.55691166500314548)
+12.('BlockPushSameday', 0.40037486054684046)
+13.('ScreenHeight-736', 0.34634690339125962)
+14.('OSVersion-920', 0.27018135488955325)
+15.('OSVersion-910', 0.26821759286072594)
+
+Top 20 negative features
+1.('LastUpdateDays', -71.889593713391747)
+2.('AppVersion-1071256', -9.3891882704087166)
+3.('OSVersion-830', -4.8652831608035711)
+4.('OSVersion-812', -2.5818313422810948)
+5.('DeviceModel-iPhone 5', -2.260155887186504)
+6.('DailyUsage', -1.8570280935060441)
+7.('SignIn', -1.8542476194240869)
+8.('ScreenHeight-568', -1.8382349592273977)
+9.('RevokePushTF', -0.27152412987329794)
+10.('OSVersion-840', -0.20486687979966345)
+11.('DeviceModel-iPhone 4S', -0.13721886589403184)
+12.('OSVersion-712', 0.0)
+13.('BlockPushTF', 0.0)
+14.('DeviceModel-iPad mini 2G', 0.0)
+15.('OS-ios', 0.0)
+16.('RevokePushSameday', 0.0)
+17.('DeviceModel-iPad Air', 0.0)
+18.('ScreenWidth-375', 0.0)
+19.('RevokePushAfterDays', 0.0)
+20.('PushCount', 0.0)
+
+Decision tree
+Prediction accuracy = 0.981132075472
+{'min_samples_split': 5, 'max_depth': 5, 'min_samples_leaf': 3}
+
+Top 20 positive features
+1.('LastUpdateDays', 0.82337221614161993)
+2.('InstallDays', 0.090821729129821352)
+3.('AllowFeaturePush', 0.080033728570921697)
+4.('SignIn', 0.0057723261576370531)
+
+Top 20 negative features
+1.('OSVersion-712', 0.0)
+2.('BlockPushTF', 0.0)
+3.('DeviceModel-iPad mini 2G', 0.0)
+4.('CorrectQuestion', 0.0)
+5.('DailyUsage', 0.0)
+6.('RevokePushSameday', 0.0)
+7.('AppVersion-1071256', 0.0)
+8.('DeviceModel-iPad Air', 0.0)
+9.('ScreenWidth-375', 0.0)
+10.('RevokePushAfterDays', 0.0)
+11.('PushCount', 0.0)
+12.('OSVersion-841', 0.0)
+13.('RevokePushBefore', 0.0)
+14.('RevokePushTF', 0.0)
+15.('AppVersion-1081259', 0.0)
+16.('NumCampaignMatch', 0.0)
+17.('ScreenHeight-568', 0.0)
+18.('ScreenWidth-320', 0.0)
+19.('OSVersion-920', 0.0)
+20.('OSVersion-901', 0.0)
+
+active_free-churn_free
+Class 0 = active_free, Class 1 = churn_free
+
+SVM
+Prediction accuracy = 0.908646003263
+{'penalty': 'l2', 'loss': 'squared_hinge', 'C': 1000}
+
+Top 20 positive features
+1.('NumCampaignMatch', 8.4400159461814024)
+2.('PushCount', 8.4400159461813953)
+3.('InstallDays', 7.9076069642584699)
+4.('RevokePushAfterDays', 3.0787685976618118)
+5.('RevokePushTF', 1.2864926786984652)
+6.('BlockPushAfterDays', 0.95896426738256357)
+7.('AppVersion-1061241', 0.87789914492010668)
+8.('OSVersion-704', 0.78697936737554386)
+9.('DeviceModel-iPad mini 1G', 0.74151035372136587)
+10.('DeviceModel-iPod touch 5G', 0.71902806867638636)
+11.('OSVersion-810', 0.71484987017736634)
+12.('SignIn', 0.68395773149266303)
+13.('DeviceModel-iPad Air', 0.53947991761045488)
+14.('RevokePushSameday', 0.52837390920393179)
+15.('AllowPush', 0.43688691752529829)
+16.('OSVersion-830', 0.41835355855578432)
+17.('OSVersion-902', 0.38411568749534392)
+18.('OSVersion-802', 0.35559640023616612)
+19.('OSVersion-900', 0.34257712521395078)
+20.('BlockPushTF', 0.26579313959701723)
+
+Top 20 negative features
+1.('LastUpdateDays', -39.582663906509083)
+2.('Questions', -2.4867563486984503)
+3.('OSVersion-702', -1.3874951009910841)
+4.('DeviceModel-iPad 4', -1.0498736323721511)
+5.('AdOptedIn', -0.7900904398696692)
+6.('AppVersion-1071256', -0.71746623966543921)
+7.('OSVersion-910', -0.59846295358872337)
+8.('DailyUsage', -0.58992493815493274)
+9.('RevokePushBefore', -0.42438993115839069)
+10.('OSVersion-711', -0.41570359845334792)
+11.('DeviceModel-Unknown iPhone8', -0.40436662187537836)
+12.('DeviceModel-iPhone 6 Plus', -0.39770386811427438)
+13.('AllowBT', -0.34490750121953995)
+14.('OSVersion-813', -0.29949621574423518)
+15.('CorrectQuestion', -0.28648584192716109)
+16.('DeviceModel-iPhone 6', -0.28582369701191407)
+17.('DeviceModel-iPad 3', -0.20644573697299734)
+18.('OSVersion-841', -0.20021044243939248)
+19.('DeviceModel-iPhone 4S', -0.18225617968231875)
+20.('DeviceModel-Unknown iPad2', -0.16285502082714065)
+
+Logistic regression
+Prediction accuracy = 0.915171288744
+{'penalty': 'l2', 'C': 1000}
+
+Top 20 positive features
+1.('NumCampaignMatch', 24.986975910575769)
+2.('PushCount', 24.897162255550306)
+3.('InstallDays', 23.599560113954457)
+4.('RevokePushAfterDays', 17.413654944106128)
+5.('AppVersion-1061241', 4.9590723490477346)
+6.('DeviceModel-iPad mini 1G', 4.674967465889253)
+7.('OSVersion-810', 4.596988287356826)
+8.('DeviceModel-iPod touch 5G', 4.2058321613292282)
+9.('OSVersion-802', 3.2640785102822241)
+10.('OSVersion-704', 3.0587527826522551)
+11.('BlockPushAfterDays', 2.829786456070273)
+12.('RevokePushTF', 2.8024217531717426)
+13.('NumCrash', 1.9423970751787301)
+14.('RevokePushSameday', 1.8763835392247001)
+15.('DeviceModel-Unknown iPad4', 1.6486674734338558)
+16.('OSVersion-710', 1.4460594459043268)
+17.('SignIn', 1.2492638014136876)
+18.('AllowPush', 1.2157755464049631)
+19.('DeviceModel-iPhone 5c', 1.0381482580670971)
+20.('EmailExist', 1.0169641110538115)
+
+Top 20 negative features
+1.('LastUpdateDays', -158.79915929725806)
+2.('Questions', -7.8479345676247654)
+3.('OSVersion-702', -6.508289845812949)
+4.('AppVersion-1071256', -3.9421082379924957)
+5.('DeviceModel-Unknown iPod7', -3.2005638304796085)
+6.('AdOptedIn', -2.9109770319902664)
+7.('DeviceModel-iPad 4', -2.8189030070231516)
+8.('DeviceModel-Unknown iPad2', -1.750293189374021)
+9.('DailyUsage', -1.6875531683232787)
+10.('OSVersion-813', -1.6609489373082154)
+11.('OSVersion-711', -1.3121388286440727)
+12.('OSVersion-910', -1.2538832201975545)
+13.('DeviceModel-iPad 3', -1.1813643519846362)
+14.('OSVersion-712', -0.96891810024022618)
+15.('DeviceModel-iPhone 6 Plus', -0.95637622701319547)
+16.('DeviceModel-Unknown iPhone8', -0.65030970845696157)
+17.('DeviceModel-iPhone 4S', -0.55009572484359548)
+18.('OSVersion-840', -0.40796426848985512)
+19.('OSVersion-841', -0.33731843496882685)
+20.('CorrectQuestion', -0.31068408908816136)
+
+Decision tree
+Prediction accuracy = 0.904567699837
+{'min_samples_split': 5, 'max_depth': 5, 'min_samples_leaf': 3}
+
+Top 20 positive features
+1.('LastUpdateDays', 0.72060095808401814)
+2.('InstallDays', 0.2066911080431722)
+3.('NumCampaignMatch', 0.051940696789223688)
+4.('OSVersion-902', 0.013903039219310619)
+5.('PushCount', 0.0032821440658563957)
+6.('ScreenWidth-320', 0.0013189152061124391)
+7.('CorrectQuestion', 0.0012090056056030688)
+8.('OSVersion-910', 0.00057099352172757618)
+9.('OSVersion-813', 0.00048313946497592511)
+
+Top 20 negative features
+1.('OSVersion-712', 0.0)
+2.('BlockPushTF', 0.0)
+3.('DeviceModel-iPad mini 2G', 0.0)
+4.('OS-ios', 0.0)
+5.('DailyUsage', 0.0)
+6.('RevokePushSameday', 0.0)
+7.('AppVersion-1071256', 0.0)
+8.('DeviceModel-iPad Air', 0.0)
+9.('ScreenWidth-375', 0.0)
+10.('RevokePushAfterDays', 0.0)
+11.('OSVersion-840', 0.0)
+12.('OSVersion-841', 0.0)
+13.('DeviceModel-iPod touch 5G', 0.0)
+14.('RevokePushBefore', 0.0)
+15.('RevokePushTF', 0.0)
+16.('OSVersion-800', 0.0)
+17.('ScreenHeight-568', 0.0)
+18.('OSVersion-802', 0.0)
+19.('OSVersion-901', 0.0)
+20.('OSVersion-900', 0.0)
+
+active-churn
+Class 0 = active, Class 1 = churn
+
+SVM
+Prediction accuracy = 0.905415162455
+{'penalty': 'l2', 'loss': 'hinge', 'C': 10}
+
+Top 20 positive features
+1.('InstallDays', 9.3606485398794739)
+2.('NumCampaignMatch', 5.1749913678382251)
+3.('PushCount', 5.1749913678382198)
+4.('BlockPushSameday', 1.379240735653362)
+5.('DeviceModel-iPod touch 5G', 1.3605943952587005)
+6.('RevokePushSameday', 0.86549514141575057)
+7.('OSVersion-811', 0.56208516111247186)
+8.('DeviceModel-Unknown iPad4', 0.52701816195934403)
+9.('OSVersion-902', 0.50082753930764956)
+10.('AppVersion-1061240', 0.45846451546453759)
+11.('OSVersion-901', 0.44615637371963168)
+12.('OSVersion-810', 0.44515052023592322)
+13.('BlockPushAfterDays', 0.42488680720186361)
+14.('EmailExist', 0.37108425527161798)
+15.('OS-ios', 0.37108425527161798)
+16.('EmailAddress', 0.37108425527161798)
+17.('AllowGeo', 0.37108425527161798)
+18.('AppVersion-1061241', 0.37020685759918182)
+19.('AllowPush', 0.33892768916529104)
+20.('OSVersion-704', 0.31007820228276783)
+
+Top 20 negative features
+1.('LastUpdateDays', -23.022499498425578)
+2.('Questions', -1.9768258743322726)
+3.('OSVersion-702', -1.9023059595989162)
+4.('OSVersion-910', -1.3184408399237142)
+5.('AdOptedIn', -1.2611247064444358)
+6.('RevokePushBefore', -0.6039540711352519)
+7.('AppVersion-1071256', -0.45758711779209982)
+8.('DailyUsage', -0.37293642431827528)
+9.('DeviceModel-iPhone 6 Plus', -0.28725957369145078)
+10.('CorrectQuestion', -0.28710234725380929)
+11.('DeviceModel-iPhone 5s', -0.2788669998299862)
+12.('AllowBT', -0.25233769210533802)
+13.('DeviceModel-iPhone 4', -0.22497656086413029)
+14.('DeviceModel-Unknown iPhone8', -0.21788840982329707)
+15.('DeviceModel-iPhone 5c', -0.20871251985022257)
+16.('DeviceModel-iPhone 4S', -0.20258105710240704)
+17.('DeviceModel-iPhone 6', -0.13863770118249708)
+18.('OSVersion-800', -0.13024271653930902)
+19.('DeviceModel-Unknown iPod7', -0.12713304122212479)
+20.('DeviceModel-iPad 4', -0.12263408251869409)
+
+Logistic regression
+Prediction accuracy = 0.910469314079
+{'penalty': 'l1', 'C': 1}
+
+Top 20 positive features
+1.('InstallDays', 12.261090329715167)
+2.('NumCampaignMatch', 9.4435721408686906)
+3.('PushCount', 4.4692412014531673)
+4.('AppVersion-1061241', 2.6122374516966884)
+5.('RevokePushTF', 1.6136368908239862)
+6.('OSVersion-902', 1.2089497620934466)
+7.('RevokePushSameday', 1.1350661196330942)
+8.('AllowPush', 1.0315044205856114)
+9.('OSVersion-901', 0.46603880347627269)
+10.('DeviceModel-iPhone 5', 0.44803360994329405)
+11.('OSVersion-810', 0.3514556221304817)
+12.('OSVersion-900', 0.30033408241754828)
+13.('SignIn', 0.25262527360850578)
+14.('DeviceModel-iPhone 6', 0.24244368338693545)
+15.('DeviceModel-iPad Air', 0.131522719977686)
+16.('ScreenHeight-568', 0.059564623046372528)
+17.('AllowFeaturePush', 0.05665104764143946)
+18.('OSVersion-704', 0.025754204717309794)
+
+Top 20 negative features
+1.('LastUpdateDays', -33.304363533842817)
+2.('OSVersion-910', -1.2695602906633268)
+3.('OSVersion-702', -0.78191560441374774)
+4.('AppVersion-1071256', -0.63599616068552123)
+5.('OSVersion-813', -0.35154188112006268)
+6.('AllowBT', -0.27820292706792349)
+7.('CorrectQuestion', -0.16296298908708751)
+8.('OSVersion-840', -0.082085699525278708)
+9.('OSVersion-712', -0.081602602630809887)
+10.('DeviceModel-iPhone 5s', -0.080731326185842292)
+11.('BlockPushTF', -0.071628248535148001)
+12.('DeviceModel-iPhone 6 Plus', -0.044602561955337926)
+13.('DeviceModel-iPad mini 2G', 0.0)
+14.('DailyUsage', 0.0)
+15.('ScreenWidth-375', 0.0)
+16.('RevokePushAfterDays', 0.0)
+17.('AppVersion-1061239', 0.0)
+18.('OSVersion-841', 0.0)
+19.('DeviceModel-iPod touch 5G', 0.0)
+20.('RevokePushBefore', 0.0)
+
+Decision tree
+Prediction accuracy = 0.916245487365
+{'min_samples_split': 5, 'max_depth': 6, 'min_samples_leaf': 3}
+
+Top 20 positive features
+1.('LastUpdateDays', 0.73588205333558365)
+2.('InstallDays', 0.18732859581696029)
+3.('NumCampaignMatch', 0.042106085889828754)
+4.('OSVersion-902', 0.013331775288170207)
+5.('Questions', 0.012218938235418024)
+6.('PushCount', 0.0034898323594664236)
+7.('AdOptedIn', 0.0028553173850179815)
+8.('ScreenWidth-375', 0.001057524957414068)
+9.('RevokePushBefore', 0.00094002218436805987)
+10.('OSVersion-910', 0.00044565683733722549)
+11.('OSVersion-813', 0.00034419771043535727)
+
+Top 20 negative features
+1.('BlockPushTF', 0.0)
+2.('DeviceModel-iPad mini 2G', 0.0)
+3.('CorrectQuestion', 0.0)
+4.('DailyUsage', 0.0)
+5.('RevokePushSameday', 0.0)
+6.('AppVersion-1071256', 0.0)
+7.('DeviceModel-iPad Air', 0.0)
+8.('RevokePushAfterDays', 0.0)
+9.('AppVersion-1061239', 0.0)
+10.('OSVersion-841', 0.0)
+11.('DeviceModel-iPod touch 5G', 0.0)
+12.('ScreenWidth-414', 0.0)
+13.('RevokePushTF', 0.0)
+14.('AppVersion-1081259', 0.0)
+15.('OS-ios', 0.0)
+16.('OSVersion-800', 0.0)
+17.('ScreenHeight-568', 0.0)
+18.('OSVersion-802', 0.0)
+19.('ScreenWidth-320', 0.0)
+20.('OSVersion-920', 0.0)
+
+free-paid
+Class 0 = free, Class 1 = paid
+
+SVM
+Prediction accuracy = 0.950180505415
+{'penalty': 'l2', 'loss': 'hinge', 'C': 1}
+
+Top 20 positive features
+1.('Questions', 7.3589518443036255)
+2.('OSVersion-920', 1.2433121611189624)
+3.('InstallDays', 0.86825082904687034)
+4.('CorrectQuestion', 0.80639944177482747)
+5.('BlockPushAfterDays', 0.62572963465321652)
+6.('BlockPushSameday', 0.61805895795204047)
+7.('AdOptedIn', 0.5118947434167449)
+8.('DeviceModel-iPad 2', 0.47274191797161486)
+9.('AppVersion-1061240', 0.41925129861471205)
+10.('DeviceModel-iPad mini 1G', 0.4079595830119801)
+11.('OSVersion-812', 0.36020693823698219)
+12.('DeviceModel-Unknown iPad5', 0.31257847177677944)
+13.('AppVersion-1081259', 0.30888057312092854)
+14.('ScreenHeight-375', 0.30888057312092854)
+15.('ScreenWidth-667', 0.30888057312092854)
+16.('AllowBT', 0.30327820445300246)
+17.('OSVersion-813', 0.29830125539230001)
+18.('OSVersion-704', 0.27884112585618487)
+19.('DeviceModel-Unknown iPhone8', 0.27387655466540467)
+20.('RevokePushBefore', 0.26650561053567434)
+
+Top 20 negative features
+1.('NumCampaignMatch', -1.3172836383521898)
+2.('PushCount', -1.2082669654859828)
+3.('DailyUsage', -0.78920792879221058)
+4.('DeviceModel-Unknown iPad4', -0.61070004580087012)
+5.('OSVersion-900', -0.51061979044796146)
+6.('AppVersion-1061241', -0.45612592464996243)
+7.('RevokePushSameday', -0.37035391083516395)
+8.('AppVersion-1071256', -0.35636896530929013)
+9.('OSVersion-711', -0.33536638913729072)
+10.('OSVersion-902', -0.31844752608990212)
+11.('DeviceModel-iPhone 4S', -0.31698018807343842)
+12.('DeviceModel-iPad mini 2G', -0.29761384380409234)
+13.('OSVersion-901', -0.24377769832414051)
+14.('OSVersion-841', -0.23358693192928437)
+15.('OSVersion-910', -0.20724362792144413)
+16.('ScreenWidth-414', -0.20508767298765165)
+17.('ScreenHeight-736', -0.20508767298765165)
+18.('RevokePushTF', -0.20451826239545068)
+19.('OSVersion-830', -0.2004676862252896)
+20.('DeviceModel-iPhone 4', -0.17614359482554659)
+
+Logistic regression
+Prediction accuracy = 0.965342960289
+{'penalty': 'l1', 'C': 1}
+
+Top 20 positive features
+1.('Questions', 50.642341144101692)
+2.('CorrectQuestion', 2.0297006226739689)
+3.('InstallDays', 1.4671759120001462)
+4.('AllowBT', 1.110776594033877)
+5.('OSVersion-920', 1.0827543140951785)
+6.('DeviceModel-Unknown iPad5', 0.99540212847693044)
+7.('DeviceModel-Unknown iPhone8', 0.77813017420658026)
+8.('SignIn', 0.58783046883451351)
+9.('OSVersion-840', 0.49553527811184067)
+10.('OSVersion-813', 0.47219300744599862)
+11.('OSVersion-812', 0.14424592085304533)
+12.('DeviceModel-iPhone 6 Plus', 0.093176149896983793)
+
+Top 20 negative features
+1.('NumCampaignMatch', -4.2767027745659778)
+2.('DailyUsage', -1.2116378082196853)
+3.('OS-ios', -0.91385656295290485)
+4.('DeviceModel-iPhone 5', -0.75755906766889369)
+5.('RevokePushTF', -0.66997679419855527)
+6.('RevokePushSameday', -0.56591556255196729)
+7.('OSVersion-902', -0.55563110360604795)
+8.('AllowGeo', -0.50018974664066751)
+9.('EmailAddress', -0.48351179335990524)
+10.('EmailExist', -0.45055111085568389)
+11.('DeviceModel-iPhone 5s', -0.37455363877888614)
+12.('DeviceModel-iPhone 6', -0.35489932305887512)
+13.('ScreenHeight-736', -0.27335540112391632)
+14.('AppVersion-1071256', -0.21780533831772783)
+15.('ScreenWidth-320', -0.15489529026797291)
+16.('AllowPush', -0.1095797095911667)
+17.('OSVersion-712', -0.092594404928625043)
+18.('ScreenWidth-414', -0.0086296175744261516)
+19.('BlockPushTF', 0.0)
+20.('DeviceModel-iPad mini 2G', 0.0)
+
+Decision tree
+Prediction accuracy = 0.983393501805
+{'min_samples_split': 5, 'max_depth': 6, 'min_samples_leaf': 4}
+
+Top 20 positive features
+1.('Questions', 0.94089413787178089)
+2.('OSVersion-910', 0.018386456189895393)
+3.('SignIn', 0.017886344581530236)
+4.('CorrectQuestion', 0.011246530538730039)
+5.('InstallDays', 0.0044593015680600805)
+6.('NumCrash', 0.0018468700057161737)
+7.('DeviceModel-Unknown iPad5', 0.0017007366910189213)
+8.('DeviceModel-iPhone 6', 0.0014096552477545295)
+9.('AllowBT', 0.0010973080983940288)
+10.('OSVersion-813', 0.0010726592071197585)
+
+Top 20 negative features
+1.('BlockPushTF', 0.0)
+2.('DeviceModel-iPad mini 2G', 0.0)
+3.('OS-ios', 0.0)
+4.('DailyUsage', 0.0)
+5.('RevokePushSameday', 0.0)
+6.('AppVersion-1071256', 0.0)
+7.('DeviceModel-iPad Air', 0.0)
+8.('ScreenWidth-375', 0.0)
+9.('RevokePushAfterDays', 0.0)
+10.('AppVersion-1061239', 0.0)
+11.('OSVersion-841', 0.0)
+12.('DeviceModel-iPod touch 5G', 0.0)
+13.('RevokePushBefore', 0.0)
+14.('RevokePushTF', 0.0)
+15.('AppVersion-1081259', 0.0)
+16.('NumCampaignMatch', 0.0)
+17.('OSVersion-800', 0.0)
+18.('ScreenHeight-568', 0.0)
+19.('OSVersion-802', 0.0)
+20.('ScreenWidth-320', 0.0)

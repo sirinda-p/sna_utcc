@@ -1,10 +1,13 @@
-from sklearn import linear_model, decomposition, datasets
+from sklearn import linear_model, decomposition, datasets, tree
 import sklearn.svm as mysvm
 from sklearn.pipeline import Pipeline
 from sklearn.grid_search import GridSearchCV
 import matplotlib.pyplot as plt
 import numpy as np
 import operator
+from sklearn.externals.six import StringIO  
+import pydot
+from IPython.display import Image 
 
 def logistic_plot():
 	## Build a logistic regression 
@@ -25,7 +28,7 @@ def logistic_plot():
  	sorted_positive_coef = sorted(positive_coef.items(), key=operator.itemgetter(1),reverse=True) 
  	sorted_negative_coef = sorted(negative_coef.items(), key=operator.itemgetter(1)) 
 	#print sorted_positive_coef
- 	print "Top 20 positive features"
+ 	print "\nTop 20 positive features"
 	for pos_tuple in sorted_positive_coef[0:20] :
 		print pos_tuple
 	
@@ -44,9 +47,39 @@ def logistic(X, Y, att_name_arr):
 	acc_score = best_estimator.score(X,Y)
 	coef_arr = best_estimator.coef_[0]
 	print "Prediction accuracy = "+str(acc_score)
+	print estimator.best_params_
 	printCoef(coef_arr, att_name_arr)
+	return estimator
 	
+def decisiontree(X, Y, att_name_arr, treename):
+	param_grid = {'min_samples_split':[10],'min_samples_leaf': [5], 'max_depth':[4]},
 	
+	clf = tree.DecisionTreeClassifier()
+	estimator =  GridSearchCV(clf, param_grid)
+	estimator.fit(X, Y)
+	best_estimator = estimator.best_estimator_
+	 
+	acc_score = best_estimator.score(X,Y)
+	print "Prediction accuracy = "+str(acc_score)
+	print estimator.best_params_
+	
+	printCoef( best_estimator.feature_importances_, att_name_arr)	
+	'''
+	tree.export_graphviz(clf, out_file=dot_data) 
+	graph = pydot.graph_from_dot_data(dot_data.getvalue()) 
+	graph.write_pdf("test.pdf") 
+	'''
+ 	dot_data = StringIO()  
+  	 
+	tree.export_graphviz(best_estimator, out_file=dot_data,  
+                         feature_names = att_name_arr,  
+                         class_names= [str(c) for c in best_estimator.classes_],  
+                         rounded=True,  
+                         special_characters=True)  
+	graph = pydot.graph_from_dot_data(dot_data.getvalue())  
+	Image(graph.create_png()) 
+	graph.write_pdf("tree_"+treename+".pdf") 
+		
 def svm(X, Y, att_name_arr):
 	param_grid = { 'C': [0.1, 1, 10, 100, 1000], 'loss' : ['hinge', 'squared_hinge'],  'penalty':['l2']},
  	
@@ -59,8 +92,10 @@ def svm(X, Y, att_name_arr):
 	acc_score = best_estimator.score(X,Y)
 	coef_arr = best_estimator.coef_[0]
 	print "Prediction accuracy = "+str(acc_score)
+	print estimator.best_params_
 	printCoef(coef_arr, att_name_arr)
-
+	return estimator
+	
 def printCoef(coef_arr, att_name_arr):
 	positive_coef = dict()
 	negative_coef = dict()
@@ -74,7 +109,7 @@ def printCoef(coef_arr, att_name_arr):
  	sorted_positive_coef = sorted(positive_coef.items(), key=operator.itemgetter(1),reverse=True) 
  	sorted_negative_coef = sorted(negative_coef.items(), key=operator.itemgetter(1)) 
 	#print sorted_positive_coef
-	print "Top 20 positive features"
+	print "\nTop 20 positive features"
 	i = 1
 	for pos_tuple in sorted_positive_coef[0:20] :
 		print str(i)+"."+str(pos_tuple)
