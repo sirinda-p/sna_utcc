@@ -2,6 +2,7 @@ import os
 import igraph as ig
 import numpy
 import stat_myutil as mystat 
+import math
 
 def getSigSubgNumber(outfile, fanmod_path, size):
 	f = open(fanmod_path+outfile, "r")
@@ -145,7 +146,10 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 	selected_node = set()	
 	## extract subgraphs and get nodes in those significant subgraphs
 	for line in mfile.readlines()[2::]:
-		 
+		
+		if size == 2:
+			motif_id, n1, n2  = 	line.strip().split(",")
+			temp = [float(n1), float(n2) ] 
 		if size == 3:
 			motif_id, n1, n2, n3 = 	line.strip().split(",")
 			temp = [float(n1), float(n2), float(n3)] 
@@ -173,7 +177,7 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 	return selected_node, cmotif
 		
 def main_correlation(): 
-	machine = "home"
+	machine = "ubuntu"
 	if machine == "ubuntu":
 		prefix = "/home/ubuntu/Desktop/sna_utcc/"
 	else:
@@ -185,10 +189,10 @@ def main_correlation():
 	gml_path = prefix+"data/gml/notempnode/"
 	
 	
-	for size in (3,4): ## need to change node ids in motifs of ICT57  
+	for size in ([3,4]): ## need to change node ids in motifs of ICT57  
  		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
 
- 		type_arr = ["bf", "friend", "study"]
+ 		type_arr = ["friend","bf", "study"] # 
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
 		print "size "+str(size)
 		f_w = open(result_path+"one-tailed_2sampleTest_gpa_motifSize"+str(size)+"VSall.txt", "w")
@@ -209,23 +213,29 @@ def main_correlation():
 				dumpfilename= fname + "_"+t+ ".txt.csv.dump"
  				dfile = open(fanmod_path+dumpfilename, "r")
 				## Get significant subgraphs numbers in outfile
- 
-				sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)	
+				if size == 2:
+					sigNo_arr = [1] 
+				else:
+					sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)	
 							 
 				motif_nodes, cmotif = getNodesInMotif(size, g, dfile, directed, sigNo_arr,node_all)
 				nonmotif_nodes = set(node_all).difference(set(motif_nodes))
 				tval, pval = mystat.test2Means(motif_nodes, nonmotif_nodes, g)
 
-				print (fname, cmotif)
+				if math.isnan(pval):
+					print fname
+					print (len(motif_nodes),len(nonmotif_nodes))
 				tow = "%15s, %5.4f, %5.4f\n" %(fname, tval.item(), pval)
 				f_w.write(tow)
+				 
 			f_w.write("\n") 
+			 
 	 	f_w.close()
 		
 			
 			
 def main(): 
-	'''
+	
 	fanmod_path = "/home/ubuntu/Desktop/sna_utcc/result/motif/fanmod/"
 	result_path = "/home/ubuntu/Desktop/sna_utcc/result/motif/analysis/"
 	gml_path = "/home/ubuntu/Desktop/sna_utcc/data/gml/notempnode/"
@@ -233,9 +243,9 @@ def main():
 	fanmod_basepath = "/home/amm/Desktop/sna-project/sna-git/result/motif/fanmod/"
 	result_path = "/home/amm/Desktop/sna-project/sna-git/result/motif/analysis/"
 	gml_path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
+	'''
 	
-	
-	for size in range(3,5): ## need to find motifs in ICT57 -->change node id to  digits
+	for size in range(3,5): ## need to find motifs in ICT57 -->change node id to  digits - may be done
 		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
 		type_arr = [ "friend", "study"]
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"

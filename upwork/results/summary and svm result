@@ -8,7 +8,6 @@ Prediction accuracy = 0.987421383648 (from 3-fold cross validation)
 (See weights of top 20 positive/negative features at the end of this document) 
 
 
-
 Characters of churners
 
 1. The longer the users install the app, the more likely they will stop using the app.

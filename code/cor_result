@@ -1,0 +1,53 @@
+clique
+Niti56_friend.gml
+H1:False
+H2:NAN-denom
+-----
+Ac57_friend.gml
+H1:False
+H2:False
+-----
+Biz55_friend.gml
+H1: pvalue = 0.48
+H2: pvalue = 0.52
+-----
+EC55_friend.gml
+H1:False
+H2: pvalue = 0.96
+-----
+Eng55_friend.gml
+H1:NAN-nom
+H2:NAN-nom
+-----
+HM Act57_friend.gml
+H1:False
+H2:False
+-----
+HM Korea57_friend.gml
+H1: pvalue = 0.59
+H2: pvalue = 0.6
+-----
+HM Thai57_friend.gml
+H1:False
+H2: pvalue = 0.39
+-----
+ICT55_friend.gml
+H1:NAN-nom
+H2:NAN-nom
+-----
+ICT56_friend.gml
+H1:NAN-nom
+H2:NAN-nom
+-----
+ICT57-All_friend.gml
+H1:NAN-nom
+H2:NAN-nom
+-----
+Nited56_friend.gml
+H1:False
+H2: pvalue = 0.9
+-----
+Niti55_friend.gml
+H1:False
+H2: pvalue = 0.78
+-----

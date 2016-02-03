@@ -1,0 +1,53 @@
+clique
+Niti56_study.gml
+H1:False
+H2: pvalue = 0.45
+-----
+Ac57_study.gml
+H1: pvalue = 0.5
+H2: pvalue = 0.6
+-----
+Biz55_study.gml
+H1: pvalue = 0.97
+H2:False
+-----
+EC55_study.gml
+H1: pvalue = 0.58
+H2: pvalue = 0.49
+-----
+Eng55_study.gml
+H1: pvalue = 0.54
+H2:NAN-nom
+-----
+HM Act57_study.gml
+H1: pvalue = 0.94
+H2: pvalue = 0.99
+-----
+HM Korea57_study.gml
+H1: pvalue = 0.57
+H2: pvalue = 0.57
+-----
+HM Thai57_study.gml
+H1: pvalue = 0.46
+H2: pvalue = 0.47
+-----
+ICT55_study.gml
+H1:False
+H2: pvalue = 0.48
+-----
+ICT56_study.gml
+H1:False
+H2: pvalue = 0.64
+-----
+ICT57-All_study.gml
+H1:False
+H2: pvalue = 0.4
+-----
+Nited56_study.gml
+H1:False
+H2: pvalue = 0.49
+-----
+Niti55_study.gml
+H1: pvalue = 0.54
+H2: pvalue = 0.55
+-----

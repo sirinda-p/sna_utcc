@@ -1,0 +1,59 @@
+friend
+Permutation test
+Clique Hypothesis
+['nan', 'nan', 'nan', 'nan', 'nan', 'nan', 'nan', 'nan', 0.43, 'nan', 'nan', 0.41, 'nan']
+[False, 'NAN-nom', 'NAN-nom', 'NAN-nom', 'NAN-nom', False, False, False, True, False, False, True, False]
+Broker Hypothesis
+['nan', 'nan', 'nan', 'nan', 'nan', 'nan', 'nan', 0.99, 0.83, 0.84, 'nan', 'nan', 0.98]
+[False, 'NAN-nom', 'NAN-nom', 'NAN-nom', 'NAN-nom', False, False, True, True, True, False, False, True]
+Isolator Hypothesis
+[1.0, 'nan', 'nan', 'nan', 'nan', 'nan', 'nan', 'nan', 1.0, 1.0, 1.0, 1.0, 'nan']
+[True, 'NAN-nom', 'NAN-nom', 'NAN-nom', 'NAN-nom', 'NAN-nom', 'NAN-nom', 'NAN-nom', True, True, True, True, 'NAN-nom']
+
+t test
+Clique Hypothesis
+[0.024291222306544402, nan, nan, nan, nan, 0.0086195234648600884, 0.0064012207249847294, 0.009842211307594299, 0.18304344991542654, 0.14592239636221371, 0.15557638328972728, 0.09458976543978577, 0.015108971355684005]
+Broker Hypothesis
+[0.42083215948872643, nan, nan, nan, nan, 0.446587283691399, nan, nan, 0.042731460709498473, 0.037317188208018895, 0.12851082368184752, 0.41467453875420279, 0.34130694268497397]
+Isolator Hypothesis
+[nan, nan, nan, nan, nan, nan, nan, nan, 0.008711154623824208, 0.026905357446867676, 0.12621123054341016, 0.14484717472211647, nan]
+
+study
+Permutation test
+Clique Hypothesis
+[0.53, 0.58, 'nan', 'nan', 'nan', 0.42, 'nan', 0.94, 0.45, 0.18, 'nan', 0.97, 'nan']
+[True, True, False, False, False, True, False, True, True, True, False, True, False]
+Broker Hypothesis
+[0.73, 'nan', 0.49, 0.67, 0.51, 0.66, 0.62, 1.0, 0.71, 'nan', 0.54, 'nan', 0.65]
+[True, 'NAN-nom', True, True, True, True, True, True, True, 'NAN-nom', True, 'NAN-nom', True]
+Isolator Hypothesis
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+[True, True, True, True, True, True, True, True, True, True, True, True, True]
+
+t test
+Clique Hypothesis
+[0.23895643843020659, nan, 0.13396491890478229, 0.0097997902118589098, 0.4437101574842619, 0.26368397260130344, 0.41154670298324791, 0.012243721259390794, 0.013104136176003842, 0.00060454052053771112, 0.48456271544745755, 0.0059740842968720644, 0.43495051141258606]
+Broker Hypothesis
+[0.064285640039598857, nan, 0.028044350933698094, 0.19277227273632158, 0.033379890791958793, 0.30203629211138061, 0.0046320602608391822, nan, 0.29689181026412864, nan, 0.051395698389142833, nan, 0.015677819272998446]
+Isolator Hypothesis
+[0.014320156022560723, 4.8850264906278542e-05, 0.46623553465036321, nan, 0.00099482022993515858, 0.11860793397399756, 5.7425422716956233e-05, 0.0021197659125946153, 0.00017916868096751055, 4.9271524183667348e-05, 0.0028470635128520533, 0.0004023691955404112, 0.0086384167681666478]
+
+bf
+Permutation test
+Clique Hypothesis
+[0.6, 'nan', 'nan', 'nan', 'nan', 0.44, 'nan', 0.85, 0.43, 0.2, 'nan', 0.53, 'nan']
+[True, False, False, False, False, True, False, True, True, True, False, True, False]
+Broker Hypothesis
+[0.5, 0.81, 0.74, 'nan', 0.74, 'nan', 0.58, 1.0, 0.66, 0.73, 'nan', 0.85, 0.64]
+[True, True, True, 'NAN-nom', True, False, True, True, True, True, False, True, True]
+Isolator Hypothesis
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+[True, True, True, True, True, True, True, True, True, True, True, True, True]
+
+t test
+Clique Hypothesis
+[0.03762132121064634, 0.0075098575154302688, 0.37314795794585232, 0.0091892677847642615, 0.4827431832092226, 0.25976891471152141, 0.28389751865773433, 0.0051856262830947963, 0.1212180130327964, 0.00032018626301356934, 0.079483288629618995, 0.014525516385459233, 0.35405098054178952]
+Broker Hypothesis
+[0.4030804380395589, 0.19410668507246207, 0.20190547277043358, nan, 0.32577303934692992, 0.44931204014718362, 0.16594826789188821, nan, 0.040771956887879546, 0.22576656366349873, 0.096853874182752125, nan, 0.0049963721350978346]
+Isolator Hypothesis
+[0.0080284757708377896, nan, nan, nan, 0.25839638962336031, nan, 0.0013046733290958672, 0.0010168825660775015, 0.0059697628919123096, 0.00052812032035616616, 0.21861810939413701, 0.020831485117994947, 0.0038487433104214186]

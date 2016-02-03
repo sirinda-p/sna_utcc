@@ -1,18 +1,3 @@
-bf (Name, t-stat, one-tailed pvalue (nan = no motif found)
-           Ac57, 0.9415, 0.1757
-          Eng55, 3.1269, 0.0068
-          ICT55, -0.9189, 0.1813
-          ICT56, 0.4460, 0.3318
-      ICT57-All, 0.3857, 0.3506
-         Niti55, 1.9103, 0.0306
-         Niti56, 2.9689, 0.0024
-       HM Act57, 3.0167, 0.0208
-     HM Korea57, 3.7829, 0.0021
-      HM Thai57, 3.0374, 0.0035
-        Nited56, 3.2098, 0.0011
-          Biz55, 2.7693, 0.0060
-           EC55, 2.4262, 0.0091
-
 friend (Name, t-stat, one-tailed pvalue (nan = no motif found)
            Ac57, -0.5879, 0.3006
           Eng55,   nan,   nan
@@ -27,6 +12,21 @@ friend (Name, t-stat, one-tailed pvalue (nan = no motif found)
         Nited56, 2.4779, 0.0088
           Biz55, 2.4763, 0.0073
            EC55, 0.1693, 0.4390
+
+bf (Name, t-stat, one-tailed pvalue (nan = no motif found)
+           Ac57, 0.9415, 0.1757
+          Eng55, 3.1269, 0.0068
+          ICT55, -0.9189, 0.1813
+          ICT56, 0.4460, 0.3318
+      ICT57-All, 0.3857, 0.3506
+         Niti55, 1.9103, 0.0306
+         Niti56, 2.9689, 0.0024
+       HM Act57, 3.0167, 0.0208
+     HM Korea57, 3.7829, 0.0021
+      HM Thai57, 3.0374, 0.0035
+        Nited56, 3.2098, 0.0011
+          Biz55, 2.7693, 0.0060
+           EC55, 2.4262, 0.0091
 
 study (Name, t-stat, one-tailed pvalue (nan = no motif found)
            Ac57, -0.0282, 0.4889

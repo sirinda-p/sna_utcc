@@ -7,8 +7,7 @@ def test2Means(motif_nodeid,nonmotif_nodeid,  g):
 	score_motif = getGPA(motif_nodeid, gpa_hash)
 
 	tval, pval = stats.ttest_ind(score_motif,score_all, equal_var=False)
-	print (tval, pval)
-	return tval,pval/2
+ 	return tval,pval/2
 	
 
 def getGPA(node_arr, gpa_hash):

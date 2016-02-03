@@ -1,0 +1,52 @@
+active_paid - churn_paid 
+
+Logistic regression 
+
+Prediction accuracy = 1.0 (from 3-fold cross validation)
+
+Top 20 positive features
+1.('InstallDays', 19.623127589978228)
+
+2.('OSVersion-901', 5.5709313293533045)
+8.('OSVersion-902', 0.97573929894265798)
+
+3.('AllowPush', 2.2482635692350588)
+9.('AllowFeaturePush', 0.66659480459495135)
+11.('BlockPushSameday', 0.1725200957743224)
+
+4.('CorrectQuestion', 2.1542375830138023)
+
+5.('AllowBT', 2.0362493250855596)
+
+6.('DeviceModel-iPhone 6', 1.422189878362764)
+
+7.('AppVersion-1061241', 1.0945484201354081)
+
+10.('ScreenHeight-736', 0.19752003650738265)
+12.('ScreenWidth-414', 0.13472691739844289)
+
+13.('DeviceModel-Unknown iPhone8', 0.099688094947061684)
+14.('DeviceModel-iPad Air', 0.034272782065854074)
+
+
+Top 20 negative features
+1.('LastUpdateDays', -35.304663519553223)
+
+2.('AppVersion-1071256', -5.1564995802054003)
+
+3.('OSVersion-830', -1.5788484657988622)
+7.('OSVersion-812', -0.5114223823877585)
+
+4.('ScreenHeight-568', -1.0186498055967337)
+
+
+5.('DeviceModel-iPhone 4S', -0.73346053058455174)
+8.('DeviceModel-iPhone 5', -0.38210163443345807)
+8.('DeviceModel-iPhone 5', -0.38210163443345807)
+
+6.('SignIn', -0.57301124810537729)
+
+7.('OSVersion-812', -0.5114223823877585)
+
+9.('DailyUsage', -0.35158306804339784)
+ 

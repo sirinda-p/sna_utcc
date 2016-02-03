@@ -1,0 +1,235 @@
+clique
+Niti56_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.54
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.55
+-----
+Ac57_study.gml
+H1 (clique>non_clique): pvalue = 0.47
+H2 (broker>Iso+Norole): pvalue = 0.65
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.66
+-----
+Biz55_study.gml
+H1 (clique>non_clique): pvalue = 0.97
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):NAN-nom
+-----
+EC55_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.63
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.64
+-----
+Eng55_study.gml
+H1 (clique>non_clique): pvalue = 0.51
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):NAN-nom
+-----
+HM Act57_study.gml
+H1 (clique>non_clique): pvalue = 0.93
+H2 (broker>Iso+Norole): pvalue = 1.0
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 1.0
+-----
+HM Korea57_study.gml
+H1 (clique>non_clique): pvalue = 0.43
+H2 (broker>Iso+Norole): pvalue = 0.68
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.65
+-----
+HM Thai57_study.gml
+H1 (clique>non_clique): pvalue = 0.21
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):NAN-nom
+-----
+ICT55_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.48
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.48
+-----
+ICT56_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.74
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.75
+-----
+ICT57-All_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.47
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.44
+-----
+Nited56_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.58
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.58
+-----
+Niti55_study.gml
+H1 (clique>non_clique): pvalue = 0.43
+H2 (broker>Iso+Norole): pvalue = 0.62
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.63
+-----
+Niti56_friend.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole):False
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker):False
+-----
+Ac57_friend.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole):False
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):False
+-----
+Biz55_friend.gml
+H1 (clique>non_clique): pvalue = 0.5
+H2 (broker>Iso+Norole):False
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):False
+-----
+EC55_friend.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole):False
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker): pvalue = 0.97
+-----
+Eng55_friend.gml
+H1 (clique>non_clique):NAN-nom
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker):NAN-nom
+-----
+HM Act57_friend.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole):False
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker): pvalue = 1.0
+-----
+HM Korea57_friend.gml
+H1 (clique>non_clique): pvalue = 0.47
+H2 (broker>Iso+Norole): pvalue = 0.72
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.74
+-----
+HM Thai57_friend.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.73
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.78
+-----
+ICT55_friend.gml
+H1 (clique>non_clique):NAN-nom
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker):NAN-nom
+-----
+ICT56_friend.gml
+H1 (clique>non_clique):NAN-nom
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker):NAN-nom
+-----
+ICT57-All_friend.gml
+H1 (clique>non_clique):NAN-nom
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker):NAN-nom
+-----
+Nited56_friend.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole):False
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):False
+-----
+Niti55_friend.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole):False
+H3 (Iso<NonIso):NAN-nom
+H4 (broker<Nonbroker):False
+-----
+Niti56_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.63
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.64
+-----
+Ac57_study.gml
+H1 (clique>non_clique): pvalue = 0.55
+H2 (broker>Iso+Norole): pvalue = 0.59
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.6
+-----
+Biz55_study.gml
+H1 (clique>non_clique): pvalue = 1.0
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):NAN-nom
+-----
+EC55_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.63
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.65
+-----
+Eng55_study.gml
+H1 (clique>non_clique): pvalue = 0.52
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):NAN-nom
+-----
+HM Act57_study.gml
+H1 (clique>non_clique): pvalue = 0.95
+H2 (broker>Iso+Norole): pvalue = 1.0
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 1.0
+-----
+HM Korea57_study.gml
+H1 (clique>non_clique): pvalue = 0.53
+H2 (broker>Iso+Norole): pvalue = 0.62
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.62
+-----
+HM Thai57_study.gml
+H1 (clique>non_clique): pvalue = 0.18
+H2 (broker>Iso+Norole):NAN-nom
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker):NAN-nom
+-----
+ICT55_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.52
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.51
+-----
+ICT56_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.71
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.72
+-----
+ICT57-All_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.47
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.47
+-----
+Nited56_study.gml
+H1 (clique>non_clique):False
+H2 (broker>Iso+Norole): pvalue = 0.55
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.56
+-----
+Niti55_study.gml
+H1 (clique>non_clique): pvalue = 0.47
+H2 (broker>Iso+Norole): pvalue = 0.58
+H3 (Iso<NonIso): pvalue = 1.0
+H4 (broker<Nonbroker): pvalue = 0.59
+-----

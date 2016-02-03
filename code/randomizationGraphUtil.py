@@ -19,8 +19,9 @@ def swapedges(ftype, g):
 def swapedges_withAttributes(ftype, g, gpa_intID_hash, gender_intID_hash ):
  	
 	if ftype== "friend":
- 
+		print "get out seq"
 		out_seq = [v.degree() for v in g.vs()]
+		print "create random graph" ## taking too long. need to change this function
 		newg = ig.Graph.Degree_Sequence(out_seq, method="no_multiple")
 			
 	else:
@@ -31,14 +32,32 @@ def swapedges_withAttributes(ftype, g, gpa_intID_hash, gender_intID_hash ):
 		#print out_seq
 		#print in_seq
 		try:
+			print "create random graph" 
 			newg = ig.Graph.Degree_Sequence(out_seq, in_seq, method="no_multiple")
 		except Exception as e :
 			print e
 			
 			raise e
-			 
+	print "get attributes"
 	for v in newg.vs():
 		v['gpa'] = gpa_intID_hash[v.index]
 		v['gender'] = gender_intID_hash[v.index]
 
 	return newg
+
+
+def ER_withAttributes(ftype, gpa_intID_hash,  n,m ):
+	
+	if ftype== "friend":
+  		
+		newg = ig.Graph.Erdos_Renyi(n=n,  m=m, directed=False, loops=False)
+			
+	else:
+		newg = ig.Graph.Erdos_Renyi(n=n,  m=m, directed=True, loops=False)
+		
+	for v in newg.vs():
+		v['gpa'] = gpa_intID_hash[v.index]
+ 
+	return newg
+		
+		

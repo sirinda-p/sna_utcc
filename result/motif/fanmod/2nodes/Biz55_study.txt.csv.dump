@@ -1,0 +1,8 @@
+Number of subgraphs: 6
+Format: adjacency matrix, <participating vertices>
+1,8054,8055
+1,8055,8054
+1,8104,8106
+1,8106,8104
+1,8155,8176
+1,8176,8155
