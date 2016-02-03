@@ -9,7 +9,7 @@ import classifyUtil as myclassifier
 
 def main():
 	
-	machine = "aws"
+	machine = "amm"
 	if machine == "amm":
 		prefix = "/home/amm/Desktop/sna-project/sna-git/upwork/"
 	else:
@@ -40,9 +40,9 @@ def main():
 	
 	## 1. Active paid = 0 vs churn_paid = 1 
 	fname0_arr = ["active_paid_transformed_continent.csv","active_free_transformed_continent.csv",
-	"churn_transformed_continent.csv","paid_transformed_continent.csv"]
-	fname1_arr = ["churn_paid_transformed_continent.csv","churn_free_transformed_continent.csv",
 	"active_transformed_continent.csv","free_transformed_continent.csv"]
+	fname1_arr = ["churn_paid_transformed_continent.csv","churn_free_transformed_continent.csv",
+	"churn_transformed_continent.csv","paid_transformed_continent.csv"]
 	
 	## Set minimum and maximum number of features to keep 
    	kpcamin = 10
@@ -54,17 +54,24 @@ def main():
    	ncompmax =  4
    	ncomp = 2
    	for fname0, fname1 in zip(fname0_arr, fname1_arr):
-		print fname0+"-"+fname1
+		class0 = fname0.replace("_transformed_continent.csv","")
+		class1 = fname1.replace("_transformed_continent.csv","")
+		treename = class0+"-"+class1
+		print "\n"+treename
+		print "Class 0 = "+class0+", Class 1 = "+class1
+		
+		
 		XData, YData, newfeature_arr  = futil.makeXYforClassifier_combinedData(datapath, [fname0, fname1], ncomp, kpca)
-		#print "svm"
+		print "\nSVM"
 		#print  len(newfeature_arr )
-		#myclassifier.svm(XData, YData, newfeature_arr)
+		myclassifier.svm(XData, YData, newfeature_arr)
 		 
-		print "logistic"
+		print "\nLogistic regression"
 		myclassifier.logistic(XData, YData, newfeature_arr)
-		
+		print "\nDecision tree"
+		myclassifier.decisiontree(XData, YData, newfeature_arr, treename)
 		## Build a classification tree using features from logistic regression
-		
+	 
 				
 main()
 	
