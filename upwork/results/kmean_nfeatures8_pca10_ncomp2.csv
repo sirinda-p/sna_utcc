@@ -1,9 +1,0 @@
-,Cluster #0,Cluster #1,Cluster #2,Cluster #3
-AllowGeo,0.0000 (False),0.0000 (False),0.0000 (False),0.0000 (False)
-DeviceModel,iPod touch 5G,iPod touch 5G,iPod touch 5G,iPhone 6
-InstallDays,3.3872 ,10.5573 ,13.6123 ,12.5794 
-RevokePushAfterDays,0.0000 ,0.3127 ,1.8106 ,1.6667 
-RevokePushBefore,0.0000 (False),0.6873 (True),0.6872 (True),0.6587 (True)
-UninstalledAfter,-0.0000 ,1.4923 ,2.4714 ,0.7619 
-UninstalledSameday,0.0000 (False),0.0805 (False),0.0969 (False),0.0794 (False)
-UninstalledTF,1.0000 (True),0.1641 (False),0.0925 (False),0.0714 (False)
