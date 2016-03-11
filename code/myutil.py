@@ -86,12 +86,10 @@ def getGenderHash_intID(g):
 	  
 	for v in g.vs():
 		gender_hash[v.index] = v['gender']
-		 
 		
 	return gender_hash	
 	 
 def countGender(comm_arr, g):
-	
 	
 	gender_freq_list = []
 	for comm in comm_arr:
@@ -104,8 +102,19 @@ def countGender(comm_arr, g):
 		gender_freq_list.append(letter_freqs)
 	
 	return gender_freq_list
+	
+	 
+def countValuesFeatures(node_arr, g, feature_name):
+	
+	freq_list = []
+	for n in node_arr:
+		gender_arr.append(g.vs[n][feature_name])
+	
+	letter_freqs = collections.Counter(gender_arr)
+	freq_list.append(letter_freqs)
+	
+	return freq_list
 			
-
 
 
 

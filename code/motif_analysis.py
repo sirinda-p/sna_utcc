@@ -245,9 +245,9 @@ def main():
 	gml_path = "/home/amm/Desktop/sna-project/sna-git/data/gml/notempnode/"
 	'''
 	
-	for size in range(3,5): ## need to find motifs in ICT57 -->change node id to  digits - may be done
+	for size in range(3,5):  
 		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
-		type_arr = [ "friend", "study"]
+		type_arr = [ "friend", "study", "bf"]
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
 		print size
 		for t in type_arr:

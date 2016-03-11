@@ -1,5 +1,0 @@
-clique
-Niti56_study.gml
-H1 (clique>non_clique): t, pvalue = (array(-0.22750125889230385), 0.41154670298324791)
-H2 (broker>Iso+Norole): t, pvalue = (array(2.9865358414166883), 0.0039253618779379806)
-H3 (Iso<NonIso): t, pvalue = (array(4.265305992933802), 5.7425422716956233e-05)

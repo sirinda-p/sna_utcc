@@ -79,8 +79,8 @@ def Centrality_grade_correlation_main(g, directed, cen_arr, cen_score_arr_all):
 	
  
 def main_powerlaw():
-	path = "/home/amm/Desktop/sna-git/data/gml/notempnode/"
-	result_path = "/home/amm/Desktop/sna-git/result/analysis/"
+	path = "/home/ubuntu/Desktop/sna_utcc/data/gml/notempnode/"
+	result_path = "/home/ubuntu/Desktop/sna_utcc/result/freqDistPlot/new/"
 	
 	k = 10 # top k students with the highest centrality scores
 	
@@ -108,17 +108,15 @@ def main_powerlaw():
 				print "Error importing a graph"
 				continue
 			
-			
-			
 			if directed:
 				indeg_arr = [d for d in g.indegree() if d>0]
 				pvalue_in = power_law_fit(indeg_arr,return_alpha_only=False).p
-				pathfname = "/home/amm/Desktop/sna-git/result/freqDistPlot/"+fname.replace(".gml","_indegree.png")
+				pathfname = result_path+fname.replace(".gml","_indegree.png")
 				plotFreqDist(indeg_arr , pathfname, directed, 'Indegree')	
 				
 				outdeg_arr = [d for d in g.outdegree() if d>0]
 				pvalue_out = power_law_fit(outdeg_arr,return_alpha_only=False).p
-				pathfname = "/home/amm/Desktop/sna-git/result/freqDistPlot/"+fname.replace(".gml","_outdegree.png")
+				pathfname = result_path+fname.replace(".gml","_outdegree.png")
 				plotFreqDist(outdeg_arr , pathfname, directed, 'Outdegree')	
 				
 				tow = "%10s, %5.4f %5.4f\n " %(fname, pvalue_in, pvalue_out)
@@ -126,7 +124,7 @@ def main_powerlaw():
 			else:
 				deg_arr = [d for d in g.degree() if d>0]
 				pvalue = power_law_fit(deg_arr,return_alpha_only=False).p
-				pathfname = "/home/amm/Desktop/sna-git/result/freqDistPlot/"+fname.replace(".gml","_degree.png")
+				pathfname = result_path+fname.replace(".gml","_degree.png")
 				plotFreqDist(deg_arr, pathfname, directed)
 					
 				tow = "%10s, %5.4f\n " %(fname, pvalue)
@@ -138,11 +136,9 @@ def main_powerlaw():
 def plotFreqDist(arr, pathfname, directed, degree='Degree'):
 	
 	plt.hist(arr)
-	if directed:
-		plt.xlabel('Indegree')
-	else:
-		plt.xlabel(degree)
+	plt.xlabel(degree)
 	plt.ylabel('Frequency')
+	
 	#plt.show()
 	plt.savefig(pathfname)
 	plt.clf()
@@ -380,8 +376,7 @@ def main_TopBottomKOnly():
 			f_gpaH.close()
 			f_gpaL.close()
 				
-main_structure()
-#main_TopBottomKOnly()
+main_powerlaw()
 '''
 Structure properties:
 - Centrality 

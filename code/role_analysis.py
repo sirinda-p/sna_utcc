@@ -199,9 +199,9 @@ def ExtGenderGPA(g, surveyed_g, comm_technique, nodeid_surveyed_set, nodeid_all_
 	 
 	gpa_role_hash['clique'] =   [g.vs[idx]['gpa'] for idx in  clique_members_set]
 	gpa_role_hash['broker']=   [g.vs[idx]['gpa'] for idx in  broker_set]
-	gpa_role_hash['isolator'] =  [g.vs[idx]['gpa'] for idx in  isolators_index_all_set]
+	gpa_role_hash['isolator'] =  [g.vs[idx]['gpa'] for idx in  isolators_index_surveyed_set]
 	gpa_role_hash['norole'] =  [g.vs[idx]['gpa'] for idx in  norole_set]
-
+	
 	return gpa_role_hash 
 
 def calPvalue_ratioDifference( mratio_arr_hash, fratio_arr_hash, difratio_hash, rndmnumber):
@@ -297,60 +297,64 @@ def main_withGender():
 
  
 def checkMean_clique_non_clique( gpa_role_hash ):
-	if len(gpa_role_hash['clique'])>0:
+	numarr = len(gpa_role_hash['clique'])
+	if numarr>0:
 		clique_mean = sum(gpa_role_hash['clique'])/len(gpa_role_hash['clique'])
 	else:
-		return "NAN-nom"
+		return "NAN-nom", numarr
 	nonclique_arr = gpa_role_hash['broker']+gpa_role_hash['isolator']+gpa_role_hash['norole']
 	
 	if len(nonclique_arr)>0:
 		nonclique_mean = sum(nonclique_arr)/len(nonclique_arr)
 		 
-		return clique_mean>nonclique_mean
+		return clique_mean>nonclique_mean, numarr
 	else:
-		return "NAN-denom"
+		return "NAN-denom", numarr
 	
 def checkMean_broker_nonBroker( gpa_role_hash ):
-	if len(gpa_role_hash['broker'])>0:
+	numarr = len(gpa_role_hash['broker'])
+	if numarr>0:
 		broker_mean = sum(gpa_role_hash['broker'])/len(gpa_role_hash['broker'])
 	else:
-		return "NAN-nom"
+		return "NAN-nom", numarr
 	nonbroker_arr =  gpa_role_hash['isolator']+gpa_role_hash['norole']+gpa_role_hash['clique']
 	
 	if len(nonbroker_arr)>0:
 		nonbroker_mean = sum(nonbroker_arr)/len(nonbroker_arr)
 
-		return broker_mean>nonbroker_mean	
+		return broker_mean>nonbroker_mean, numarr	
 	else:
-		return "NAN-denom"
+		return "NAN-denom", numarr
 		
 def checkMean_broker_IsoNorole( gpa_role_hash ):
-	if len(gpa_role_hash['broker'])>0:
+	numarr = len(gpa_role_hash['broker'])
+	if numarr>0:
 		broker_mean = sum(gpa_role_hash['broker'])/len(gpa_role_hash['broker'])
 	else:
-		return "NAN-nom"
+		return "NAN-nom", numarr
 	nonbroker_arr =  gpa_role_hash['isolator']+gpa_role_hash['norole']
 	
 	if len(nonbroker_arr)>0:
 		nonbroker_mean = sum(nonbroker_arr)/len(nonbroker_arr)
 
-		return broker_mean>nonbroker_mean	
+		return broker_mean>nonbroker_mean, numarr	
 	else:
-		return "NAN-denom"
+		return "NAN-denom", numarr
 
 def checkMean_Isolator_nonIso( gpa_role_hash):
-	if len(gpa_role_hash['isolator'])>0:
+	numarr = len(gpa_role_hash['isolator'])
+	if numarr>0:
 		isolator_mean = sum(gpa_role_hash['isolator'])/len(gpa_role_hash['isolator'])
 	else:
-		return "NAN-nom"
+		return "NAN-nom", numarr
 	nonisolator_arr =  gpa_role_hash['broker']+gpa_role_hash['norole']+gpa_role_hash['clique']
 	
 	if len(nonisolator_arr)>0:
 		nonisolator_mean = sum(nonisolator_arr)/len(nonisolator_arr)
 
-		return isolator_mean<nonisolator_arr	
+		return isolator_mean<nonisolator_arr, numarr	
 	else:
-		return "NAN-denom"
+		return "NAN-denom", numarr
 	
 ####
 def testMean_clique_non_clique( gpa_role_hash ):
@@ -425,6 +429,10 @@ def main():
 		isGrtr_broker_permute_arr = []
 		isGrtr_iso_permute_arr = []
 		
+ 		num_clique_arr = []
+		num_broker_arr = []
+		num_iso_arr = []
+		print ""
  		print t
  
 		for fname in flist:
@@ -452,7 +460,8 @@ def main():
 			nodeid_all_set = set([v.index for v in  g.vs])
 			
   			gpa_role_hash  = ExtGenderGPA(g, surveyed_g, comm_technique, nodeid_surveyed_set, nodeid_all_set, directed, csize)
-			 
+			print fname+" "+str(len(gpa_role_hash['isolator']))
+			continue
  	 		gpa_role_hash_arr_rdn  = ExtGenderGPA_4rndRoles(g, surveyed_g, comm_technique, nodeid_surveyed_set, nodeid_all_set,rndmnumber, directed,t, gpa_intID_hash,  csize)
 			
 			
@@ -475,14 +484,15 @@ def main():
 			tiso_arr.append(p3)
  			
  
-			isGreater = checkMean_clique_non_clique( gpa_role_hash )
+			isGreater, num_clique = checkMean_clique_non_clique( gpa_role_hash )
 			isGrtr_clique_permute_arr.append(isGreater)
+			num_clique_arr.append(num_clique)
 			
   			if isGreater and isGreater!="NAN-denom" and isGreater!="NAN-nom":
 				nom = 0.
  				for i in range(0, rndmnumber):
 					
-					isGreater_random = checkMean_clique_non_clique( gpa_role_hash_arr_rdn[i] )
+					isGreater_random, numarr = checkMean_clique_non_clique( gpa_role_hash_arr_rdn[i] )
 					if isGreater_random:
 						nom += 1.
 			 
@@ -490,6 +500,7 @@ def main():
 				pclique_permute_arr.append(p_value)
  			else:
 				pclique_permute_arr.append("nan")
+				
 			''' 
 			## 2. Broker members have higher GPA than no-role + isolator members
 		 
@@ -511,15 +522,16 @@ def main():
 				print "H2 (broker>Iso+Norole):"+str(isGreater)
 			'''
 			## 3. Isolators have lower GPA than non-isolator members
-			isGreater = checkMean_Isolator_nonIso( gpa_role_hash )
+			isGreater, num_iso = checkMean_Isolator_nonIso( gpa_role_hash )
 			isGrtr_iso_permute_arr.append(isGreater)
-		
+  			num_iso_arr.append(num_iso)
+			
 			if isGreater and  isGreater!="NAN-denom" and isGreater!="NAN-nom":
 				nom = 0.
 				
  				for i in range(0, rndmnumber):
 					
-					isGreater_random = checkMean_Isolator_nonIso( gpa_role_hash_arr_rdn[i] )
+					isGreater_random, numarr = checkMean_Isolator_nonIso( gpa_role_hash_arr_rdn[i] )
 					if isGreater_random:
 						nom += 1
 					
@@ -529,15 +541,17 @@ def main():
 				piso_permute_arr.append("nan")
 			
 			## 4. Broker members hvee higher GPA than non-broker members
-			isGreater = checkMean_broker_nonBroker( gpa_role_hash )
+			isGreater, num_broker = checkMean_broker_nonBroker( gpa_role_hash )
 			isGrtr_broker_permute_arr.append(isGreater)
-			
+
+			num_broker_arr.append(num_broker)
+
 			if isGreater and  isGreater!="NAN-denom" and isGreater!="NAN-nom":
 				nom = 0.
 				
  				for i in range(0, rndmnumber):
 					
-					isGreater_random = checkMean_broker_nonBroker( gpa_role_hash_arr_rdn[i] )
+					isGreater_random, numarr = checkMean_broker_nonBroker( gpa_role_hash_arr_rdn[i] )
 					if isGreater_random:
 						nom += 1
 					
@@ -546,26 +560,29 @@ def main():
 			else:
 				pbroker_permute_arr.append("nan")
 			
-		print "Permutation test"	
-		print "Clique Hypothesis"
-		print pclique_permute_arr 
-		print isGrtr_clique_permute_arr 
-		print "Broker Hypothesis"
-		print pbroker_permute_arr 
-		print isGrtr_broker_permute_arr 
-		print "Isolator Hypothesis"
-		print piso_permute_arr 
- 		print isGrtr_iso_permute_arr 
+		#print "Permutation test"	
+		#print "Clique Hypothesis"
+		#print pclique_permute_arr 
+		#print isGrtr_clique_permute_arr 
+		#print "Broker Hypothesis"
+		#print pbroker_permute_arr 
+		#print isGrtr_broker_permute_arr 
+		#print "Isolator Hypothesis"
+		#print piso_permute_arr 
+ 		#print isGrtr_iso_permute_arr 
  		
-		
-		
-		
-		print "t test"
- 		print "Clique Hypothesis"
-		print pclique_arr
- 		print "Broker Hypothesis"
-		print pbroker_arr 
-		print "Isolator Hypothesis"
-		print piso_arr
+
+ 		#print "t test"
+ 		#print "Clique Hypothesis"
+		#print pclique_arr
+		#print "#Clique "
+		#print num_clique_arr
+ 		#print "Broker Hypothesis"
+		#print pbroker_arr 
+		#print "#Brokers"
+ 		#print num_broker_arr
+ 		#print piso_arr
+		#print "#Isolators"
+		#print num_iso_arr
 main()
 			
