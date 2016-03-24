@@ -3,7 +3,11 @@ import igraph as ig
 import numpy
 import stat_myutil as mystat 
 import math
-
+import mycfinder as cfinder
+import collections, itertools
+from itertools import combinations, product
+from sklearn.metrics import jaccard_similarity_score, pairwise
+ 
 def getSigSubgNumber(outfile, fanmod_path, size):
 	f = open(fanmod_path+outfile, "r")
 	lines = f.readlines()
@@ -144,6 +148,7 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 		number_hash[v] = i
 	
 	selected_node = set()	
+	motif_hash = dict()
 	## extract subgraphs and get nodes in those significant subgraphs
 	for line in mfile.readlines()[2::]:
 		
@@ -166,15 +171,16 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 			
 			subg = g.subgraph(node_arr)
 			if len(subg.es()) == nedge:
+				motif_hash[cmotif] = node_arr
 				cmotif += 1
 				selected_node = selected_node.union(set(temp))
-
+			
 			elif len(subg.es()) > nedge:
 				print "Something is wrong. Number of edges in the graph exceeds the maximum number of edges" 
 	
 	#print (len(selected_node), len(vall))
  
-	return selected_node, cmotif
+	return selected_node, cmotif, motif_hash
 		
 def main_correlation(): 
 	machine = "ubuntu"
@@ -189,13 +195,13 @@ def main_correlation():
 	gml_path = prefix+"data/gml/notempnode/"
 	
 	
-	for size in ([3,4]): ## need to change node ids in motifs of ICT57  
+	for size in ([ 4]): ## need to change node ids in motifs of ICT57  
  		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
 
  		type_arr = ["friend","bf", "study"] # 
 		fanmod_path = fanmod_basepath+str(size)+"nodes/"
 		print "size "+str(size)
-		f_w = open(result_path+"one-tailed_2sampleTest_gpa_motifSize"+str(size)+"VSall.txt", "w")
+		f_w = open(result_path+"one-tailed_2sampleTest_gpa_motifSize"+str(size)+"VSall2.txt", "w")
 		for t in type_arr:
 			print t
 			f_w.write(t+" (Name, t-stat, one-tailed pvalue (nan = no motif found)\n")
@@ -219,21 +225,141 @@ def main_correlation():
 					sigNo_arr = getSigSubgNumber(outfile, fanmod_path, size)	
 							 
 				motif_nodes, cmotif = getNodesInMotif(size, g, dfile, directed, sigNo_arr,node_all)
+				print cmotif
 				nonmotif_nodes = set(node_all).difference(set(motif_nodes))
 				tval, pval = mystat.test2Means(motif_nodes, nonmotif_nodes, g)
-
+				'''
 				if math.isnan(pval):
 					print fname
 					print (len(motif_nodes),len(nonmotif_nodes))
 				tow = "%15s, %5.4f, %5.4f\n" %(fname, tval.item(), pval)
 				f_w.write(tow)
-				 
+				 '''
 			f_w.write("\n") 
 			 
 	 	f_w.close()
+
+def calSim(comm_hash, g, att, att_type, all_keys):
+	##Within group 
+	within_sim_arr = []
+	for key, comm in comm_hash.items():
+		tt = 0.
+		count = 0
+		for (x,y) in combinations(comm, 2):
+			if att_type =="nom":
+				if g.vs[x][att] == g.vs[y][att]: 
+					count += 1.
+			elif att_type == "ord":
+				count += pairwise.euclidean_distances(g.vs[x][att],g.vs[y][att])[0][0]
+				#print count
+			tt += 1
+		 
+		within_sim_arr.append( count/tt)
+	within_sim = sum(within_sim_arr)/len(within_sim_arr)
+	
+	##Btw group
+	btw_sim_arr = []
+	for (g1, g2) in combinations(all_keys, 2):
+		pair_node_arr = list(itertools.product(comm_hash[g1], comm_hash[g2]))
+		tt = 0.
+		count = 0
+		for (x,y) in pair_node_arr:
+			if att_type =="nom":
+				if g.vs[x][att] == g.vs[y][att]: 
+					count += 1.
+			elif att_type == "ord":
+				count += pairwise.euclidean_distances(g.vs[x][att],g.vs[y][att])[0][0]
+				
+			tt += 1
+		btw_sim_arr.append(count/tt)
+	btw_sim = sum(btw_sim_arr)/len(btw_sim_arr)
+	
+	return within_sim, btw_sim	
 		
+def main_variation(): 
+	machine = "ubuntu"
+	if machine == "ubuntu":
+		prefix = "/home/ubuntu/Desktop/sna_utcc/"
+	else:
+		prefix = "/home/amm/Desktop/sna-project/sna-git/"
+		
+ 
+	fanmod_basepath = prefix+"/result/motif/fanmod/"
+	result_path = prefix+"result/motif/analysis/"
+	gml_path = prefix+"data/gml/gml_moreAtt/ver2/"
+	
+	comm_type = "motif" #or "motif"
+	
+	for csize in ([ 4]): ## need to change node ids in motifs of ICT57  
+ 		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
+		if comm_type == "motif":
+			type_arr = [ "bf", "friend", "study" ] 
+		else:
+			type_arr = [ "friend", "study" ,"bf"] 
 			
+		fanmod_path = fanmod_basepath+str(csize)+"nodes/"
+		
+		## Cal correlation between a pair of nodes: single variable
+		ord_arr_arr = [ "total_income", "father_income", "mother_income" ] ## use cosine similarity
+		nom_att_arr = ["entry_degree",  "gender"] ## use jaccard similarity 
 			
+  		for t in type_arr:
+			f_w = open("/home/ubuntu/Desktop/sna_utcc/result/motif/analysis/variance_analysis_"+comm_type+"_"+t+".csv", "w")
+			f_w.write("fname, entry_degree_within_sim, entry_degree_btw_sim, gender_within_sim, gender_btw_sim, total_income_within_sim, total_income_btw_sim, father_income_within_sim, father_income_btw_sim, mother_income_within_sim, mother_income_btw_sim\n")
+  			
+  			for fname in flist:
+				print fname
+				if t == "friend":
+					directed = False
+					g = ig.read(gml_path+fname+"_"+t+".gml", format="gml").as_undirected().simplify()
+				else:
+					directed = True
+					g = ig.read(gml_path+fname+"_"+t+".gml", format="gml").simplify()
+				 
+				node_all = [n['id'] for n in g.vs() ]
+				outfile = fname + "_"+t+".txt.csv" 
+				dumpfilename= fname + "_"+t+ ".txt.csv.dump"
+ 				dfile = open(fanmod_path+dumpfilename, "r")
+				## Get significant subgraphs numbers in outfile
+				if csize == 2:
+					sigNo_arr = [1] 
+				else:
+					sigNo_arr = getSigSubgNumber(outfile, fanmod_path, csize)	
+				
+				if comm_type == "motif":
+								 
+					motif_nodes, cmoti, comm_hash = getNodesInMotif(csize, g, dfile, directed, sigNo_arr,node_all)
+ 				else: # use clique percolation
+					###
+					comm_hash = cfinder.cfinder(g, csize)
+					#clique_arr = g.cliques(min=csize, max=csize)
+				
+				## Add total_income = father_income + mother_incomoe 
+				g.vs["total_income"] = [v["father_income"]+v["mother_income"] for v in g.vs]
+ 
+				all_keys = comm_hash.keys()
+ 				if len(comm_hash.keys())<2: continue
+ 				att_sim_all_arr = []
+ 				
+ 				att_type = "nom"
+				for att in nom_att_arr:
+					#print att
+ 					within_sim, btw_sim	 = calSim(comm_hash, g, att, att_type, all_keys)
+					att_sim_all_arr.append((within_sim, btw_sim	))
+					
+				att_type = "ord"	
+ 				for att in ord_arr_arr:	 
+					 
+ 					within_sim, btw_sim	 = calSim(comm_hash, g, att, att_type, all_keys)
+					att_sim_all_arr.append((within_sim, btw_sim	))
+				
+				
+				val = str(att_sim_all_arr).replace("[","").replace("(","").replace(")","").replace("]","")
+				print val
+				to_w = fname+","+val+"\n"
+				f_w.write(to_w)
+			f_w.close()
+					
 def main(): 
 	
 	fanmod_path = "/home/ubuntu/Desktop/sna_utcc/result/motif/fanmod/"
@@ -274,4 +400,53 @@ def main():
 			f_nonsig.close()
 		
 			 
-main_correlation()
+main_variation()
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+				att_freq_hash = dict()
+				vall = [ v.index for v in g.vs()]
+				for att in ["gender", "minor_programname"]:
+ 					att_arr_all = [g.vs[v][att] for v in vall]
+  					att_freq_hash[att] = [collections.Counter(att_arr_all)]
+ 				
+				att_arr_all = [g.vs[v]["father_income"]+g.vs[v]["mother_income"]for v in vall]
+ 				att_freq_hash["income"] = [collections.Counter(att_arr_all)]
+				
+				if len(	comm_hash.keys())== 0: continue
+				print len(comm_hash.keys())
+				continue
+				for comm in comm_hash.values():
+  					## get a list of feature values 
+					## gender 
+					print comm
+					for att in ["gender", "minor_programname"]:
+ 						
+						att_arr_clique = [g.vs[c][att] for c in comm]
+  						att_freq_hash[att].append(collections.Counter(att_arr_clique))
+					
+					
+					#freq_list.append(letter_freqs)
+					
+					## income 
+					income_arr = [g.vs[c]["father_income"]+g.vs[c]["mother_income"]for c in comm]
+					att_freq_hash["income"].append(collections.Counter(income_arr))	
+			 
+				print ""		
+ 				for att, freq_arr in att_freq_hash.items():
+					print att 
+					for freq in freq_arr:
+						print freq
+					
+					print ""
+'''

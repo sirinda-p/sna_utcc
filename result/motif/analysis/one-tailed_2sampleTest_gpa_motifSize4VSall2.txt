@@ -1,0 +1,6 @@
+friend (Name, t-stat, one-tailed pvalue (nan = no motif found)
+
+bf (Name, t-stat, one-tailed pvalue (nan = no motif found)
+
+study (Name, t-stat, one-tailed pvalue (nan = no motif found)
+
