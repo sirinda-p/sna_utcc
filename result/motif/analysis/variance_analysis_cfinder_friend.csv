@@ -1,6 +1,18 @@
-fname, entry_degree_within_sim, entry_degree_btw_sim, gender_within_sim, gender_btw_sim, total_income_within_sim, total_income_btw_sim, father_income_within_sim, father_income_btw_sim, mother_income_within_sim, mother_income_btw_sim
-Niti55,0.265491875274484, 0.2973342116820377, 0.7755191668235146, 0.495740008783487, 2.5386598908338041, 2.37951690821256, 1.5060574691009474, 1.4153074220465525, 1.485472739820566, 1.4230193236714974
-HM Korea57,0.24544668294668295, 0.22829861111111113, 0.9814814814814815, 0.9814814814814814, 2.4304538054538054, 2.6176697530864197, 1.6855413105413106, 1.701195987654321, 1.6305962555962557, 1.7644675925925926
-Nited56,0.15801614222666854, 0.2015894436947068, 0.5144910092278514, 0.49598890388364075, 2.6910527357895777, 2.5844954266006899, 1.3945612471928261, 1.4006447743289849, 1.5535126798284693, 1.4656695156695159
-Biz55,0.1515455304928989, 0.13861904761904761, 0.6322055137844611, 0.6559523809523812, 1.999986076301866, 1.9626190476190475, 1.4258284600389863, 1.3957619047619048, 1.5216931216931215, 1.524
-EC55,0.19254091110128263, 0.27005985552115586, 0.46494766327583675, 0.4907533539731682, 1.8560803970711093, 1.9403632610939112, 1.3969010762199616, 1.4649473684210526, 0.98243206054351562, 0.96401651186790505
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+Niti55,0.265491875274484, 0.2973342116820377, 0.22320315931049628, 0.7755191668235146, 0.495740008783487, 0.5190286012296882, 0.40053113955287856, 0.42212170619235828, 0.37678427970593864
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+HM Korea57,0.24544668294668295, 0.22829861111111113, 0.2310474537037037, 0.9814814814814815, 0.9814814814814814, 0.8925925925925926, 0.40544180246561201, 0.41012744007535668, 0.4208106079395138
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+Nited56,0.15801614222666854, 0.2015894436947068, 'na', 0.5144910092278514, 0.49598890388364075, 'na', 0.38392159205129128, 0.40966691974367414, 'na'
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+Biz55,0.1515455304928989, 0.13861904761904761, 0.14569892473118282, 0.6322055137844611, 0.6559523809523812, 0.6009600614439324, 0.48926574693909691, 0.49879360441146159, 0.4471194035206128
+fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim
+EC55,0.19254091110128263, 0.27005985552115586, 0.2896055498222681, 0.46494766327583675, 0.4907533539731682, 0.501573214080954, 0.49865355791439392, 0.47888772175536876, 0.47889819865568051

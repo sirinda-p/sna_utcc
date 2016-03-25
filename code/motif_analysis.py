@@ -132,7 +132,7 @@ def getAvgGPAall(gml_path, fanmod_path, dumpfile, sigNo_arr, f_sig, f_nonsig):
 		
 
 			
-def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
+def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, number_hash  ):
 	## Analyze only a complete motif (complete graph) 
 	cmotif = 0
 	if directed: 
@@ -140,22 +140,17 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 	else:
 		nedge =  size*(size-1)/2
 		
-	
-	## get node number for each node id 
-	number_hash = dict()
-	
-	for v, i in zip(vall, range(0,len(vall))):
-		number_hash[v] = i
-	
-	selected_node = set()	
+  	
+  	selected_node = set()	
 	motif_hash = dict()
+	id_set = set()
 	## extract subgraphs and get nodes in those significant subgraphs
 	for line in mfile.readlines()[2::]:
 		
 		if size == 2:
 			motif_id, n1, n2  = 	line.strip().split(",")
 			temp = [float(n1), float(n2) ] 
-		if size == 3:
+		elif size == 3:
 			motif_id, n1, n2, n3 = 	line.strip().split(",")
 			temp = [float(n1), float(n2), float(n3)] 
 			
@@ -165,21 +160,21 @@ def getNodesInMotif(size, g, mfile, directed, sig_motifID_arr, vall):
 		
 		
 		motif_id = 	int(motif_id,2) 
- 	
+		
+		if motif_id in id_set: continue
 		if motif_id in sig_motifID_arr:
+			id_set.add(motif_id)
 			node_arr = set(number_hash[key] for key in temp)
+ 			subg = g.subgraph(node_arr)
+			#if len(subg.es()) == nedge:
+			motif_hash[cmotif] = node_arr
+			cmotif += 1
+			selected_node = selected_node.union(set(temp))
 			
-			subg = g.subgraph(node_arr)
-			if len(subg.es()) == nedge:
-				motif_hash[cmotif] = node_arr
-				cmotif += 1
-				selected_node = selected_node.union(set(temp))
-			
-			elif len(subg.es()) > nedge:
-				print "Something is wrong. Number of edges in the graph exceeds the maximum number of edges" 
+			#elif len(subg.es()) > nedge:
+				#print "Something is wrong. Number of edges in the graph exceeds the maximum number of edges" 
 	
-	#print (len(selected_node), len(vall))
- 
+ 	
 	return selected_node, cmotif, motif_hash
 		
 def main_correlation(): 
@@ -239,42 +234,77 @@ def main_correlation():
 			 
 	 	f_w.close()
 
-def calSim(comm_hash, g, att, att_type, all_keys):
+def calSim(comm_hash, g, att, att_type, all_keys, nongroup_node_set):
 	##Within group 
 	within_sim_arr = []
 	for key, comm in comm_hash.items():
 		tt = 0.
-		count = 0
+		count = 0.
 		for (x,y) in combinations(comm, 2):
 			if att_type =="nom":
 				if g.vs[x][att] == g.vs[y][att]: 
 					count += 1.
 			elif att_type == "ord":
-				count += pairwise.euclidean_distances(g.vs[x][att],g.vs[y][att])[0][0]
-				#print count
-			tt += 1
-		 
-		within_sim_arr.append( count/tt)
-	within_sim = sum(within_sim_arr)/len(within_sim_arr)
-	
+				count +=  1/(1+pairwise.pairwise_distances (g.vs[x][att],g.vs[y][att],metric='euclidean')[0][0])
+				
+			tt += 1.
+		if tt>0:
+			within_sim_arr.append( count/tt)
+	if len(within_sim_arr)>0:
+		within_sim = sum(within_sim_arr)/len(within_sim_arr)
+	else:
+		within_sim = 'na'
+	#if within_sim == 0:
+		#print [g.vs[x][att] for x in comm]
+					
 	##Btw group
 	btw_sim_arr = []
 	for (g1, g2) in combinations(all_keys, 2):
 		pair_node_arr = list(itertools.product(comm_hash[g1], comm_hash[g2]))
+		
+
 		tt = 0.
-		count = 0
+		count = 0.
 		for (x,y) in pair_node_arr:
 			if att_type =="nom":
 				if g.vs[x][att] == g.vs[y][att]: 
 					count += 1.
 			elif att_type == "ord":
-				count += pairwise.euclidean_distances(g.vs[x][att],g.vs[y][att])[0][0]
-				
+				count += 1/(1+pairwise.pairwise_distances (g.vs[x][att],g.vs[y][att],metric='euclidean')[0][0])
+				#if count == 0:
+					#print (g.vs[x][att],g.vs[y][att])
 			tt += 1
-		btw_sim_arr.append(count/tt)
-	btw_sim = sum(btw_sim_arr)/len(btw_sim_arr)
-	
-	return within_sim, btw_sim	
+		if tt>0:
+			btw_sim_arr.append(count/tt)
+	if len(btw_sim_arr)>0:
+		btw_sim = sum(btw_sim_arr)/len(btw_sim_arr)
+	else:
+		btw_sim = 'na'
+	#Btw group and non-group
+	grp_nongrp_sim_arr = []
+   	for g1 in all_keys:
+		
+		pair_node_arr = list(itertools.product(comm_hash[g1], nongroup_node_set))
+ 		tt = 0.
+		count = 0.
+		for (x,y) in pair_node_arr:
+			if att_type =="nom":
+			 
+				if g.vs[x][att] == g.vs[y][att]: 
+					count += 1.
+			elif att_type == "ord":
+				count += 1/(1+pairwise.pairwise_distances (g.vs[x][att],g.vs[y][att],metric='euclidean')[0][0])
+				#if count == 0:
+					#print (g.vs[x][att],g.vs[y][att])
+			tt += 1
+		if tt>0:
+			grp_nongrp_sim_arr.append(count/tt)
+	if len(grp_nongrp_sim_arr)>0:
+		grp_nongrp_sim = sum(grp_nongrp_sim_arr)/len(grp_nongrp_sim_arr)
+	else:
+		grp_nongrp_sim = 'na'	
+ 	
+	return within_sim, btw_sim, grp_nongrp_sim	
 		
 def main_variation(): 
 	machine = "ubuntu"
@@ -288,26 +318,30 @@ def main_variation():
 	result_path = prefix+"result/motif/analysis/"
 	gml_path = prefix+"data/gml/gml_moreAtt/ver2/"
 	
-	comm_type = "motif" #or "motif"
+	comm_type = "motif" #or "cfinder"
 	
 	for csize in ([ 4]): ## need to change node ids in motifs of ICT57  
  		flist = ["Ac57","Eng55","ICT55","ICT56","ICT57-All","Niti55","Niti56","HM Act57","HM Korea57","HM Thai57","Nited56", "Biz55", "EC55"]
+		#flist = ["Ac57"]
 		if comm_type == "motif":
-			type_arr = [ "bf", "friend", "study" ] 
+			type_arr = [ "friend", "study" ,"bf" ] # "bf", "study"
 		else:
 			type_arr = [ "friend", "study" ,"bf"] 
 			
 		fanmod_path = fanmod_basepath+str(csize)+"nodes/"
 		
 		## Cal correlation between a pair of nodes: single variable
-		ord_arr_arr = [ "total_income", "father_income", "mother_income" ] ## use cosine similarity
+		ord_arr_arr = [ "total_income", "gpa" ] ## use cosine similarity , "father_income", "mother_income"
 		nom_att_arr = ["entry_degree",  "gender"] ## use jaccard similarity 
-			
+		
   		for t in type_arr:
-			f_w = open("/home/ubuntu/Desktop/sna_utcc/result/motif/analysis/variance_analysis_"+comm_type+"_"+t+".csv", "w")
-			f_w.write("fname, entry_degree_within_sim, entry_degree_btw_sim, gender_within_sim, gender_btw_sim, total_income_within_sim, total_income_btw_sim, father_income_within_sim, father_income_btw_sim, mother_income_within_sim, mother_income_btw_sim\n")
+ 			
+ 			f_w = open("/home/ubuntu/Desktop/sna_utcc/result/motif/analysis/variance_analysis_"+comm_type+"_"+t+".csv", "w")
   			
   			for fname in flist:
+								
+				f_w.write("fname, entry_degree_within_sim, entry_degree_btw_sim, entry_degree_grpnongrp_sim, gender_within_sim, gender_btw_sim,  gender_grpnongrp_sim,total_income_within_sim, total_income_btw_sim, total_income_grpnongrp_sim, gpa_within_sim, gpa_btw_sim, gpa_grpnongrp_sim, \n")
+ 
 				print fname
 				if t == "friend":
 					directed = False
@@ -315,8 +349,14 @@ def main_variation():
 				else:
 					directed = True
 					g = ig.read(gml_path+fname+"_"+t+".gml", format="gml").simplify()
-				 
-				node_all = [n['id'] for n in g.vs() ]
+				
+				
+				number_hash = dict()
+				vall = [n['id'] for n in g.vs() ]
+				for v, i in zip(vall, range(0,len(vall))):
+					number_hash[v] = i
+				vall_internalid_set = set([number_hash[v] for v in vall])
+					
 				outfile = fname + "_"+t+".txt.csv" 
 				dumpfilename= fname + "_"+t+ ".txt.csv.dump"
  				dfile = open(fanmod_path+dumpfilename, "r")
@@ -328,12 +368,13 @@ def main_variation():
 				
 				if comm_type == "motif":
 								 
-					motif_nodes, cmoti, comm_hash = getNodesInMotif(csize, g, dfile, directed, sigNo_arr,node_all)
+					group_nodes, cmoti, comm_hash  = getNodesInMotif(csize, g, dfile, directed, sigNo_arr, number_hash )
  				else: # use clique percolation
 					###
-					comm_hash = cfinder.cfinder(g, csize)
+					comm_hash, group_nodes = cfinder.cfinder(g, csize)
 					#clique_arr = g.cliques(min=csize, max=csize)
-				
+				nongroup_node_set = vall_internalid_set.difference(group_nodes)
+ 				 
 				## Add total_income = father_income + mother_incomoe 
 				g.vs["total_income"] = [v["father_income"]+v["mother_income"] for v in g.vs]
  
@@ -344,19 +385,18 @@ def main_variation():
  				att_type = "nom"
 				for att in nom_att_arr:
 					#print att
- 					within_sim, btw_sim	 = calSim(comm_hash, g, att, att_type, all_keys)
-					att_sim_all_arr.append((within_sim, btw_sim	))
+ 					within_sim, btw_sim, grp_nongrp_sim	 = calSim(comm_hash, g, att, att_type, all_keys, nongroup_node_set)
+					att_sim_all_arr.append((within_sim, btw_sim, grp_nongrp_sim	))
 					
 				att_type = "ord"	
  				for att in ord_arr_arr:	 
 					 
- 					within_sim, btw_sim	 = calSim(comm_hash, g, att, att_type, all_keys)
-					att_sim_all_arr.append((within_sim, btw_sim	))
-				
+ 					within_sim, btw_sim, grp_nongrp_sim	 = calSim(comm_hash, g, att, att_type, all_keys, nongroup_node_set)
+					att_sim_all_arr.append((within_sim, btw_sim, grp_nongrp_sim	))
+				 
 				
 				val = str(att_sim_all_arr).replace("[","").replace("(","").replace(")","").replace("]","")
-				print val
-				to_w = fname+","+val+"\n"
+ 				to_w = fname+","+val+"\n"
 				f_w.write(to_w)
 			f_w.close()
 					
